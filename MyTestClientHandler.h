@@ -7,9 +7,12 @@
 
 #include "ClientHandler.h"
 #include "Solver.h"
-
+#include "CacheManager.h"
+template <typename Problem,typename Solution>
+// Class template with two parameters
 class MyTestClientHandler:public ClientHandler {
-Solver solver;
+Solver<Problem,Solution> solver;
+CacheManager<Problem,Solution> cm;
 public:
     /**
  * get two streams for communication between server and client
