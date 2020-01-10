@@ -25,29 +25,6 @@ namespace server_side {
          */
         virtual void stop() = 0;
     };
-
-
-    namespace boot {
-        class Main {
-        public:
-            int main(int argc, char *argv[]) {
-                int port = atoi(argv[1]);
-                Solver<string,string>* reverse = new StringReverser();
-                CacheManager<string,string>* cache = new FileCacheManager(5);
-                server_side::Server* serial = new MySerialServer();
-            }
-        };
-    }
-
 }
-
-
-
-
-
-
-
-
-
 
 #endif //GENERALIZED_SERVER_SIDE_IMPLEMENTATION_SERVER_H
