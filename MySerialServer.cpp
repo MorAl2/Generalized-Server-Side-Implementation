@@ -30,11 +30,12 @@ void MySerialServer::run() {
         throw "Error-Listen";
 
     }
-    // TODO - figure the timeout
+    struct timeval tv;
+    tv.tv_sec = 120;
+    setsockopt(sockfd, SOL_SOCKET, SO_RCVTIMEO, (const char*)&tv, sizeof tv);
     cout << "Waiting For Connections... " << endl;
     while (MySerialServer::threadCondition) {
         int client_socket = accept(sockfd, (struct sockaddr *) &address, (socklen_t *) &address);
-        char buffer[4096] = {0};
         MySerialServer::handler->handleClient(client_socket, client_socket);
         close(client_socket);
     }
