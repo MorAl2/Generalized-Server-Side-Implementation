@@ -2,6 +2,11 @@
 #define GENERALIZED_SERVER_SIDE_IMPLEMENTATION_SERVER_H
 
 #include "ClientHandler.h"
+#include "Solver.h"
+#include "StringReverser.h"
+#include "CacheManager.h"
+#include "FileCacheManager.h"
+#include "MySerialServer.h"
 
 namespace server_side {
     class Server {
@@ -21,6 +26,19 @@ namespace server_side {
         virtual void stop() = 0;
     };
 
+
+    namespace boot {
+        class Main {
+        public:
+            int main(int argc, char *argv[]) {
+                int port = atoi(argv[1]);
+                Solver<string,string>* reverse = new StringReverser();
+                CacheManager<string,string>* cache = new FileCacheManager(5);
+                server_side::Server* serial = new MySerialServer();
+            }
+        };
+    }
+
 }
 
 
@@ -28,14 +46,7 @@ namespace server_side {
 
 
 
-//    namespace boot {
-//        class Main {
-//        public:
-//            int main(int argc, char *argv[]) {
-//                printf("%s\n",argv[0]);
-//            }
-//        };
-//    }
+
 
 
 

@@ -11,8 +11,6 @@ void MySerialServer::run() {
     address.sin_addr.s_addr = INADDR_ANY;
     address.sin_port = htons(MySerialServer::port);
 
-
-
     int sockfd = socket(AF_INET, SOCK_STREAM, 0);
     if (sockfd == -1) {
         cout << "Error-Socket" << endl;
