@@ -8,7 +8,7 @@
 using namespace std;
     int main(int argc, char *argv[]) {
         try {
-            boot::Main* run = new boot::Main();
+            server_side::boot::Main* run = new  server_side::boot::Main();
             run->main(argc,argv);
         }
         catch (const char *e) {
