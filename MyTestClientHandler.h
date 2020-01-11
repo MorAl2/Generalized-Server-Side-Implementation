@@ -15,9 +15,9 @@ class MyTestClientHandler : public ClientHandler {
     CacheManager<string, string> *cm;
 
 public:
-    MyTestClientHandler(Solver<string, string>* solver, CacheManager<string, string>* cm) {
-        solver = solver;
-        cm = cm;
+    MyTestClientHandler(Solver<string, string>* sol, CacheManager<string, string>* cache) {
+        solver = sol;
+        cm = cache;
     }
 
     vector<string> *splitToLines(char *) {
@@ -41,7 +41,7 @@ public:
             stringstream stream(buffer);
             string line;
 
-            while (getline(stream, line, '\n')) {
+            while (getline(stream, line,'\n')) {
                 if (line == "end") {
                     endFlag = true;
                     break;
