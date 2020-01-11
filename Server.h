@@ -24,6 +24,9 @@ namespace server_side {
          * stop Listening for Clients.
          */
         virtual void stop() = 0;
+        virtual bool getCondition(){
+            return threadCondition;
+        }
     };
 }
 

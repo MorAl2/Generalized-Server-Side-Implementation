@@ -15,7 +15,7 @@ class MyTestClientHandler : public ClientHandler {
     CacheManager<string, string> *cm;
 
 public:
-    MyTestClientHandler(Solver<string, string> solver, CacheManager<string, string> cm) {
+    MyTestClientHandler(Solver<string, string>* solver, CacheManager<string, string>* cm) {
         solver = solver;
         cm = cm;
     }
