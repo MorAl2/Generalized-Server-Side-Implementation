@@ -41,13 +41,16 @@ void MySerialServer::run() {
         std::cout << "Server is now listening ..." << std::endl;
     }
 
-    while (MySerialServer::threadCondition) {
-        int client_socket = accept(socketfd, (struct sockaddr *) &address,
-                                   (socklen_t *) &address);
+    struct timeval tv;
+    tv.tv_sec = 120;
+    tv.tv_usec = 0;
+    setsockopt(socketfd, SOL_SOCKET, SO_RCVTIMEO, (const char *) &tv, sizeof tv);
 
+    while (MySerialServer::threadCondition) {
+        int client_socket = accept(socketfd, (struct sockaddr *) &address, (socklen_t *) &address);
         if (client_socket == -1) {
-            std::cerr << "Error accepting client" << std::endl;
-            MySerialServer::threadCondition = false;
+            std::cerr << "Error accepting client! / TimeOut!" << std::endl;
+            MySerialServer::stop();
             throw "Error accepting client";
         } else {
             cout << "Got Connection!" << endl;

@@ -3,24 +3,16 @@
 #include <fstream>
 #include "MySerialServer.h"
 #include "MyTestClientHandler.h"
+#include "Main.h"
 
 using namespace std;
-
-int main(int argc, char *argv[]) {
-    try {
-        int port = atoi(argv[1]);
-        Solver<string, string> *reverse = new StringReverser();
-        CacheManager<string, string> *cache = new FileCacheManager(5);
-        MyTestClientHandler *s = new MyTestClientHandler(reverse, cache);
-        server_side::Server *serial = new MySerialServer();
-        serial->open(port, s);
-        cout << "Main Done.." << endl;
-        while (serial->getCondition()) {
-
+    int main(int argc, char *argv[]) {
+        try {
+            boot::Main* run = new boot::Main();
+            run->main(argc,argv);
+        }
+        catch (const char *e) {
+            cout << e << endl;
         }
     }
-    catch (const char* e){
-        cout << e << endl;
-    }
-}
 
