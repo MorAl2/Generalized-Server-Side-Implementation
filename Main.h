@@ -7,6 +7,7 @@
 #include "Server.h"
 #include "MySerialServer.h"
 #include "MyTestClientHandler.h"
+#include "State.h"
 
 using namespace server_side;
 
@@ -23,6 +24,13 @@ namespace server_side {
                     ClientHandler *handler = new MyTestClientHandler(reverse, cache);
                     server_side::Server *serial = new MySerialServer();
                     serial->open(port, handler);
+                    string x = "a";
+                    string y = "a";
+                    State<string> *s1 = new State<string>(x);
+                    State<string> *s2 = new State<string>(y);
+                    if (*s1==*s2){
+                        cout << "Equal" << endl;
+                    }
                     cout << "Main Done.." << endl;
                     while (serial->getCondition()) {
 
