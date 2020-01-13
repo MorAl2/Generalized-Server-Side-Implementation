@@ -11,7 +11,7 @@ struct CompareState {
     bool operator()(State<T> const &p1, State<T> const &p2) {
         // return "true" if "p1" is ordered
         // before "p2", for example:
-        return p1.getCost() < p2.getCost();
+        return p1.getCost() > p2.getCost();
     }
 };
 

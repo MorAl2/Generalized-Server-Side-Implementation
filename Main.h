@@ -28,10 +28,10 @@ namespace server_side {
                 s1->setCost(8);
                 s2->setCost(4);
                 s3->setCost(6);
-                temp->getOpenList().push(*s1);
-                temp->getOpenList().push(*s2);
-                temp->getOpenList().push(*s3);
-                cout << temp->getOpenList().top().getCost() << endl;
+                temp->getOpenList()->push(*s1);
+                temp->getOpenList()->push(*s2);
+                temp->getOpenList()->push(*s3);
+                cout << temp->getOpenList()->top().getCost() << endl;
                 /*try {
                      int port = atoi(argv[1]);
                      Solver<string, string> *reverse = new StringReverser();
