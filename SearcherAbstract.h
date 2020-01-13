@@ -8,15 +8,18 @@
 #include "Searcher.h"
 #include <queue>
 #include "CompareState.h"
+#include <vector>
 template <typename T>
 class SearcherAbstract : public Searcher<T>{
 
 priority_queue<State<T>, vector<State<T>>,CompareState<T>> *openList;
 int evaluatedNodes;
+vector<State<T>> *vectorOpenList;
 public:
     SearcherAbstract(){
         openList = new (priority_queue<State<T>, vector<State<T>>,CompareState<T>>);
         evaluatedNodes=0;
+        vectorOpenList = new vector<State<T>>;
     }
     virtual int openListSize(){
         return openList->size();
@@ -24,9 +27,19 @@ public:
     virtual int getNumberOfNodesEvaluated(){
         return this->evaluatedNodes;
     }
-    virtual Solution search(Searchable<T> searchable) {}
-    priority_queue<State<T>, vector<State<T>>,CompareState<T>> *getOpenList(){
+    virtual Solution search(Searchable<T> searchable) = 0;
+    priority_queue<State<T>, vector<State<T>> ,CompareState<T>> *getOpenList(){
         return this->openList;
+    }
+    void addToOpenList(State<T> s){
+        openList->push(s);
+        vectorOpenList->push_back(s);
+    }
+    bool openContains(State<T> s){
+        for(State<T> x: vectorOpenList){
+            //פה צריכה להמשיך
+        }
+
     }
 protected:
     virtual State<T> popOpenList(){
