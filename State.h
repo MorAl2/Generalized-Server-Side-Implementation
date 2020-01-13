@@ -6,7 +6,7 @@
 #define GENERALIZED_SERVER_SIDE_IMPLEMENTATION_STATE_H
 
 template <typename T>
-class State {
+struct State {
     T state;
     double cost;
     State<T> *cameFrom;
@@ -14,18 +14,20 @@ public:
     State(T state){
         this->state = state;
     }
-    bool operator==(State& s1){
-        if(this->state == s1.getState())
-            return true;
-        return false;
-    }
     T getState(){
         return this->state;
     }
     void setCameFrom(State<T> s){
         this->cameFrom = s;
     }
+    void setCost(double cost){
+        this->cost=cost;
+    }
+    double getCost() const {
+        return this->cost;
+    }
 };
+
 
 
 #endif //GENERALIZED_SERVER_SIDE_IMPLEMENTATION_STATE_H

@@ -10,7 +10,7 @@
 template <typename T>
 class Searcher {
 public:
-    Solution search(Searchable<T> searchable)=0;
-    int getNumberOfNodesEvaluated()=0;
+    Solution search(Searchable<T> searchable){}
+    int getNumberOfNodesEvaluated(){}
 };
 #endif //GENERALIZED_SERVER_SIDE_IMPLEMENTATION_SEARCHER_H

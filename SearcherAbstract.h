@@ -6,14 +6,16 @@
 #define GENERALIZED_SERVER_SIDE_IMPLEMENTATION_SEARCHERABSTRACT_H
 
 #include "Searcher.h"
-#include "MyPriorityQueue.h"
+#include <queue>
+#include "CompareState.h"
 template <typename T>
 class SearcherAbstract : public Searcher<T>{
-MyPriorityQueue<T> openList;
+
+priority_queue<State<T>, vector<State<T>>,CompareState<T>> openList;
 int evaluatedNodes;
 public:
     SearcherAbstract(){
-        openList = new MyPriorityQueue<T>;
+        openList = new (priority_queue<State<T>, vector<State<T>>,CompareState<T>>);
         evaluatedNodes=0;
     }
     virtual int openListSize(){
@@ -22,14 +24,17 @@ public:
     virtual int getNumberOfNodesEvaluated(){
         return this->evaluatedNodes;
     }
-    virtual Solution search(Searchable<T> searchable) = 0;
-
+    virtual Solution search(Searchable<T> searchable) {}
+    priority_queue<State<T>, vector<State<T>>,CompareState<T>> getOpenList(){
+        return this->openList;
+    }
 protected:
     virtual State<T> popOpenList(){
         evaluatedNodes++;
         return openList.poll();
     }
 };
+
 
 
 #endif //GENERALIZED_SERVER_SIDE_IMPLEMENTATION_SEARCHERABSTRACT_H
