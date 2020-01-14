@@ -18,7 +18,7 @@ namespace server_side {
         class Main {
         public:
             int main(int argc, char *argv[]) {
-                SearcherAbstract<string> *temp = new SearcherAbstract<string>;
+                SearcherAbstract<string> *temp = new SearcherAbstract<string>();
                 string x = "a";
                 string y = "b";
                 string z = "c";

@@ -1,8 +1,13 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/Generalized-Server-Side-Implementation.dir/BestFS.cpp.o"
+  "CMakeFiles/Generalized-Server-Side-Implementation.dir/CompareState.cpp.o"
   "CMakeFiles/Generalized-Server-Side-Implementation.dir/FileCacheManager.cpp.o"
   "CMakeFiles/Generalized-Server-Side-Implementation.dir/MySerialServer.cpp.o"
   "CMakeFiles/Generalized-Server-Side-Implementation.dir/MyTestClientHandler.cpp.o"
+  "CMakeFiles/Generalized-Server-Side-Implementation.dir/SearcherAbstract.cpp.o"
+  "CMakeFiles/Generalized-Server-Side-Implementation.dir/Solution.cpp.o"
   "CMakeFiles/Generalized-Server-Side-Implementation.dir/Solver.cpp.o"
+  "CMakeFiles/Generalized-Server-Side-Implementation.dir/State.cpp.o"
   "CMakeFiles/Generalized-Server-Side-Implementation.dir/StringReverser.cpp.o"
   "CMakeFiles/Generalized-Server-Side-Implementation.dir/test.cpp.o"
   "Generalized-Server-Side-Implementation"
