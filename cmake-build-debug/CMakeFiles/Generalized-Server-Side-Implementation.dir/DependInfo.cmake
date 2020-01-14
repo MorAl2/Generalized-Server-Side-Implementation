@@ -4,10 +4,15 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/mor/CLionProjects/Generalized-Server-Side-Implementation/BestFS.cpp" "/home/mor/CLionProjects/Generalized-Server-Side-Implementation/cmake-build-debug/CMakeFiles/Generalized-Server-Side-Implementation.dir/BestFS.cpp.o"
+  "/home/mor/CLionProjects/Generalized-Server-Side-Implementation/CompareState.cpp" "/home/mor/CLionProjects/Generalized-Server-Side-Implementation/cmake-build-debug/CMakeFiles/Generalized-Server-Side-Implementation.dir/CompareState.cpp.o"
   "/home/mor/CLionProjects/Generalized-Server-Side-Implementation/FileCacheManager.cpp" "/home/mor/CLionProjects/Generalized-Server-Side-Implementation/cmake-build-debug/CMakeFiles/Generalized-Server-Side-Implementation.dir/FileCacheManager.cpp.o"
   "/home/mor/CLionProjects/Generalized-Server-Side-Implementation/MySerialServer.cpp" "/home/mor/CLionProjects/Generalized-Server-Side-Implementation/cmake-build-debug/CMakeFiles/Generalized-Server-Side-Implementation.dir/MySerialServer.cpp.o"
   "/home/mor/CLionProjects/Generalized-Server-Side-Implementation/MyTestClientHandler.cpp" "/home/mor/CLionProjects/Generalized-Server-Side-Implementation/cmake-build-debug/CMakeFiles/Generalized-Server-Side-Implementation.dir/MyTestClientHandler.cpp.o"
+  "/home/mor/CLionProjects/Generalized-Server-Side-Implementation/SearcherAbstract.cpp" "/home/mor/CLionProjects/Generalized-Server-Side-Implementation/cmake-build-debug/CMakeFiles/Generalized-Server-Side-Implementation.dir/SearcherAbstract.cpp.o"
+  "/home/mor/CLionProjects/Generalized-Server-Side-Implementation/Solution.cpp" "/home/mor/CLionProjects/Generalized-Server-Side-Implementation/cmake-build-debug/CMakeFiles/Generalized-Server-Side-Implementation.dir/Solution.cpp.o"
   "/home/mor/CLionProjects/Generalized-Server-Side-Implementation/Solver.cpp" "/home/mor/CLionProjects/Generalized-Server-Side-Implementation/cmake-build-debug/CMakeFiles/Generalized-Server-Side-Implementation.dir/Solver.cpp.o"
+  "/home/mor/CLionProjects/Generalized-Server-Side-Implementation/State.cpp" "/home/mor/CLionProjects/Generalized-Server-Side-Implementation/cmake-build-debug/CMakeFiles/Generalized-Server-Side-Implementation.dir/State.cpp.o"
   "/home/mor/CLionProjects/Generalized-Server-Side-Implementation/StringReverser.cpp" "/home/mor/CLionProjects/Generalized-Server-Side-Implementation/cmake-build-debug/CMakeFiles/Generalized-Server-Side-Implementation.dir/StringReverser.cpp.o"
   "/home/mor/CLionProjects/Generalized-Server-Side-Implementation/test.cpp" "/home/mor/CLionProjects/Generalized-Server-Side-Implementation/cmake-build-debug/CMakeFiles/Generalized-Server-Side-Implementation.dir/test.cpp.o"
   )

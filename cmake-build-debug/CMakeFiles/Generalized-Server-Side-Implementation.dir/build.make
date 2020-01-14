@@ -34,10 +34,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/mor/הורדות/clion-2019.2.5/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /home/mor/clion-2019.2.5/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/mor/הורדות/clion-2019.2.5/bin/cmake/linux/bin/cmake -E remove -f
+RM = /home/mor/clion-2019.2.5/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -135,6 +135,71 @@ CMakeFiles/Generalized-Server-Side-Implementation.dir/test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Generalized-Server-Side-Implementation.dir/test.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mor/CLionProjects/Generalized-Server-Side-Implementation/test.cpp -o CMakeFiles/Generalized-Server-Side-Implementation.dir/test.cpp.s
 
+CMakeFiles/Generalized-Server-Side-Implementation.dir/State.cpp.o: CMakeFiles/Generalized-Server-Side-Implementation.dir/flags.make
+CMakeFiles/Generalized-Server-Side-Implementation.dir/State.cpp.o: ../State.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mor/CLionProjects/Generalized-Server-Side-Implementation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Generalized-Server-Side-Implementation.dir/State.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Generalized-Server-Side-Implementation.dir/State.cpp.o -c /home/mor/CLionProjects/Generalized-Server-Side-Implementation/State.cpp
+
+CMakeFiles/Generalized-Server-Side-Implementation.dir/State.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Generalized-Server-Side-Implementation.dir/State.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mor/CLionProjects/Generalized-Server-Side-Implementation/State.cpp > CMakeFiles/Generalized-Server-Side-Implementation.dir/State.cpp.i
+
+CMakeFiles/Generalized-Server-Side-Implementation.dir/State.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Generalized-Server-Side-Implementation.dir/State.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mor/CLionProjects/Generalized-Server-Side-Implementation/State.cpp -o CMakeFiles/Generalized-Server-Side-Implementation.dir/State.cpp.s
+
+CMakeFiles/Generalized-Server-Side-Implementation.dir/Solution.cpp.o: CMakeFiles/Generalized-Server-Side-Implementation.dir/flags.make
+CMakeFiles/Generalized-Server-Side-Implementation.dir/Solution.cpp.o: ../Solution.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mor/CLionProjects/Generalized-Server-Side-Implementation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Generalized-Server-Side-Implementation.dir/Solution.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Generalized-Server-Side-Implementation.dir/Solution.cpp.o -c /home/mor/CLionProjects/Generalized-Server-Side-Implementation/Solution.cpp
+
+CMakeFiles/Generalized-Server-Side-Implementation.dir/Solution.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Generalized-Server-Side-Implementation.dir/Solution.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mor/CLionProjects/Generalized-Server-Side-Implementation/Solution.cpp > CMakeFiles/Generalized-Server-Side-Implementation.dir/Solution.cpp.i
+
+CMakeFiles/Generalized-Server-Side-Implementation.dir/Solution.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Generalized-Server-Side-Implementation.dir/Solution.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mor/CLionProjects/Generalized-Server-Side-Implementation/Solution.cpp -o CMakeFiles/Generalized-Server-Side-Implementation.dir/Solution.cpp.s
+
+CMakeFiles/Generalized-Server-Side-Implementation.dir/SearcherAbstract.cpp.o: CMakeFiles/Generalized-Server-Side-Implementation.dir/flags.make
+CMakeFiles/Generalized-Server-Side-Implementation.dir/SearcherAbstract.cpp.o: ../SearcherAbstract.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mor/CLionProjects/Generalized-Server-Side-Implementation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Generalized-Server-Side-Implementation.dir/SearcherAbstract.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Generalized-Server-Side-Implementation.dir/SearcherAbstract.cpp.o -c /home/mor/CLionProjects/Generalized-Server-Side-Implementation/SearcherAbstract.cpp
+
+CMakeFiles/Generalized-Server-Side-Implementation.dir/SearcherAbstract.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Generalized-Server-Side-Implementation.dir/SearcherAbstract.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mor/CLionProjects/Generalized-Server-Side-Implementation/SearcherAbstract.cpp > CMakeFiles/Generalized-Server-Side-Implementation.dir/SearcherAbstract.cpp.i
+
+CMakeFiles/Generalized-Server-Side-Implementation.dir/SearcherAbstract.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Generalized-Server-Side-Implementation.dir/SearcherAbstract.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mor/CLionProjects/Generalized-Server-Side-Implementation/SearcherAbstract.cpp -o CMakeFiles/Generalized-Server-Side-Implementation.dir/SearcherAbstract.cpp.s
+
+CMakeFiles/Generalized-Server-Side-Implementation.dir/CompareState.cpp.o: CMakeFiles/Generalized-Server-Side-Implementation.dir/flags.make
+CMakeFiles/Generalized-Server-Side-Implementation.dir/CompareState.cpp.o: ../CompareState.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mor/CLionProjects/Generalized-Server-Side-Implementation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Generalized-Server-Side-Implementation.dir/CompareState.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Generalized-Server-Side-Implementation.dir/CompareState.cpp.o -c /home/mor/CLionProjects/Generalized-Server-Side-Implementation/CompareState.cpp
+
+CMakeFiles/Generalized-Server-Side-Implementation.dir/CompareState.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Generalized-Server-Side-Implementation.dir/CompareState.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mor/CLionProjects/Generalized-Server-Side-Implementation/CompareState.cpp > CMakeFiles/Generalized-Server-Side-Implementation.dir/CompareState.cpp.i
+
+CMakeFiles/Generalized-Server-Side-Implementation.dir/CompareState.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Generalized-Server-Side-Implementation.dir/CompareState.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mor/CLionProjects/Generalized-Server-Side-Implementation/CompareState.cpp -o CMakeFiles/Generalized-Server-Side-Implementation.dir/CompareState.cpp.s
+
+CMakeFiles/Generalized-Server-Side-Implementation.dir/BestFS.cpp.o: CMakeFiles/Generalized-Server-Side-Implementation.dir/flags.make
+CMakeFiles/Generalized-Server-Side-Implementation.dir/BestFS.cpp.o: ../BestFS.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mor/CLionProjects/Generalized-Server-Side-Implementation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Generalized-Server-Side-Implementation.dir/BestFS.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Generalized-Server-Side-Implementation.dir/BestFS.cpp.o -c /home/mor/CLionProjects/Generalized-Server-Side-Implementation/BestFS.cpp
+
+CMakeFiles/Generalized-Server-Side-Implementation.dir/BestFS.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Generalized-Server-Side-Implementation.dir/BestFS.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mor/CLionProjects/Generalized-Server-Side-Implementation/BestFS.cpp > CMakeFiles/Generalized-Server-Side-Implementation.dir/BestFS.cpp.i
+
+CMakeFiles/Generalized-Server-Side-Implementation.dir/BestFS.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Generalized-Server-Side-Implementation.dir/BestFS.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mor/CLionProjects/Generalized-Server-Side-Implementation/BestFS.cpp -o CMakeFiles/Generalized-Server-Side-Implementation.dir/BestFS.cpp.s
+
 # Object files for target Generalized-Server-Side-Implementation
 Generalized__Server__Side__Implementation_OBJECTS = \
 "CMakeFiles/Generalized-Server-Side-Implementation.dir/MySerialServer.cpp.o" \
@@ -142,7 +207,12 @@ Generalized__Server__Side__Implementation_OBJECTS = \
 "CMakeFiles/Generalized-Server-Side-Implementation.dir/Solver.cpp.o" \
 "CMakeFiles/Generalized-Server-Side-Implementation.dir/FileCacheManager.cpp.o" \
 "CMakeFiles/Generalized-Server-Side-Implementation.dir/StringReverser.cpp.o" \
-"CMakeFiles/Generalized-Server-Side-Implementation.dir/test.cpp.o"
+"CMakeFiles/Generalized-Server-Side-Implementation.dir/test.cpp.o" \
+"CMakeFiles/Generalized-Server-Side-Implementation.dir/State.cpp.o" \
+"CMakeFiles/Generalized-Server-Side-Implementation.dir/Solution.cpp.o" \
+"CMakeFiles/Generalized-Server-Side-Implementation.dir/SearcherAbstract.cpp.o" \
+"CMakeFiles/Generalized-Server-Side-Implementation.dir/CompareState.cpp.o" \
+"CMakeFiles/Generalized-Server-Side-Implementation.dir/BestFS.cpp.o"
 
 # External object files for target Generalized-Server-Side-Implementation
 Generalized__Server__Side__Implementation_EXTERNAL_OBJECTS =
@@ -153,9 +223,14 @@ Generalized-Server-Side-Implementation: CMakeFiles/Generalized-Server-Side-Imple
 Generalized-Server-Side-Implementation: CMakeFiles/Generalized-Server-Side-Implementation.dir/FileCacheManager.cpp.o
 Generalized-Server-Side-Implementation: CMakeFiles/Generalized-Server-Side-Implementation.dir/StringReverser.cpp.o
 Generalized-Server-Side-Implementation: CMakeFiles/Generalized-Server-Side-Implementation.dir/test.cpp.o
+Generalized-Server-Side-Implementation: CMakeFiles/Generalized-Server-Side-Implementation.dir/State.cpp.o
+Generalized-Server-Side-Implementation: CMakeFiles/Generalized-Server-Side-Implementation.dir/Solution.cpp.o
+Generalized-Server-Side-Implementation: CMakeFiles/Generalized-Server-Side-Implementation.dir/SearcherAbstract.cpp.o
+Generalized-Server-Side-Implementation: CMakeFiles/Generalized-Server-Side-Implementation.dir/CompareState.cpp.o
+Generalized-Server-Side-Implementation: CMakeFiles/Generalized-Server-Side-Implementation.dir/BestFS.cpp.o
 Generalized-Server-Side-Implementation: CMakeFiles/Generalized-Server-Side-Implementation.dir/build.make
 Generalized-Server-Side-Implementation: CMakeFiles/Generalized-Server-Side-Implementation.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mor/CLionProjects/Generalized-Server-Side-Implementation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable Generalized-Server-Side-Implementation"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mor/CLionProjects/Generalized-Server-Side-Implementation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable Generalized-Server-Side-Implementation"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Generalized-Server-Side-Implementation.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

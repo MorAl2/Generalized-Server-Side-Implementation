@@ -84,10 +84,22 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation/BestFS.cpp">
+			<Option target="Generalized-Server-Side-Implementation"/>
+		</Unit>
+		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation/BestFS.h">
+			<Option target="Generalized-Server-Side-Implementation"/>
+		</Unit>
 		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation/CacheManager.h">
 			<Option target="Generalized-Server-Side-Implementation"/>
 		</Unit>
 		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation/ClientHandler.h">
+			<Option target="Generalized-Server-Side-Implementation"/>
+		</Unit>
+		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation/CompareState.cpp">
+			<Option target="Generalized-Server-Side-Implementation"/>
+		</Unit>
+		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation/CompareState.h">
 			<Option target="Generalized-Server-Side-Implementation"/>
 		</Unit>
 		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation/FileCacheManager.cpp">
@@ -111,13 +123,37 @@
 		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation/MyTestClientHandler.h">
 			<Option target="Generalized-Server-Side-Implementation"/>
 		</Unit>
+		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation/Searchable.h">
+			<Option target="Generalized-Server-Side-Implementation"/>
+		</Unit>
+		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation/Searcher.h">
+			<Option target="Generalized-Server-Side-Implementation"/>
+		</Unit>
+		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation/SearcherAbstract.cpp">
+			<Option target="Generalized-Server-Side-Implementation"/>
+		</Unit>
+		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation/SearcherAbstract.h">
+			<Option target="Generalized-Server-Side-Implementation"/>
+		</Unit>
 		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation/Server.h">
+			<Option target="Generalized-Server-Side-Implementation"/>
+		</Unit>
+		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation/Solution.cpp">
+			<Option target="Generalized-Server-Side-Implementation"/>
+		</Unit>
+		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation/Solution.h">
 			<Option target="Generalized-Server-Side-Implementation"/>
 		</Unit>
 		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation/Solver.cpp">
 			<Option target="Generalized-Server-Side-Implementation"/>
 		</Unit>
 		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation/Solver.h">
+			<Option target="Generalized-Server-Side-Implementation"/>
+		</Unit>
+		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation/State.cpp">
+			<Option target="Generalized-Server-Side-Implementation"/>
+		</Unit>
+		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation/State.h">
 			<Option target="Generalized-Server-Side-Implementation"/>
 		</Unit>
 		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation/StringReverser.cpp">
