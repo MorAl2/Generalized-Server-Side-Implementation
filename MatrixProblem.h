@@ -12,6 +12,10 @@ using namespace std;
 class MatrixProblem {
   string state;
   vector<vector<int>*> matrix;
+  int startX;
+  int startY;
+  int endX;
+  int endY;
 
  public:
   MatrixProblem(string data){
@@ -22,6 +26,14 @@ class MatrixProblem {
   }
   void addline(vector<int> *mat){
     matrix.push_back(mat);
+  }
+  void setStart(int x, int y) {
+    startX = x;
+    startY = y;
+  }
+  void setEnd(int x, int y) {
+    endX = x;
+    endY = y;
   }
 };
 

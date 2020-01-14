@@ -37,7 +37,9 @@ class MyClientHandler : public ClientHandler {
       stringstream stream(buffer);
       string line;
       MatrixProblem *matrix_problem = new MatrixProblem(line);
-
+      int dimension = 0;
+      int col = 1;
+      bool startFlag = true;
       while (getline(stream, line, '\n')) {
         // i got the information
         if (line == "end") {
@@ -45,13 +47,28 @@ class MyClientHandler : public ClientHandler {
           break;
         } else {
           // creating a Problem Object from The Information.
-          vector<int>* row = new vector<int>();
+          vector<int> *row = new vector<int>();
           stringstream stream(line);
           string val;
-          while (getline(stream, val, ',')){
+          while (getline(stream, val, ',')) {
             row->push_back(atoi(val.c_str()));
           }
-          matrix_problem->addline(row);
+          if (dimension == 0) {
+            dimension = row->size();
+          }
+          if (col > dimension) {
+            if(startFlag){
+              matrix_problem->setStart(row->at(0),row->at(1));
+              startFlag = 0;
+            } else{
+              matrix_problem->setEnd(row->at(0),row->at(1));
+            }
+
+          }
+          if (col <= dimension) {
+            matrix_problem->addline(row);
+          }
+          col++;
         }
       }
       if (cm->isSolutionExists(matrix_problem)) {
