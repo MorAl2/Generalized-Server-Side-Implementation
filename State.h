@@ -26,6 +26,16 @@ public:
     double getCost() const {
         return this->cost;
     }
+    State<T> getCameFrom(){
+        return this->cameFrom;
+    }
+    bool operator==(State<T> other){
+        if((this->state == other.getState())){
+            return true;
+        }
+        return false;
+    }
+
 };
 
 

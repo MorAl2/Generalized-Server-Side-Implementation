@@ -28,6 +28,9 @@ namespace server_side {
                 s1->setCost(8);
                 s2->setCost(4);
                 s3->setCost(6);
+                if(*s1==*s2){
+                    cout << "IF:yes" << endl;
+                }
                 temp->getOpenList()->push(*s1);
                 temp->getOpenList()->push(*s2);
                 temp->getOpenList()->push(*s3);

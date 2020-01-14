@@ -27,7 +27,7 @@ public:
     virtual int getNumberOfNodesEvaluated(){
         return this->evaluatedNodes;
     }
-    virtual Solution search(Searchable<T> searchable) = 0;
+    virtual Solution search(Searchable<T> searchable)  {};
     priority_queue<State<T>, vector<State<T>> ,CompareState<T>> *getOpenList(){
         return this->openList;
     }
@@ -35,11 +35,13 @@ public:
         openList->push(s);
         vectorOpenList->push_back(s);
     }
-    bool openContains(State<T> s){
-        for(State<T> x: vectorOpenList){
-            //פה צריכה להמשיך
+    bool openContains(State<T> s) {
+        for (State<T> x: vectorOpenList) {
+            if (x == s) {
+                return true;
+            }
+            return false;
         }
-
     }
 protected:
     virtual State<T> popOpenList(){

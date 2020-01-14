@@ -25,9 +25,15 @@ public:
                  return backTrace();
              }
              list<State<T>> succerssors = searchable.getAllPossibleStates(n);
-             for (State<T> x : succerssors)
+             for (State<T> s : succerssors)
              {
-                 if((!(closed->find(x)!=closed->end()))&&(!(this->getOpenList()->)))
+                 if((!(closed->find(s)!=closed->end()))&&(!(this->openContains(s)))){
+                     s.setCameFrom(n);
+                     addToOpenList(s);
+                 } else if(!(closed->find(s)!=closed->end())){
+                    // s = C , n = B
+
+                 }
              }
          }
     }

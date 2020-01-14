@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/mor/הורדות/clion-2019.2.5/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/99/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/mor/הורדות/clion-2019.2.5/bin/cmake/linux/bin/cmake -E remove -f
+RM = /snap/clion/99/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mor/CLionProjects/Generalized-Server-Side-Implementation
+CMAKE_SOURCE_DIR = /home/noy/CLionProjects/Generalized-Server-Side-Implementation
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mor/CLionProjects/Generalized-Server-Side-Implementation/cmake-build-debug
+CMAKE_BINARY_DIR = /home/noy/CLionProjects/Generalized-Server-Side-Implementation/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/mor/CLionProjects/Generalized-Server-Side-Implementatio
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/mor/הורדות/clion-2019.2.5/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/clion/99/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/mor/הורדות/clion-2019.2.5/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/snap/clion/99/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mor/CLionProjects/Generalized-Server-Side-Implementation/cmake-build-debug/CMakeFiles /home/mor/CLionProjects/Generalized-Server-Side-Implementation/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/noy/CLionProjects/Generalized-Server-Side-Implementation/cmake-build-debug/CMakeFiles /home/noy/CLionProjects/Generalized-Server-Side-Implementation/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mor/CLionProjects/Generalized-Server-Side-Implementation/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/noy/CLionProjects/Generalized-Server-Side-Implementation/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -122,6 +122,60 @@ Generalized-Server-Side-Implementation: cmake_check_build_system
 Generalized-Server-Side-Implementation/fast:
 	$(MAKE) -f CMakeFiles/Generalized-Server-Side-Implementation.dir/build.make CMakeFiles/Generalized-Server-Side-Implementation.dir/build
 .PHONY : Generalized-Server-Side-Implementation/fast
+
+BestFS.o: BestFS.cpp.o
+
+.PHONY : BestFS.o
+
+# target to build an object file
+BestFS.cpp.o:
+	$(MAKE) -f CMakeFiles/Generalized-Server-Side-Implementation.dir/build.make CMakeFiles/Generalized-Server-Side-Implementation.dir/BestFS.cpp.o
+.PHONY : BestFS.cpp.o
+
+BestFS.i: BestFS.cpp.i
+
+.PHONY : BestFS.i
+
+# target to preprocess a source file
+BestFS.cpp.i:
+	$(MAKE) -f CMakeFiles/Generalized-Server-Side-Implementation.dir/build.make CMakeFiles/Generalized-Server-Side-Implementation.dir/BestFS.cpp.i
+.PHONY : BestFS.cpp.i
+
+BestFS.s: BestFS.cpp.s
+
+.PHONY : BestFS.s
+
+# target to generate assembly for a file
+BestFS.cpp.s:
+	$(MAKE) -f CMakeFiles/Generalized-Server-Side-Implementation.dir/build.make CMakeFiles/Generalized-Server-Side-Implementation.dir/BestFS.cpp.s
+.PHONY : BestFS.cpp.s
+
+CompareState.o: CompareState.cpp.o
+
+.PHONY : CompareState.o
+
+# target to build an object file
+CompareState.cpp.o:
+	$(MAKE) -f CMakeFiles/Generalized-Server-Side-Implementation.dir/build.make CMakeFiles/Generalized-Server-Side-Implementation.dir/CompareState.cpp.o
+.PHONY : CompareState.cpp.o
+
+CompareState.i: CompareState.cpp.i
+
+.PHONY : CompareState.i
+
+# target to preprocess a source file
+CompareState.cpp.i:
+	$(MAKE) -f CMakeFiles/Generalized-Server-Side-Implementation.dir/build.make CMakeFiles/Generalized-Server-Side-Implementation.dir/CompareState.cpp.i
+.PHONY : CompareState.cpp.i
+
+CompareState.s: CompareState.cpp.s
+
+.PHONY : CompareState.s
+
+# target to generate assembly for a file
+CompareState.cpp.s:
+	$(MAKE) -f CMakeFiles/Generalized-Server-Side-Implementation.dir/build.make CMakeFiles/Generalized-Server-Side-Implementation.dir/CompareState.cpp.s
+.PHONY : CompareState.cpp.s
 
 FileCacheManager.o: FileCacheManager.cpp.o
 
@@ -204,6 +258,60 @@ MyTestClientHandler.cpp.s:
 	$(MAKE) -f CMakeFiles/Generalized-Server-Side-Implementation.dir/build.make CMakeFiles/Generalized-Server-Side-Implementation.dir/MyTestClientHandler.cpp.s
 .PHONY : MyTestClientHandler.cpp.s
 
+SearcherAbstract.o: SearcherAbstract.cpp.o
+
+.PHONY : SearcherAbstract.o
+
+# target to build an object file
+SearcherAbstract.cpp.o:
+	$(MAKE) -f CMakeFiles/Generalized-Server-Side-Implementation.dir/build.make CMakeFiles/Generalized-Server-Side-Implementation.dir/SearcherAbstract.cpp.o
+.PHONY : SearcherAbstract.cpp.o
+
+SearcherAbstract.i: SearcherAbstract.cpp.i
+
+.PHONY : SearcherAbstract.i
+
+# target to preprocess a source file
+SearcherAbstract.cpp.i:
+	$(MAKE) -f CMakeFiles/Generalized-Server-Side-Implementation.dir/build.make CMakeFiles/Generalized-Server-Side-Implementation.dir/SearcherAbstract.cpp.i
+.PHONY : SearcherAbstract.cpp.i
+
+SearcherAbstract.s: SearcherAbstract.cpp.s
+
+.PHONY : SearcherAbstract.s
+
+# target to generate assembly for a file
+SearcherAbstract.cpp.s:
+	$(MAKE) -f CMakeFiles/Generalized-Server-Side-Implementation.dir/build.make CMakeFiles/Generalized-Server-Side-Implementation.dir/SearcherAbstract.cpp.s
+.PHONY : SearcherAbstract.cpp.s
+
+Solution.o: Solution.cpp.o
+
+.PHONY : Solution.o
+
+# target to build an object file
+Solution.cpp.o:
+	$(MAKE) -f CMakeFiles/Generalized-Server-Side-Implementation.dir/build.make CMakeFiles/Generalized-Server-Side-Implementation.dir/Solution.cpp.o
+.PHONY : Solution.cpp.o
+
+Solution.i: Solution.cpp.i
+
+.PHONY : Solution.i
+
+# target to preprocess a source file
+Solution.cpp.i:
+	$(MAKE) -f CMakeFiles/Generalized-Server-Side-Implementation.dir/build.make CMakeFiles/Generalized-Server-Side-Implementation.dir/Solution.cpp.i
+.PHONY : Solution.cpp.i
+
+Solution.s: Solution.cpp.s
+
+.PHONY : Solution.s
+
+# target to generate assembly for a file
+Solution.cpp.s:
+	$(MAKE) -f CMakeFiles/Generalized-Server-Side-Implementation.dir/build.make CMakeFiles/Generalized-Server-Side-Implementation.dir/Solution.cpp.s
+.PHONY : Solution.cpp.s
+
 Solver.o: Solver.cpp.o
 
 .PHONY : Solver.o
@@ -230,6 +338,33 @@ Solver.s: Solver.cpp.s
 Solver.cpp.s:
 	$(MAKE) -f CMakeFiles/Generalized-Server-Side-Implementation.dir/build.make CMakeFiles/Generalized-Server-Side-Implementation.dir/Solver.cpp.s
 .PHONY : Solver.cpp.s
+
+State.o: State.cpp.o
+
+.PHONY : State.o
+
+# target to build an object file
+State.cpp.o:
+	$(MAKE) -f CMakeFiles/Generalized-Server-Side-Implementation.dir/build.make CMakeFiles/Generalized-Server-Side-Implementation.dir/State.cpp.o
+.PHONY : State.cpp.o
+
+State.i: State.cpp.i
+
+.PHONY : State.i
+
+# target to preprocess a source file
+State.cpp.i:
+	$(MAKE) -f CMakeFiles/Generalized-Server-Side-Implementation.dir/build.make CMakeFiles/Generalized-Server-Side-Implementation.dir/State.cpp.i
+.PHONY : State.cpp.i
+
+State.s: State.cpp.s
+
+.PHONY : State.s
+
+# target to generate assembly for a file
+State.cpp.s:
+	$(MAKE) -f CMakeFiles/Generalized-Server-Side-Implementation.dir/build.make CMakeFiles/Generalized-Server-Side-Implementation.dir/State.cpp.s
+.PHONY : State.cpp.s
 
 StringReverser.o: StringReverser.cpp.o
 
@@ -294,6 +429,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Generalized-Server-Side-Implementation"
 	@echo "... edit_cache"
+	@echo "... BestFS.o"
+	@echo "... BestFS.i"
+	@echo "... BestFS.s"
+	@echo "... CompareState.o"
+	@echo "... CompareState.i"
+	@echo "... CompareState.s"
 	@echo "... FileCacheManager.o"
 	@echo "... FileCacheManager.i"
 	@echo "... FileCacheManager.s"
@@ -303,9 +444,18 @@ help:
 	@echo "... MyTestClientHandler.o"
 	@echo "... MyTestClientHandler.i"
 	@echo "... MyTestClientHandler.s"
+	@echo "... SearcherAbstract.o"
+	@echo "... SearcherAbstract.i"
+	@echo "... SearcherAbstract.s"
+	@echo "... Solution.o"
+	@echo "... Solution.i"
+	@echo "... Solution.s"
 	@echo "... Solver.o"
 	@echo "... Solver.i"
 	@echo "... Solver.s"
+	@echo "... State.o"
+	@echo "... State.i"
+	@echo "... State.s"
 	@echo "... StringReverser.o"
 	@echo "... StringReverser.i"
 	@echo "... StringReverser.s"
