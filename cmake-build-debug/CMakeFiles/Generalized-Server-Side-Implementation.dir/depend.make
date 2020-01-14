@@ -18,6 +18,20 @@ CMakeFiles/Generalized-Server-Side-Implementation.dir/FileCacheManager.cpp.o: ..
 CMakeFiles/Generalized-Server-Side-Implementation.dir/FileCacheManager.cpp.o: ../FileCacheManager.cpp
 CMakeFiles/Generalized-Server-Side-Implementation.dir/FileCacheManager.cpp.o: ../FileCacheManager.h
 
+CMakeFiles/Generalized-Server-Side-Implementation.dir/MatrixProblem.cpp.o: ../MatrixProblem.cpp
+CMakeFiles/Generalized-Server-Side-Implementation.dir/MatrixProblem.cpp.o: ../MatrixProblem.h
+
+CMakeFiles/Generalized-Server-Side-Implementation.dir/MatrixSolution.cpp.o: ../MatrixSolution.cpp
+CMakeFiles/Generalized-Server-Side-Implementation.dir/MatrixSolution.cpp.o: ../MatrixSolution.h
+
+CMakeFiles/Generalized-Server-Side-Implementation.dir/MyClientHandler.cpp.o: ../CacheManager.h
+CMakeFiles/Generalized-Server-Side-Implementation.dir/MyClientHandler.cpp.o: ../ClientHandler.h
+CMakeFiles/Generalized-Server-Side-Implementation.dir/MyClientHandler.cpp.o: ../MatrixProblem.h
+CMakeFiles/Generalized-Server-Side-Implementation.dir/MyClientHandler.cpp.o: ../MatrixSolution.h
+CMakeFiles/Generalized-Server-Side-Implementation.dir/MyClientHandler.cpp.o: ../MyClientHandler.cpp
+CMakeFiles/Generalized-Server-Side-Implementation.dir/MyClientHandler.cpp.o: ../MyClientHandler.h
+CMakeFiles/Generalized-Server-Side-Implementation.dir/MyClientHandler.cpp.o: ../Solver.h
+
 CMakeFiles/Generalized-Server-Side-Implementation.dir/MySerialServer.cpp.o: ../CacheManager.h
 CMakeFiles/Generalized-Server-Side-Implementation.dir/MySerialServer.cpp.o: ../ClientHandler.h
 CMakeFiles/Generalized-Server-Side-Implementation.dir/MySerialServer.cpp.o: ../FileCacheManager.h
@@ -47,6 +61,10 @@ CMakeFiles/Generalized-Server-Side-Implementation.dir/Solution.cpp.o: ../Solutio
 CMakeFiles/Generalized-Server-Side-Implementation.dir/Solver.cpp.o: ../Solver.cpp
 CMakeFiles/Generalized-Server-Side-Implementation.dir/Solver.cpp.o: ../Solver.h
 
+CMakeFiles/Generalized-Server-Side-Implementation.dir/SolverTester.cpp.o: ../Solver.h
+CMakeFiles/Generalized-Server-Side-Implementation.dir/SolverTester.cpp.o: ../SolverTester.cpp
+CMakeFiles/Generalized-Server-Side-Implementation.dir/SolverTester.cpp.o: ../SolverTester.h
+
 CMakeFiles/Generalized-Server-Side-Implementation.dir/State.cpp.o: ../State.cpp
 CMakeFiles/Generalized-Server-Side-Implementation.dir/State.cpp.o: ../State.h
 
@@ -59,6 +77,9 @@ CMakeFiles/Generalized-Server-Side-Implementation.dir/test.cpp.o: ../ClientHandl
 CMakeFiles/Generalized-Server-Side-Implementation.dir/test.cpp.o: ../CompareState.h
 CMakeFiles/Generalized-Server-Side-Implementation.dir/test.cpp.o: ../FileCacheManager.h
 CMakeFiles/Generalized-Server-Side-Implementation.dir/test.cpp.o: ../Main.h
+CMakeFiles/Generalized-Server-Side-Implementation.dir/test.cpp.o: ../MatrixProblem.h
+CMakeFiles/Generalized-Server-Side-Implementation.dir/test.cpp.o: ../MatrixSolution.h
+CMakeFiles/Generalized-Server-Side-Implementation.dir/test.cpp.o: ../MyClientHandler.h
 CMakeFiles/Generalized-Server-Side-Implementation.dir/test.cpp.o: ../MySerialServer.h
 CMakeFiles/Generalized-Server-Side-Implementation.dir/test.cpp.o: ../MyTestClientHandler.h
 CMakeFiles/Generalized-Server-Side-Implementation.dir/test.cpp.o: ../Searchable.h
@@ -67,6 +88,7 @@ CMakeFiles/Generalized-Server-Side-Implementation.dir/test.cpp.o: ../SearcherAbs
 CMakeFiles/Generalized-Server-Side-Implementation.dir/test.cpp.o: ../Server.h
 CMakeFiles/Generalized-Server-Side-Implementation.dir/test.cpp.o: ../Solution.h
 CMakeFiles/Generalized-Server-Side-Implementation.dir/test.cpp.o: ../Solver.h
+CMakeFiles/Generalized-Server-Side-Implementation.dir/test.cpp.o: ../SolverTester.h
 CMakeFiles/Generalized-Server-Side-Implementation.dir/test.cpp.o: ../State.h
 CMakeFiles/Generalized-Server-Side-Implementation.dir/test.cpp.o: ../StringReverser.h
 CMakeFiles/Generalized-Server-Side-Implementation.dir/test.cpp.o: ../test.cpp

@@ -1,4 +1,4 @@
-# Install script for directory: /home/noy/CLionProjects/Generalized-Server-Side-Implementation
+# Install script for directory: /home/mor/CLionProjects/Generalized-Server-Side-Implementation
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/noy/CLionProjects/Generalized-Server-Side-Implementation/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/mor/CLionProjects/Generalized-Server-Side-Implementation/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -1,6 +1,7 @@
 #ifndef GENERALIZED_SERVER_SIDE_IMPLEMENTATION_CACHEMANAGER_H
 #define GENERALIZED_SERVER_SIDE_IMPLEMENTATION_CACHEMANAGER_H
-
+#include <iostream>
+using namespace std;
 template<typename Problem, typename Solution>
 class CacheManager {
 public:
@@ -16,7 +17,7 @@ public:
      * @param p - the Problem.
      * @return the solution for The problem p
      */
-    virtual Solution getSolution(Problem p) = 0;
+    virtual string getSolution(Problem p) = 0;
 
     /**
      * rcv problem p and solution s ,and add them to the cache

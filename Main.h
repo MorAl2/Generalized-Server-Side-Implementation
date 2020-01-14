@@ -10,6 +10,10 @@
 #include "State.h"
 #include <queue>
 #include "SearcherAbstract.h"
+#include "MatrixProblem.h"
+#include "MatrixSolution.h"
+#include "MyClientHandler.h"
+#include "SolverTester.h"
 using namespace server_side;
 // asjdilajsdijasidjsd
 using namespace std;
@@ -19,23 +23,34 @@ namespace server_side {
         public:
             //mor
             int main(int argc, char *argv[]) {
-                SearcherAbstract<string> *temp = new SearcherAbstract<string>();
-                string x = "a";
-                string y = "b";
-                string z = "c";
-                State<string> *s1 = new State<string>(x);
-                State<string> *s2 = new State<string>(y);
-                State<string> *s3 = new State<string>(z);
-                s1->setCost(8);
-                s2->setCost(4);
-                s3->setCost(6);
-                if(*s1==*s2){
-                    cout << "IF:yes" << endl;
-                }
-                temp->getOpenList()->push(*s1);
-                temp->getOpenList()->push(*s2);
-                temp->getOpenList()->push(*s3);
-                cout << temp->getOpenList()->top().getCost() << endl;
+              int port = atoi(argv[1]);
+              Solver<MatrixProblem*, MatrixSolution*> *reverse = new SolverTester<MatrixProblem*, MatrixSolution*>();
+              CacheManager<MatrixProblem*, MatrixSolution*> *cache = new FileCacheManager<MatrixProblem*, MatrixSolution*>(5);
+              ClientHandler *handler = new MyClientHandler(reverse, cache);
+              server_side::Server *serial = new MySerialServer();
+              serial->open(port, handler);
+              while (serial->getCondition()) {
+
+              }
+
+
+//                SearcherAbstract<string> *temp = new SearcherAbstract<string>();
+//                string x = "a";
+//                string y = "b";
+//                string z = "c";
+//                State<string> *s1 = new State<string>(x);
+//                State<string> *s2 = new State<string>(y);
+//                State<string> *s3 = new State<string>(z);
+//                s1->setCost(8);
+//                s2->setCost(4);
+//                s3->setCost(6);
+//                if(*s1==*s2){
+//                    cout << "IF:yes" << endl;
+//                }
+//                temp->getOpenList()->push(*s1);
+//                temp->getOpenList()->push(*s2);
+//                temp->getOpenList()->push(*s3);
+//                cout << temp->getOpenList()->top().getCost() << endl;
                 /*try {
                      int port = atoi(argv[1]);
                      Solver<string, string> *reverse = new StringReverser();

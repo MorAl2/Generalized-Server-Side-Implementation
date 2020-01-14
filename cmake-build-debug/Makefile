@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/99/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /home/mor/clion-2019.2.5/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/99/bin/cmake/linux/bin/cmake -E remove -f
+RM = /home/mor/clion-2019.2.5/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/noy/CLionProjects/Generalized-Server-Side-Implementation
+CMAKE_SOURCE_DIR = /home/mor/CLionProjects/Generalized-Server-Side-Implementation
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/noy/CLionProjects/Generalized-Server-Side-Implementation/cmake-build-debug
+CMAKE_BINARY_DIR = /home/mor/CLionProjects/Generalized-Server-Side-Implementation/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/noy/CLionProjects/Generalized-Server-Side-Implementatio
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/snap/clion/99/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/mor/clion-2019.2.5/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/snap/clion/99/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/mor/clion-2019.2.5/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/noy/CLionProjects/Generalized-Server-Side-Implementation/cmake-build-debug/CMakeFiles /home/noy/CLionProjects/Generalized-Server-Side-Implementation/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mor/CLionProjects/Generalized-Server-Side-Implementation/cmake-build-debug/CMakeFiles /home/mor/CLionProjects/Generalized-Server-Side-Implementation/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/noy/CLionProjects/Generalized-Server-Side-Implementation/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mor/CLionProjects/Generalized-Server-Side-Implementation/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -203,6 +203,87 @@ FileCacheManager.s: FileCacheManager.cpp.s
 FileCacheManager.cpp.s:
 	$(MAKE) -f CMakeFiles/Generalized-Server-Side-Implementation.dir/build.make CMakeFiles/Generalized-Server-Side-Implementation.dir/FileCacheManager.cpp.s
 .PHONY : FileCacheManager.cpp.s
+
+MatrixProblem.o: MatrixProblem.cpp.o
+
+.PHONY : MatrixProblem.o
+
+# target to build an object file
+MatrixProblem.cpp.o:
+	$(MAKE) -f CMakeFiles/Generalized-Server-Side-Implementation.dir/build.make CMakeFiles/Generalized-Server-Side-Implementation.dir/MatrixProblem.cpp.o
+.PHONY : MatrixProblem.cpp.o
+
+MatrixProblem.i: MatrixProblem.cpp.i
+
+.PHONY : MatrixProblem.i
+
+# target to preprocess a source file
+MatrixProblem.cpp.i:
+	$(MAKE) -f CMakeFiles/Generalized-Server-Side-Implementation.dir/build.make CMakeFiles/Generalized-Server-Side-Implementation.dir/MatrixProblem.cpp.i
+.PHONY : MatrixProblem.cpp.i
+
+MatrixProblem.s: MatrixProblem.cpp.s
+
+.PHONY : MatrixProblem.s
+
+# target to generate assembly for a file
+MatrixProblem.cpp.s:
+	$(MAKE) -f CMakeFiles/Generalized-Server-Side-Implementation.dir/build.make CMakeFiles/Generalized-Server-Side-Implementation.dir/MatrixProblem.cpp.s
+.PHONY : MatrixProblem.cpp.s
+
+MatrixSolution.o: MatrixSolution.cpp.o
+
+.PHONY : MatrixSolution.o
+
+# target to build an object file
+MatrixSolution.cpp.o:
+	$(MAKE) -f CMakeFiles/Generalized-Server-Side-Implementation.dir/build.make CMakeFiles/Generalized-Server-Side-Implementation.dir/MatrixSolution.cpp.o
+.PHONY : MatrixSolution.cpp.o
+
+MatrixSolution.i: MatrixSolution.cpp.i
+
+.PHONY : MatrixSolution.i
+
+# target to preprocess a source file
+MatrixSolution.cpp.i:
+	$(MAKE) -f CMakeFiles/Generalized-Server-Side-Implementation.dir/build.make CMakeFiles/Generalized-Server-Side-Implementation.dir/MatrixSolution.cpp.i
+.PHONY : MatrixSolution.cpp.i
+
+MatrixSolution.s: MatrixSolution.cpp.s
+
+.PHONY : MatrixSolution.s
+
+# target to generate assembly for a file
+MatrixSolution.cpp.s:
+	$(MAKE) -f CMakeFiles/Generalized-Server-Side-Implementation.dir/build.make CMakeFiles/Generalized-Server-Side-Implementation.dir/MatrixSolution.cpp.s
+.PHONY : MatrixSolution.cpp.s
+
+MyClientHandler.o: MyClientHandler.cpp.o
+
+.PHONY : MyClientHandler.o
+
+# target to build an object file
+MyClientHandler.cpp.o:
+	$(MAKE) -f CMakeFiles/Generalized-Server-Side-Implementation.dir/build.make CMakeFiles/Generalized-Server-Side-Implementation.dir/MyClientHandler.cpp.o
+.PHONY : MyClientHandler.cpp.o
+
+MyClientHandler.i: MyClientHandler.cpp.i
+
+.PHONY : MyClientHandler.i
+
+# target to preprocess a source file
+MyClientHandler.cpp.i:
+	$(MAKE) -f CMakeFiles/Generalized-Server-Side-Implementation.dir/build.make CMakeFiles/Generalized-Server-Side-Implementation.dir/MyClientHandler.cpp.i
+.PHONY : MyClientHandler.cpp.i
+
+MyClientHandler.s: MyClientHandler.cpp.s
+
+.PHONY : MyClientHandler.s
+
+# target to generate assembly for a file
+MyClientHandler.cpp.s:
+	$(MAKE) -f CMakeFiles/Generalized-Server-Side-Implementation.dir/build.make CMakeFiles/Generalized-Server-Side-Implementation.dir/MyClientHandler.cpp.s
+.PHONY : MyClientHandler.cpp.s
 
 MySerialServer.o: MySerialServer.cpp.o
 
@@ -339,6 +420,33 @@ Solver.cpp.s:
 	$(MAKE) -f CMakeFiles/Generalized-Server-Side-Implementation.dir/build.make CMakeFiles/Generalized-Server-Side-Implementation.dir/Solver.cpp.s
 .PHONY : Solver.cpp.s
 
+SolverTester.o: SolverTester.cpp.o
+
+.PHONY : SolverTester.o
+
+# target to build an object file
+SolverTester.cpp.o:
+	$(MAKE) -f CMakeFiles/Generalized-Server-Side-Implementation.dir/build.make CMakeFiles/Generalized-Server-Side-Implementation.dir/SolverTester.cpp.o
+.PHONY : SolverTester.cpp.o
+
+SolverTester.i: SolverTester.cpp.i
+
+.PHONY : SolverTester.i
+
+# target to preprocess a source file
+SolverTester.cpp.i:
+	$(MAKE) -f CMakeFiles/Generalized-Server-Side-Implementation.dir/build.make CMakeFiles/Generalized-Server-Side-Implementation.dir/SolverTester.cpp.i
+.PHONY : SolverTester.cpp.i
+
+SolverTester.s: SolverTester.cpp.s
+
+.PHONY : SolverTester.s
+
+# target to generate assembly for a file
+SolverTester.cpp.s:
+	$(MAKE) -f CMakeFiles/Generalized-Server-Side-Implementation.dir/build.make CMakeFiles/Generalized-Server-Side-Implementation.dir/SolverTester.cpp.s
+.PHONY : SolverTester.cpp.s
+
 State.o: State.cpp.o
 
 .PHONY : State.o
@@ -438,6 +546,15 @@ help:
 	@echo "... FileCacheManager.o"
 	@echo "... FileCacheManager.i"
 	@echo "... FileCacheManager.s"
+	@echo "... MatrixProblem.o"
+	@echo "... MatrixProblem.i"
+	@echo "... MatrixProblem.s"
+	@echo "... MatrixSolution.o"
+	@echo "... MatrixSolution.i"
+	@echo "... MatrixSolution.s"
+	@echo "... MyClientHandler.o"
+	@echo "... MyClientHandler.i"
+	@echo "... MyClientHandler.s"
 	@echo "... MySerialServer.o"
 	@echo "... MySerialServer.i"
 	@echo "... MySerialServer.s"
@@ -453,6 +570,9 @@ help:
 	@echo "... Solver.o"
 	@echo "... Solver.i"
 	@echo "... Solver.s"
+	@echo "... SolverTester.o"
+	@echo "... SolverTester.i"
+	@echo "... SolverTester.s"
 	@echo "... State.o"
 	@echo "... State.i"
 	@echo "... State.s"

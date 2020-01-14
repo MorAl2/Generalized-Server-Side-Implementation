@@ -42,7 +42,7 @@ void MySerialServer::run() {
     }
 
     struct timeval tv;
-    tv.tv_sec = 120;
+    tv.tv_sec = 12000;
     tv.tv_usec = 0;
     setsockopt(socketfd, SOL_SOCKET, SO_RCVTIMEO, (const char *) &tv, sizeof tv);
 
