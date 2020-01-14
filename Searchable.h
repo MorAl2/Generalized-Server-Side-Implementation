@@ -6,7 +6,7 @@
 #define GENERALIZED_SERVER_SIDE_IMPLEMENTATION_SEARCHABLE_H
 
 #include "State.h"
-#include <list>;
+#include <list>
 using namespace std;
 template <typename T>
 class Searchable{
