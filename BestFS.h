@@ -32,7 +32,7 @@ public:
                      addToOpenList(s);
                  } else if(!(closed->find(s)!=closed->end())){
                     // s = C , n = B
-
+                    // Mor
                  }
              }
          }

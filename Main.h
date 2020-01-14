@@ -17,6 +17,7 @@ namespace server_side {
     namespace boot {
         class Main {
         public:
+            //mor
             int main(int argc, char *argv[]) {
                 SearcherAbstract<string> *temp = new SearcherAbstract<string>();
                 string x = "a";
