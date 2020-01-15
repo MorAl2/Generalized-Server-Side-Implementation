@@ -29,10 +29,21 @@ public:
              {
                  if((!(closed->find(s)!=closed->end()))&&(!(this->openContains(s)))){
                      s.setCameFrom(n);
+                     s.setSumState(s.getCost()+n.getSumState());
                      addToOpenList(s);
-                 } else if(!(closed->find(s)!=closed->end())){
-                    // s = C , n = B
-                    // Mor
+                 // 5.b
+                 } else {
+                     if((s.getCost()+n.getSumState())<(s.getSumState())){
+                         // 5.b.i
+                         if(!this->openContains(s)){
+                             this->addToOpenList(s);
+                             closed->erase(closed->find(s));
+                         // 5.b.ii
+                         } else {
+                            s.setSumState(s.getCost()+n.getSumState());
+                            s.setCameFrom(n);
+                         }
+                     }
                  }
              }
          }

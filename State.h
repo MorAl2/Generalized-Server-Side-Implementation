@@ -43,6 +43,9 @@ struct State {
   State<T> getCameFrom() {
     return this->cameFrom;
   }
+  double getSumState(){
+      return this->sumState;
+  }
   bool operator==(State<T> other) {
     if ((this->state == other.getState())) {
       return true;
