@@ -6,12 +6,13 @@
 #define GENERALIZED_SERVER_SIDE_IMPLEMENTATION__MATRIXPROBLEM_H_
 #include <iostream>
 #include <vector>
+#include "State.h"
 using namespace std;
 
 
 class MatrixProblem {
   string state;
-  vector<vector<int>*> matrix;
+  vector<vector<State<string>*>*> matrix;
   int startX;
   int startY;
   int endX;
@@ -24,7 +25,7 @@ class MatrixProblem {
   string to_string(){
     return state;
   }
-  void addline(vector<int> *mat){
+  void addline(vector<State<string>*> *mat){
     matrix.push_back(mat);
   }
   void setStart(int x, int y) {
@@ -34,6 +35,9 @@ class MatrixProblem {
   void setEnd(int x, int y) {
     endX = x;
     endY = y;
+  }
+  void addToStateString(string x) {
+    state.append(x);
   }
 };
 

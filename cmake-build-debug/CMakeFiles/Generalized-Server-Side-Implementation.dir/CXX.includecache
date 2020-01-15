@@ -6,6 +6,18 @@
 
 #IncludeRegexTransform: 
 
+/home/mor/CLionProjects/Generalized-Server-Side-Implementation/BestFS.cpp
+BestFS.h
+/home/mor/CLionProjects/Generalized-Server-Side-Implementation/BestFS.h
+
+/home/mor/CLionProjects/Generalized-Server-Side-Implementation/BestFS.h
+SearcherAbstract.h
+/home/mor/CLionProjects/Generalized-Server-Side-Implementation/SearcherAbstract.h
+bits/stdc++.h
+-
+list
+/home/mor/CLionProjects/Generalized-Server-Side-Implementation/list
+
 /home/mor/CLionProjects/Generalized-Server-Side-Implementation/CacheManager.h
 iostream
 -
@@ -13,6 +25,10 @@ iostream
 /home/mor/CLionProjects/Generalized-Server-Side-Implementation/ClientHandler.h
 iostream
 -
+
+/home/mor/CLionProjects/Generalized-Server-Side-Implementation/CompareState.cpp
+CompareState.h
+/home/mor/CLionProjects/Generalized-Server-Side-Implementation/CompareState.h
 
 /home/mor/CLionProjects/Generalized-Server-Side-Implementation/CompareState.h
 State.h
@@ -58,11 +74,17 @@ MyClientHandler.h
 SolverTester.h
 /home/mor/CLionProjects/Generalized-Server-Side-Implementation/SolverTester.h
 
+/home/mor/CLionProjects/Generalized-Server-Side-Implementation/MatrixProblem.cpp
+MatrixProblem.h
+/home/mor/CLionProjects/Generalized-Server-Side-Implementation/MatrixProblem.h
+
 /home/mor/CLionProjects/Generalized-Server-Side-Implementation/MatrixProblem.h
 iostream
 -
 vector
 -
+State.h
+/home/mor/CLionProjects/Generalized-Server-Side-Implementation/State.h
 
 /home/mor/CLionProjects/Generalized-Server-Side-Implementation/MatrixSolution.h
 iostream
@@ -126,6 +148,10 @@ Solution.h
 Searchable.h
 /home/mor/CLionProjects/Generalized-Server-Side-Implementation/Searchable.h
 
+/home/mor/CLionProjects/Generalized-Server-Side-Implementation/SearcherAbstract.cpp
+SearcherAbstract.h
+/home/mor/CLionProjects/Generalized-Server-Side-Implementation/SearcherAbstract.h
+
 /home/mor/CLionProjects/Generalized-Server-Side-Implementation/SearcherAbstract.h
 Searcher.h
 /home/mor/CLionProjects/Generalized-Server-Side-Implementation/Searcher.h
@@ -157,6 +183,10 @@ MySerialServer.h
 /home/mor/CLionProjects/Generalized-Server-Side-Implementation/SolverTester.h
 Solver.h
 /home/mor/CLionProjects/Generalized-Server-Side-Implementation/Solver.h
+
+/home/mor/CLionProjects/Generalized-Server-Side-Implementation/State.cpp
+State.h
+/home/mor/CLionProjects/Generalized-Server-Side-Implementation/State.h
 
 /home/mor/CLionProjects/Generalized-Server-Side-Implementation/State.h
 

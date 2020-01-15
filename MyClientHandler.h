@@ -47,7 +47,7 @@ class MyClientHandler : public ClientHandler {
           break;
         } else {
           // creating a Problem Object from The Information.
-          vector<int> *row = new vector<int>();
+          vector<double> *row = new vector<double>();
           stringstream stream(line);
           string val;
           while (getline(stream, val, ',')) {
@@ -65,7 +65,13 @@ class MyClientHandler : public ClientHandler {
             }
           }
           if (col <= dimension) {
-            matrix_problem->addline(row);
+            vector<State<string>*> *stateRow = new vector<State<string>*>();
+            for(auto it = row->begin();it!= row->end();it++){
+                double value = *it.base();
+                stateRow->push_back(new State<string>(to_string(value),value));
+                matrix_problem->addToStateString(to_string(value)+",");
+            }
+            matrix_problem->addline(stateRow);
           }
           col++;
         }
