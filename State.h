@@ -11,6 +11,8 @@ struct State {
   double cost;
   State<T> *cameFrom;
   double sumState;
+  int rowPos;
+  int colPos;
  public:
   State(T state) {
     this->state = state;
@@ -24,6 +26,10 @@ struct State {
   }
   void setCameFrom(State<T> s) {
     this->cameFrom = s;
+  }
+  void setPosition(int x, int y) {
+    rowPos = x;
+    colPos = y;
   }
   void setSumState(State<T> s) {
     this->cameFrom = s;

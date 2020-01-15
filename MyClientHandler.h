@@ -38,7 +38,7 @@ class MyClientHandler : public ClientHandler {
       string line;
       MatrixProblem *matrix_problem = new MatrixProblem(line);
       int dimension = 0;
-      int col = 1;
+      int rowCount = 1;
       bool startFlag = true;
       while (getline(stream, line, '\n')) {
         // i got the information
@@ -56,7 +56,7 @@ class MyClientHandler : public ClientHandler {
           if (dimension == 0) {
             dimension = row->size();
           }
-          if (col > dimension) {
+          if (rowCount > dimension) {
             if(startFlag){
               matrix_problem->setStart(row->at(0),row->at(1));
               startFlag = false;
@@ -64,16 +64,19 @@ class MyClientHandler : public ClientHandler {
               matrix_problem->setEnd(row->at(0),row->at(1));
             }
           }
-          if (col <= dimension) {
+          if (rowCount <= dimension) {
             vector<State<string>*> *stateRow = new vector<State<string>*>();
+            int colCount = 1;
             for(auto it = row->begin();it!= row->end();it++){
                 double value = *it.base();
-                stateRow->push_back(new State<string>(to_string(value),value));
-                matrix_problem->addToStateString(to_string(value)+",");
+                auto temp = new State<string>(to_string(value),value);
+                temp->setPosition(rowCount,colCount);
+                stateRow->push_back(temp);
+                matrix_problem->addToStateString(to_string((int)value)+",");
             }
             matrix_problem->addline(stateRow);
           }
-          col++;
+          rowCount++;
         }
       }
       if (cm->isSolutionExists(matrix_problem)) {

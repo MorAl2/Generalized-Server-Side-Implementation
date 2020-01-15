@@ -39,6 +39,12 @@ class MatrixProblem {
   void addToStateString(string x) {
     state.append(x);
   }
+
+  vector<State<string>*> getAllPosssibleStates(State<string>* target){{
+
+  }
+
+  }
 };
 
 #endif //GENERALIZED_SERVER_SIDE_IMPLEMENTATION__MATRIXPROBLEM_H_
