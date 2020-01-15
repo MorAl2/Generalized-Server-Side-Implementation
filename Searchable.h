@@ -12,6 +12,6 @@ template <typename T>
 class Searchable{
     State<T>* getInitialState();
     bool isGoalState(State<T> s);
-    list<State<T>*> getAllPossibleStates(State<T> s);
+    list<State<T>*>* getAllPossibleStates(State<T> s);
 };
 #endif //GENERALIZED_SERVER_SIDE_IMPLEMENTATION_SEARCHABLE_H

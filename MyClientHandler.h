@@ -73,7 +73,7 @@ class MyClientHandler : public ClientHandler {
                 auto start = new State<string>(to_string(value),value);
                 start->setPosition(rowPos,colPos);
                 stateRow->push_back(start);
-                matrix_problem->addToStateString(to_string(value)+",");
+                matrix_problem->addToStateString(to_string((int)value)+",");
                 colPos++;
             }
             matrix_problem->addline(stateRow);
@@ -83,6 +83,11 @@ class MyClientHandler : public ClientHandler {
         }
       }
     }
+    State<string> test("2",2);
+    test.rowPos = 3;
+    test.colPos = 1;
+    vector<State<string> *> * adjlist = matrix_problem->getAllPossibleStates(test);
+    cout << "My Adjcent are: " <<endl;
     if (cm->isSolutionExists(matrix_problem)) {
       string sol = cm->getSolution(matrix_problem);
       int is_sent = send(os, sol.c_str(), sol.length(), 0);

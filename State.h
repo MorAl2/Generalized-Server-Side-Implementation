@@ -31,8 +31,8 @@ struct State {
     rowPos = x;
     colPos = y;
   }
-  void setSumState(State<T> s) {
-    this->cameFrom = s;
+  void setSumState(double s) {
+    this->sumState = s;
   }
   void setCost(double cost) {
     this->cost = cost;

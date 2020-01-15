@@ -21,6 +21,7 @@ CMakeFiles/Generalized-Server-Side-Implementation.dir/FileCacheManager.cpp.o
 CMakeFiles/Generalized-Server-Side-Implementation.dir/MatrixProblem.cpp.o
  /home/mor/CLionProjects/Generalized-Server-Side-Implementation/MatrixProblem.cpp
  /home/mor/CLionProjects/Generalized-Server-Side-Implementation/MatrixProblem.h
+ /home/mor/CLionProjects/Generalized-Server-Side-Implementation/Searchable.h
  /home/mor/CLionProjects/Generalized-Server-Side-Implementation/State.h
 CMakeFiles/Generalized-Server-Side-Implementation.dir/MatrixSolution.cpp.o
  /home/mor/CLionProjects/Generalized-Server-Side-Implementation/MatrixSolution.cpp
@@ -32,6 +33,7 @@ CMakeFiles/Generalized-Server-Side-Implementation.dir/MyClientHandler.cpp.o
  /home/mor/CLionProjects/Generalized-Server-Side-Implementation/MatrixSolution.h
  /home/mor/CLionProjects/Generalized-Server-Side-Implementation/MyClientHandler.cpp
  /home/mor/CLionProjects/Generalized-Server-Side-Implementation/MyClientHandler.h
+ /home/mor/CLionProjects/Generalized-Server-Side-Implementation/Searchable.h
  /home/mor/CLionProjects/Generalized-Server-Side-Implementation/Solver.h
  /home/mor/CLionProjects/Generalized-Server-Side-Implementation/State.h
 CMakeFiles/Generalized-Server-Side-Implementation.dir/MySerialServer.cpp.o
