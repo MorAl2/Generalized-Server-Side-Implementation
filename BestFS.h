@@ -31,7 +31,7 @@ public:
                      s.setCameFrom(n);
                      s.setSumState(s.getCost()+n.getSumState());
                      addToOpenList(s);
-                 // 5.b
+                 // 5.b /
                  } else {
                      if((s.getCost()+n.getSumState())<(s.getSumState())){
                          // 5.b.i

@@ -52,7 +52,7 @@ struct State {
     }
     return false;
   }
-
+//
 };
 
 #endif //GENERALIZED_SERVER_SIDE_IMPLEMENTATION_STATE_H
