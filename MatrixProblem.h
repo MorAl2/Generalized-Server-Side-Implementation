@@ -7,25 +7,22 @@
 #include <iostream>
 #include <vector>
 #include "State.h"
+#include "Searchable.h"
 using namespace std;
 
-
-class MatrixProblem {
+class MatrixProblem : public Searchable<string> {
   string state;
-  vector<vector<State<string>*>*> matrix;
+  vector<vector<State<string> *> *> matrix;
   int startX;
   int startY;
   int endX;
   int endY;
 
  public:
-  MatrixProblem(string data){
-    state = data;
-  }
-  string to_string(){
+  string to_string() {
     return state;
   }
-  void addline(vector<State<string>*> *mat){
+  void addline(vector<State<string> *> *mat) {
     matrix.push_back(mat);
   }
   void setStart(int x, int y) {
@@ -40,11 +37,19 @@ class MatrixProblem {
     state.append(x);
   }
 
-  vector<State<string>*> getAllPosssibleStates(State<string>* target){{
+  State<string>* getInitialState() {
+    return matrix.at(startX)->at(startY);
+  }
+  bool isGoalState(State<string> s) {
+    if(s.rowPos == endX && s.colPos == endY){
+      return true;
+    }
+    return false;
+  }
+  list<State<string>*> getAllPossibleStates(State<string> s) {
 
   }
 
-  }
 };
 
 #endif //GENERALIZED_SERVER_SIDE_IMPLEMENTATION__MATRIXPROBLEM_H_

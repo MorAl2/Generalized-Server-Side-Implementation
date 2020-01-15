@@ -28,6 +28,9 @@ class MyClientHandler : public ClientHandler {
   void handleClient(int is, int os) {
     char buffer[4096] = {0};
     bool endFlag = false;
+    MatrixProblem *matrix_problem = new MatrixProblem();
+    int size = 1;
+    int rowPos=0;
     while (!endFlag) {
       int valread = read(is, buffer, 4096);
       if (valread == -1) {
@@ -36,9 +39,7 @@ class MyClientHandler : public ClientHandler {
       }
       stringstream stream(buffer);
       string line;
-      MatrixProblem *matrix_problem = new MatrixProblem(line);
       int dimension = 0;
-      int rowCount = 1;
       bool startFlag = true;
       while (getline(stream, line, '\n')) {
         // i got the information
@@ -56,7 +57,7 @@ class MyClientHandler : public ClientHandler {
           if (dimension == 0) {
             dimension = row->size();
           }
-          if (rowCount > dimension) {
+          if (size > dimension) {
             if(startFlag){
               matrix_problem->setStart(row->at(0),row->at(1));
               startFlag = false;
@@ -64,34 +65,36 @@ class MyClientHandler : public ClientHandler {
               matrix_problem->setEnd(row->at(0),row->at(1));
             }
           }
-          if (rowCount <= dimension) {
+          if (size <= dimension) {
             vector<State<string>*> *stateRow = new vector<State<string>*>();
-            int colCount = 1;
+            int colPos = 0;
             for(auto it = row->begin();it!= row->end();it++){
                 double value = *it.base();
-                auto temp = new State<string>(to_string(value),value);
-                temp->setPosition(rowCount,colCount);
-                stateRow->push_back(temp);
-                matrix_problem->addToStateString(to_string((int)value)+",");
+                auto start = new State<string>(to_string(value),value);
+                start->setPosition(rowPos,colPos);
+                stateRow->push_back(start);
+                matrix_problem->addToStateString(to_string(value)+",");
+                colPos++;
             }
             matrix_problem->addline(stateRow);
+            size++;
+            rowPos++;
           }
-          rowCount++;
         }
       }
-      if (cm->isSolutionExists(matrix_problem)) {
-        string sol = cm->getSolution(matrix_problem);
-        int is_sent = send(os, sol.c_str(), sol.length(), 0);
-        if (is_sent == -1) {
-          cout << "The Message Wasn't sent: " + sol << endl;
-        }
-      } else {
-        MatrixSolution *matrix_solution = solver->solve(matrix_problem);
-        cm->addSolution(matrix_problem, matrix_solution);
-        int is_sent = send(os, matrix_solution->to_string().c_str(), matrix_solution->to_string().length(), 0);
-        if (is_sent == -1) {
-          cout << "The Message Wasn't sent: " + matrix_solution->to_string() << endl;
-        }
+    }
+    if (cm->isSolutionExists(matrix_problem)) {
+      string sol = cm->getSolution(matrix_problem);
+      int is_sent = send(os, sol.c_str(), sol.length(), 0);
+      if (is_sent == -1) {
+        cout << "The Message Wasn't sent: " + sol << endl;
+      }
+    } else {
+      MatrixSolution *matrix_solution = solver->solve(matrix_problem);
+      cm->addSolution(matrix_problem, matrix_solution);
+      int is_sent = send(os, matrix_solution->to_string().c_str(), matrix_solution->to_string().length(), 0);
+      if (is_sent == -1) {
+        cout << "The Message Wasn't sent: " + matrix_solution->to_string() << endl;
       }
     }
   }
