@@ -59,11 +59,10 @@ class MyClientHandler : public ClientHandler {
           if (col > dimension) {
             if(startFlag){
               matrix_problem->setStart(row->at(0),row->at(1));
-              startFlag = 0;
+              startFlag = false;
             } else{
               matrix_problem->setEnd(row->at(0),row->at(1));
             }
-
           }
           if (col <= dimension) {
             matrix_problem->addline(row);
