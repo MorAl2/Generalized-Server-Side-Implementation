@@ -7,51 +7,62 @@
 
 template<typename T>
 struct State {
-  T state;
-  double cost;
-  State<T> *cameFrom;
-  double sumState;
-  int rowPos;
-  int colPos;
- public:
-  State(T state) {
-    this->state = state;
-  }
-  State(T stat, double Cost) {
-    this->state = stat;
-    this->cost = Cost;
-  }
-  T getState() {
-    return this->state;
-  }
-  void setCameFrom(State<T> s) {
-    this->cameFrom = s;
-  }
-  void setPosition(int x, int y) {
-    rowPos = x;
-    colPos = y;
-  }
-  void setSumState(double s) {
-    this->sumState = s;
-  }
-  void setCost(double cost) {
-    this->cost = cost;
-  }
-  double getCost() const {
-    return this->cost;
-  }
-  State<T> getCameFrom() {
-    return this->cameFrom;
-  }
-  double getSumState(){
-      return this->sumState;
-  }
-  bool operator==(State<T> other) {
-    if ((this->state == other.getState())) {
-      return true;
+    T state;
+    double cost;
+    State<T> *cameFrom = nullptr;
+    double sumState;
+    int rowPos;
+    int colPos;
+    bool isDisc = false;
+public:
+    State(T state) {
+        this->state = state;
     }
-    return false;
-  }
+
+    State(T stat, double Cost) {
+        this->state = stat;
+        this->cost = Cost;
+    }
+
+    T getState() {
+        return this->state;
+    }
+
+    void setCameFrom(State<T> *s) {
+        this->cameFrom = s;
+    }
+
+    void setPosition(int x, int y) {
+        rowPos = x;
+        colPos = y;
+    }
+
+    void setSumState(double s) {
+        this->sumState = s;
+    }
+
+    void setCost(double cost) {
+        this->cost = cost;
+    }
+
+    double getCost() const {
+        return this->cost;
+    }
+
+    State<T> getCameFrom() {
+        return this->cameFrom;
+    }
+
+    double getSumState() {
+        return this->sumState;
+    }
+
+    bool operator==(State<T> other) {
+        if ((this->state == other.getState())) {
+            return true;
+        }
+        return false;
+    }
 //
 };
 

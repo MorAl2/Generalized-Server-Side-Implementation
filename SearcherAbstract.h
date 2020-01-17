@@ -27,7 +27,7 @@ public:
     virtual int getNumberOfNodesEvaluated(){
         return this->evaluatedNodes;
     }
-    virtual Solution search(Searchable<T> searchable)  {};
+    virtual Solution* search(Searchable<T> searchable)  {};
     priority_queue<State<T>, vector<State<T>> ,CompareState<T>> *getOpenList(){
         return this->openList;
     }

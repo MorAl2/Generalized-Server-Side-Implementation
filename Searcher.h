@@ -10,9 +10,12 @@
 
 template<typename T>
 class Searcher {
+protected:
+    int nodesCount = 0;
 public:
-    virtual Solution search(Searchable<T> searchable) = 0;
-    virtual int getNumberOfNodesEvaluated() = 0;
+    virtual Solution* search(Searchable<T> *searchable) {}
+
+    virtual int getNumberOfNodesEvaluated() {}
 };
 
 #endif //GENERALIZED_SERVER_SIDE_IMPLEMENTATION_SEARCHER_H

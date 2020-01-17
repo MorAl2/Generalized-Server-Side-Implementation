@@ -40,15 +40,15 @@ class MatrixProblem : public Searchable<string> {
   State<string> *getInitialState() {
     return matrix.at(startX)->at(startY);
   }
-  bool isGoalState(State<string> s) {
-    if (s.rowPos == endX && s.colPos == endY) {
+  bool isGoalState(State<string>* s) {
+    if (s->rowPos == endX && s->colPos == endY) {
       return true;
     }
     return false;
   }
-  vector<State<string> *> *getAllPossibleStates(State<string> s) {
-    int row = s.rowPos;
-    int col = s.colPos;
+  vector<State<string> *> *getAllPossibleStates(State<string>* s) {
+    int row = s->rowPos;
+    int col = s->colPos;
     int size = matrix.size() - 1;
     vector<State<string> *> *adjList = new vector<State<string> *>();
 

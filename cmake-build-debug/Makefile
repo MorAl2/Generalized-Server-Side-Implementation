@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/mor/clion-2019.2.5/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /home/mor/הורדות/clion-2019.2.5/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/mor/clion-2019.2.5/bin/cmake/linux/bin/cmake -E remove -f
+RM = /home/mor/הורדות/clion-2019.2.5/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mor/CLionProjects/Generalized-Server-Side-Implementation
+CMAKE_SOURCE_DIR = /home/mor/CLionProjects/Generalized-Server-Side-Implementation2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mor/CLionProjects/Generalized-Server-Side-Implementation/cmake-build-debug
+CMAKE_BINARY_DIR = /home/mor/CLionProjects/Generalized-Server-Side-Implementation2/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/mor/CLionProjects/Generalized-Server-Side-Implementatio
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/mor/clion-2019.2.5/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/mor/הורדות/clion-2019.2.5/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/mor/clion-2019.2.5/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/mor/הורדות/clion-2019.2.5/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mor/CLionProjects/Generalized-Server-Side-Implementation/cmake-build-debug/CMakeFiles /home/mor/CLionProjects/Generalized-Server-Side-Implementation/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mor/CLionProjects/Generalized-Server-Side-Implementation2/cmake-build-debug/CMakeFiles /home/mor/CLionProjects/Generalized-Server-Side-Implementation2/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mor/CLionProjects/Generalized-Server-Side-Implementation/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mor/CLionProjects/Generalized-Server-Side-Implementation2/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -176,6 +176,33 @@ CompareState.s: CompareState.cpp.s
 CompareState.cpp.s:
 	$(MAKE) -f CMakeFiles/Generalized-Server-Side-Implementation.dir/build.make CMakeFiles/Generalized-Server-Side-Implementation.dir/CompareState.cpp.s
 .PHONY : CompareState.cpp.s
+
+DFSearch.o: DFSearch.cpp.o
+
+.PHONY : DFSearch.o
+
+# target to build an object file
+DFSearch.cpp.o:
+	$(MAKE) -f CMakeFiles/Generalized-Server-Side-Implementation.dir/build.make CMakeFiles/Generalized-Server-Side-Implementation.dir/DFSearch.cpp.o
+.PHONY : DFSearch.cpp.o
+
+DFSearch.i: DFSearch.cpp.i
+
+.PHONY : DFSearch.i
+
+# target to preprocess a source file
+DFSearch.cpp.i:
+	$(MAKE) -f CMakeFiles/Generalized-Server-Side-Implementation.dir/build.make CMakeFiles/Generalized-Server-Side-Implementation.dir/DFSearch.cpp.i
+.PHONY : DFSearch.cpp.i
+
+DFSearch.s: DFSearch.cpp.s
+
+.PHONY : DFSearch.s
+
+# target to generate assembly for a file
+DFSearch.cpp.s:
+	$(MAKE) -f CMakeFiles/Generalized-Server-Side-Implementation.dir/build.make CMakeFiles/Generalized-Server-Side-Implementation.dir/DFSearch.cpp.s
+.PHONY : DFSearch.cpp.s
 
 FileCacheManager.o: FileCacheManager.cpp.o
 
@@ -543,6 +570,9 @@ help:
 	@echo "... CompareState.o"
 	@echo "... CompareState.i"
 	@echo "... CompareState.s"
+	@echo "... DFSearch.o"
+	@echo "... DFSearch.i"
+	@echo "... DFSearch.s"
 	@echo "... FileCacheManager.o"
 	@echo "... FileCacheManager.i"
 	@echo "... FileCacheManager.s"
