@@ -7,11 +7,17 @@
 
 #include "State.h"
 #include <list>
+
 using namespace std;
-template <typename T>
-class Searchable{
-    State<T>* getInitialState();
-    bool isGoalState(State<T> s);
-    list<State<T>*>* getAllPossibleStates(State<T> s);
+
+template<typename T>
+class Searchable {
+public:
+    State<T> *getInitialState() = 0;
+
+    bool isGoalState(State<T> s) = 0;
+
+    list<State<T> *> *getAllPossibleStates(State<T> s) = 0;
 };
+
 #endif //GENERALIZED_SERVER_SIDE_IMPLEMENTATION_SEARCHABLE_H

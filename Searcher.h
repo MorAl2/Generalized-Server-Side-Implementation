@@ -7,10 +7,12 @@
 
 #include "Solution.h"
 #include "Searchable.h"
-template <typename T>
+
+template<typename T>
 class Searcher {
 public:
-    Solution search(Searchable<T> searchable){}
-    int getNumberOfNodesEvaluated(){}
+    Solution search(Searchable<T> searchable) = 0;
+    int getNumberOfNodesEvaluated() = 0;
 };
+
 #endif //GENERALIZED_SERVER_SIDE_IMPLEMENTATION_SEARCHER_H
