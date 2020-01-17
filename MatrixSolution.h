@@ -23,7 +23,7 @@ public:
 
     string getSolution() override {
         string instruction = "";
-
+        bool flag = true;
 
         for (int i = path->size() - 1; i > 0; i--) {
             int cuurRow = path->at(i)->rowPos;
@@ -31,18 +31,38 @@ public:
 
             int nextRow = path->at(i - 1)->rowPos;
             int nextCol = path->at(i - 1)->colPos;
-
+            int sumCost;
+            if (flag == true) {
+                sumCost = path->at(i)->cost;
+                flag = false;
+            }
             if (nextRow > cuurRow) {
-                instruction += "Down ";
+                instruction += "Down";
+                sumCost += path->at(i - 1)->cost;
+                instruction += "(";
+                instruction += ::to_string(sumCost);
+                instruction += ") ";
             }
             if (nextRow < cuurRow) {
                 instruction += "Up ";
+                sumCost += path->at(i - 1)->cost;
+                instruction += "(";
+                instruction += ::to_string(sumCost);
+                instruction += ") ";
             }
             if (nextCol > cuurCol) {
                 instruction += "Right ";
+                sumCost += path->at(i - 1)->cost;
+                instruction += "(";
+                instruction += ::to_string(sumCost);
+                instruction += ") ";
             }
             if (nextCol < cuurCol) {
                 instruction += "Left ";
+                sumCost += path->at(i - 1)->cost;
+                instruction += "(";
+                instruction += ::to_string(sumCost);
+                instruction += ") ";
             }
         }
         return instruction;
