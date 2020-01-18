@@ -5,6 +5,8 @@
 #ifndef GENERALIZED_SERVER_SIDE_IMPLEMENTATION_STATE_H
 #define GENERALIZED_SERVER_SIDE_IMPLEMENTATION_STATE_H
 
+#include <cfloat>
+
 template<typename T>
 struct State {
     T state;
@@ -14,6 +16,9 @@ struct State {
     int rowPos;
     int colPos;
     bool isDisc = false;
+    double f = FLT_MAX;
+    double h = FLT_MAX;
+    double g = FLT_MAX;
 public:
     State(T state) {
         this->state = state;
@@ -22,6 +27,7 @@ public:
     State(T stat, double Cost) {
         this->state = stat;
         this->cost = Cost;
+        this->sumState = cost;
     }
 
     T getState() {
