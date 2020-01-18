@@ -49,6 +49,26 @@ public:
         }
     }
 
+    void remove(State<string>* element) {
+
+        std::vector<State<string>*> vec;
+
+        while (!this->openList.empty()) {
+
+            State<string>* currentElem = this->openList.top();
+            bool areEquals = (element == currentElem);
+
+            if (areEquals == false) {
+                vec.push_back(currentElem);
+            }
+            this->openList.pop();
+        }
+
+        for (int index = 0; index < vec.size(); index++) {
+            this->openList.push(vec[index]);
+        }
+    }
+
 protected:
     virtual State<T> *popOpenList() {
         evaluatedNodes++;

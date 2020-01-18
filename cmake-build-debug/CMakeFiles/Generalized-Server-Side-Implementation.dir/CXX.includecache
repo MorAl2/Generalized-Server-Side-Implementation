@@ -6,6 +6,20 @@
 
 #IncludeRegexTransform: 
 
+/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/AStar.cpp
+AStar.h
+/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/AStar.h
+
+/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/AStar.h
+unordered_set
+-
+TempSearcher.h
+/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/TempSearcher.h
+MatrixSolution.h
+/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/MatrixSolution.h
+math.h
+/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/math.h
+
 /home/mor/CLionProjects/Generalized-Server-Side-Implementation2/CacheManager.h
 iostream
 -
@@ -17,10 +31,6 @@ iostream
 /home/mor/CLionProjects/Generalized-Server-Side-Implementation2/CompareState.h
 State.h
 /home/mor/CLionProjects/Generalized-Server-Side-Implementation2/State.h
-
-/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/DFSearch.cpp
-DFSearch.h
-/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/DFSearch.h
 
 /home/mor/CLionProjects/Generalized-Server-Side-Implementation2/DFSearch.h
 iostream
@@ -75,6 +85,10 @@ SearcherStack.h
 /home/mor/CLionProjects/Generalized-Server-Side-Implementation2/SearcherStack.h
 DFSearch.h
 /home/mor/CLionProjects/Generalized-Server-Side-Implementation2/DFSearch.h
+AStar.h
+/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/AStar.h
+ObjectAdapter.h
+/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/ObjectAdapter.h
 
 /home/mor/CLionProjects/Generalized-Server-Side-Implementation2/MatrixProblem.h
 iostream
@@ -86,10 +100,6 @@ State.h
 Searchable.h
 /home/mor/CLionProjects/Generalized-Server-Side-Implementation2/Searchable.h
 
-/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/MatrixSolution.cpp
-MatrixSolution.h
-/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/MatrixSolution.h
-
 /home/mor/CLionProjects/Generalized-Server-Side-Implementation2/MatrixSolution.h
 iostream
 -
@@ -99,10 +109,6 @@ Solution.h
 /home/mor/CLionProjects/Generalized-Server-Side-Implementation2/Solution.h
 State.h
 /home/mor/CLionProjects/Generalized-Server-Side-Implementation2/State.h
-
-/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/MyClientHandler.cpp
-MyClientHandler.h
-/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/MyClientHandler.h
 
 /home/mor/CLionProjects/Generalized-Server-Side-Implementation2/MyClientHandler.h
 sstream
@@ -144,6 +150,22 @@ vector
 sstream
 -
 sys/socket.h
+-
+
+/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/ObjectAdapter.h
+string
+-
+Solver.h
+/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/Solver.h
+Searchable.h
+/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/Searchable.h
+MatrixSolution.h
+/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/MatrixSolution.h
+MatrixProblem.h
+/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/MatrixProblem.h
+Searcher.h
+/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/Searcher.h
+iostream
 -
 
 /home/mor/CLionProjects/Generalized-Server-Side-Implementation2/Searchable.h
@@ -205,12 +227,30 @@ Solver.h
 /home/mor/CLionProjects/Generalized-Server-Side-Implementation2/Solver.h
 
 /home/mor/CLionProjects/Generalized-Server-Side-Implementation2/State.h
+cfloat
+-
 
 /home/mor/CLionProjects/Generalized-Server-Side-Implementation2/StringReverser.h
 string
 -
 Solver.h
 /home/mor/CLionProjects/Generalized-Server-Side-Implementation2/Solver.h
+
+/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/TempComprator.h
+State.h
+/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/State.h
+
+/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/TempSearcher.h
+State.h
+/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/State.h
+Searcher.h
+/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/Searcher.h
+queue
+-
+TempComprator.h
+/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/TempComprator.h
+vector
+-
 
 /home/mor/CLionProjects/Generalized-Server-Side-Implementation2/test.cpp
 iostream

@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/AStar.cpp" "/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/cmake-build-debug/CMakeFiles/Generalized-Server-Side-Implementation.dir/AStar.cpp.o"
   "/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/BestFS.cpp" "/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/cmake-build-debug/CMakeFiles/Generalized-Server-Side-Implementation.dir/BestFS.cpp.o"
   "/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/CompareState.cpp" "/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/cmake-build-debug/CMakeFiles/Generalized-Server-Side-Implementation.dir/CompareState.cpp.o"
   "/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/DFSearch.cpp" "/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/cmake-build-debug/CMakeFiles/Generalized-Server-Side-Implementation.dir/DFSearch.cpp.o"
@@ -13,12 +14,18 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/MyClientHandler.cpp" "/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/cmake-build-debug/CMakeFiles/Generalized-Server-Side-Implementation.dir/MyClientHandler.cpp.o"
   "/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/MySerialServer.cpp" "/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/cmake-build-debug/CMakeFiles/Generalized-Server-Side-Implementation.dir/MySerialServer.cpp.o"
   "/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/MyTestClientHandler.cpp" "/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/cmake-build-debug/CMakeFiles/Generalized-Server-Side-Implementation.dir/MyTestClientHandler.cpp.o"
+  "/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/ObjectAdapter.cpp" "/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/cmake-build-debug/CMakeFiles/Generalized-Server-Side-Implementation.dir/ObjectAdapter.cpp.o"
+  "/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/RegAStar.cpp" "/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/cmake-build-debug/CMakeFiles/Generalized-Server-Side-Implementation.dir/RegAStar.cpp.o"
   "/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/SearcherAbstract.cpp" "/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/cmake-build-debug/CMakeFiles/Generalized-Server-Side-Implementation.dir/SearcherAbstract.cpp.o"
   "/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/Solution.cpp" "/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/cmake-build-debug/CMakeFiles/Generalized-Server-Side-Implementation.dir/Solution.cpp.o"
   "/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/Solver.cpp" "/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/cmake-build-debug/CMakeFiles/Generalized-Server-Side-Implementation.dir/Solver.cpp.o"
   "/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/SolverTester.cpp" "/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/cmake-build-debug/CMakeFiles/Generalized-Server-Side-Implementation.dir/SolverTester.cpp.o"
   "/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/State.cpp" "/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/cmake-build-debug/CMakeFiles/Generalized-Server-Side-Implementation.dir/State.cpp.o"
   "/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/StringReverser.cpp" "/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/cmake-build-debug/CMakeFiles/Generalized-Server-Side-Implementation.dir/StringReverser.cpp.o"
+  "/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/TempComprator.cpp" "/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/cmake-build-debug/CMakeFiles/Generalized-Server-Side-Implementation.dir/TempComprator.cpp.o"
+  "/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/TempSearcher.cpp" "/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/cmake-build-debug/CMakeFiles/Generalized-Server-Side-Implementation.dir/TempSearcher.cpp.o"
+  "/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/TestAStar.cpp" "/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/cmake-build-debug/CMakeFiles/Generalized-Server-Side-Implementation.dir/TestAStar.cpp.o"
+  "/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/c_p_queue.cpp" "/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/cmake-build-debug/CMakeFiles/Generalized-Server-Side-Implementation.dir/c_p_queue.cpp.o"
   "/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/test.cpp" "/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/cmake-build-debug/CMakeFiles/Generalized-Server-Side-Implementation.dir/test.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

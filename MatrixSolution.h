@@ -37,32 +37,32 @@ public:
                 flag = false;
             }
             if (nextRow > cuurRow) {
-                instruction += "Down";
+                instruction += "Down ";
                 sumCost += path->at(i - 1)->cost;
                 instruction += "(";
                 instruction += ::to_string(sumCost);
-                instruction += ") ";
+                instruction += ") ,";
             }
             if (nextRow < cuurRow) {
                 instruction += "Up ";
                 sumCost += path->at(i - 1)->cost;
                 instruction += "(";
                 instruction += ::to_string(sumCost);
-                instruction += ") ";
+                instruction += ") ,";
             }
             if (nextCol > cuurCol) {
                 instruction += "Right ";
                 sumCost += path->at(i - 1)->cost;
                 instruction += "(";
                 instruction += ::to_string(sumCost);
-                instruction += ") ";
+                instruction += ") ,";
             }
             if (nextCol < cuurCol) {
                 instruction += "Left ";
                 sumCost += path->at(i - 1)->cost;
                 instruction += "(";
                 instruction += ::to_string(sumCost);
-                instruction += ") ";
+                instruction += ") ,";
             }
         }
         return instruction;

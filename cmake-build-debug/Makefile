@@ -123,6 +123,33 @@ Generalized-Server-Side-Implementation/fast:
 	$(MAKE) -f CMakeFiles/Generalized-Server-Side-Implementation.dir/build.make CMakeFiles/Generalized-Server-Side-Implementation.dir/build
 .PHONY : Generalized-Server-Side-Implementation/fast
 
+AStar.o: AStar.cpp.o
+
+.PHONY : AStar.o
+
+# target to build an object file
+AStar.cpp.o:
+	$(MAKE) -f CMakeFiles/Generalized-Server-Side-Implementation.dir/build.make CMakeFiles/Generalized-Server-Side-Implementation.dir/AStar.cpp.o
+.PHONY : AStar.cpp.o
+
+AStar.i: AStar.cpp.i
+
+.PHONY : AStar.i
+
+# target to preprocess a source file
+AStar.cpp.i:
+	$(MAKE) -f CMakeFiles/Generalized-Server-Side-Implementation.dir/build.make CMakeFiles/Generalized-Server-Side-Implementation.dir/AStar.cpp.i
+.PHONY : AStar.cpp.i
+
+AStar.s: AStar.cpp.s
+
+.PHONY : AStar.s
+
+# target to generate assembly for a file
+AStar.cpp.s:
+	$(MAKE) -f CMakeFiles/Generalized-Server-Side-Implementation.dir/build.make CMakeFiles/Generalized-Server-Side-Implementation.dir/AStar.cpp.s
+.PHONY : AStar.cpp.s
+
 BestFS.o: BestFS.cpp.o
 
 .PHONY : BestFS.o
@@ -366,6 +393,60 @@ MyTestClientHandler.cpp.s:
 	$(MAKE) -f CMakeFiles/Generalized-Server-Side-Implementation.dir/build.make CMakeFiles/Generalized-Server-Side-Implementation.dir/MyTestClientHandler.cpp.s
 .PHONY : MyTestClientHandler.cpp.s
 
+ObjectAdapter.o: ObjectAdapter.cpp.o
+
+.PHONY : ObjectAdapter.o
+
+# target to build an object file
+ObjectAdapter.cpp.o:
+	$(MAKE) -f CMakeFiles/Generalized-Server-Side-Implementation.dir/build.make CMakeFiles/Generalized-Server-Side-Implementation.dir/ObjectAdapter.cpp.o
+.PHONY : ObjectAdapter.cpp.o
+
+ObjectAdapter.i: ObjectAdapter.cpp.i
+
+.PHONY : ObjectAdapter.i
+
+# target to preprocess a source file
+ObjectAdapter.cpp.i:
+	$(MAKE) -f CMakeFiles/Generalized-Server-Side-Implementation.dir/build.make CMakeFiles/Generalized-Server-Side-Implementation.dir/ObjectAdapter.cpp.i
+.PHONY : ObjectAdapter.cpp.i
+
+ObjectAdapter.s: ObjectAdapter.cpp.s
+
+.PHONY : ObjectAdapter.s
+
+# target to generate assembly for a file
+ObjectAdapter.cpp.s:
+	$(MAKE) -f CMakeFiles/Generalized-Server-Side-Implementation.dir/build.make CMakeFiles/Generalized-Server-Side-Implementation.dir/ObjectAdapter.cpp.s
+.PHONY : ObjectAdapter.cpp.s
+
+RegAStar.o: RegAStar.cpp.o
+
+.PHONY : RegAStar.o
+
+# target to build an object file
+RegAStar.cpp.o:
+	$(MAKE) -f CMakeFiles/Generalized-Server-Side-Implementation.dir/build.make CMakeFiles/Generalized-Server-Side-Implementation.dir/RegAStar.cpp.o
+.PHONY : RegAStar.cpp.o
+
+RegAStar.i: RegAStar.cpp.i
+
+.PHONY : RegAStar.i
+
+# target to preprocess a source file
+RegAStar.cpp.i:
+	$(MAKE) -f CMakeFiles/Generalized-Server-Side-Implementation.dir/build.make CMakeFiles/Generalized-Server-Side-Implementation.dir/RegAStar.cpp.i
+.PHONY : RegAStar.cpp.i
+
+RegAStar.s: RegAStar.cpp.s
+
+.PHONY : RegAStar.s
+
+# target to generate assembly for a file
+RegAStar.cpp.s:
+	$(MAKE) -f CMakeFiles/Generalized-Server-Side-Implementation.dir/build.make CMakeFiles/Generalized-Server-Side-Implementation.dir/RegAStar.cpp.s
+.PHONY : RegAStar.cpp.s
+
 SearcherAbstract.o: SearcherAbstract.cpp.o
 
 .PHONY : SearcherAbstract.o
@@ -528,6 +609,114 @@ StringReverser.cpp.s:
 	$(MAKE) -f CMakeFiles/Generalized-Server-Side-Implementation.dir/build.make CMakeFiles/Generalized-Server-Side-Implementation.dir/StringReverser.cpp.s
 .PHONY : StringReverser.cpp.s
 
+TempComprator.o: TempComprator.cpp.o
+
+.PHONY : TempComprator.o
+
+# target to build an object file
+TempComprator.cpp.o:
+	$(MAKE) -f CMakeFiles/Generalized-Server-Side-Implementation.dir/build.make CMakeFiles/Generalized-Server-Side-Implementation.dir/TempComprator.cpp.o
+.PHONY : TempComprator.cpp.o
+
+TempComprator.i: TempComprator.cpp.i
+
+.PHONY : TempComprator.i
+
+# target to preprocess a source file
+TempComprator.cpp.i:
+	$(MAKE) -f CMakeFiles/Generalized-Server-Side-Implementation.dir/build.make CMakeFiles/Generalized-Server-Side-Implementation.dir/TempComprator.cpp.i
+.PHONY : TempComprator.cpp.i
+
+TempComprator.s: TempComprator.cpp.s
+
+.PHONY : TempComprator.s
+
+# target to generate assembly for a file
+TempComprator.cpp.s:
+	$(MAKE) -f CMakeFiles/Generalized-Server-Side-Implementation.dir/build.make CMakeFiles/Generalized-Server-Side-Implementation.dir/TempComprator.cpp.s
+.PHONY : TempComprator.cpp.s
+
+TempSearcher.o: TempSearcher.cpp.o
+
+.PHONY : TempSearcher.o
+
+# target to build an object file
+TempSearcher.cpp.o:
+	$(MAKE) -f CMakeFiles/Generalized-Server-Side-Implementation.dir/build.make CMakeFiles/Generalized-Server-Side-Implementation.dir/TempSearcher.cpp.o
+.PHONY : TempSearcher.cpp.o
+
+TempSearcher.i: TempSearcher.cpp.i
+
+.PHONY : TempSearcher.i
+
+# target to preprocess a source file
+TempSearcher.cpp.i:
+	$(MAKE) -f CMakeFiles/Generalized-Server-Side-Implementation.dir/build.make CMakeFiles/Generalized-Server-Side-Implementation.dir/TempSearcher.cpp.i
+.PHONY : TempSearcher.cpp.i
+
+TempSearcher.s: TempSearcher.cpp.s
+
+.PHONY : TempSearcher.s
+
+# target to generate assembly for a file
+TempSearcher.cpp.s:
+	$(MAKE) -f CMakeFiles/Generalized-Server-Side-Implementation.dir/build.make CMakeFiles/Generalized-Server-Side-Implementation.dir/TempSearcher.cpp.s
+.PHONY : TempSearcher.cpp.s
+
+TestAStar.o: TestAStar.cpp.o
+
+.PHONY : TestAStar.o
+
+# target to build an object file
+TestAStar.cpp.o:
+	$(MAKE) -f CMakeFiles/Generalized-Server-Side-Implementation.dir/build.make CMakeFiles/Generalized-Server-Side-Implementation.dir/TestAStar.cpp.o
+.PHONY : TestAStar.cpp.o
+
+TestAStar.i: TestAStar.cpp.i
+
+.PHONY : TestAStar.i
+
+# target to preprocess a source file
+TestAStar.cpp.i:
+	$(MAKE) -f CMakeFiles/Generalized-Server-Side-Implementation.dir/build.make CMakeFiles/Generalized-Server-Side-Implementation.dir/TestAStar.cpp.i
+.PHONY : TestAStar.cpp.i
+
+TestAStar.s: TestAStar.cpp.s
+
+.PHONY : TestAStar.s
+
+# target to generate assembly for a file
+TestAStar.cpp.s:
+	$(MAKE) -f CMakeFiles/Generalized-Server-Side-Implementation.dir/build.make CMakeFiles/Generalized-Server-Side-Implementation.dir/TestAStar.cpp.s
+.PHONY : TestAStar.cpp.s
+
+c_p_queue.o: c_p_queue.cpp.o
+
+.PHONY : c_p_queue.o
+
+# target to build an object file
+c_p_queue.cpp.o:
+	$(MAKE) -f CMakeFiles/Generalized-Server-Side-Implementation.dir/build.make CMakeFiles/Generalized-Server-Side-Implementation.dir/c_p_queue.cpp.o
+.PHONY : c_p_queue.cpp.o
+
+c_p_queue.i: c_p_queue.cpp.i
+
+.PHONY : c_p_queue.i
+
+# target to preprocess a source file
+c_p_queue.cpp.i:
+	$(MAKE) -f CMakeFiles/Generalized-Server-Side-Implementation.dir/build.make CMakeFiles/Generalized-Server-Side-Implementation.dir/c_p_queue.cpp.i
+.PHONY : c_p_queue.cpp.i
+
+c_p_queue.s: c_p_queue.cpp.s
+
+.PHONY : c_p_queue.s
+
+# target to generate assembly for a file
+c_p_queue.cpp.s:
+	$(MAKE) -f CMakeFiles/Generalized-Server-Side-Implementation.dir/build.make CMakeFiles/Generalized-Server-Side-Implementation.dir/c_p_queue.cpp.s
+.PHONY : c_p_queue.cpp.s
+
 test.o: test.cpp.o
 
 .PHONY : test.o
@@ -564,6 +753,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Generalized-Server-Side-Implementation"
 	@echo "... edit_cache"
+	@echo "... AStar.o"
+	@echo "... AStar.i"
+	@echo "... AStar.s"
 	@echo "... BestFS.o"
 	@echo "... BestFS.i"
 	@echo "... BestFS.s"
@@ -591,6 +783,12 @@ help:
 	@echo "... MyTestClientHandler.o"
 	@echo "... MyTestClientHandler.i"
 	@echo "... MyTestClientHandler.s"
+	@echo "... ObjectAdapter.o"
+	@echo "... ObjectAdapter.i"
+	@echo "... ObjectAdapter.s"
+	@echo "... RegAStar.o"
+	@echo "... RegAStar.i"
+	@echo "... RegAStar.s"
 	@echo "... SearcherAbstract.o"
 	@echo "... SearcherAbstract.i"
 	@echo "... SearcherAbstract.s"
@@ -609,6 +807,18 @@ help:
 	@echo "... StringReverser.o"
 	@echo "... StringReverser.i"
 	@echo "... StringReverser.s"
+	@echo "... TempComprator.o"
+	@echo "... TempComprator.i"
+	@echo "... TempComprator.s"
+	@echo "... TempSearcher.o"
+	@echo "... TempSearcher.i"
+	@echo "... TempSearcher.s"
+	@echo "... TestAStar.o"
+	@echo "... TestAStar.i"
+	@echo "... TestAStar.s"
+	@echo "... c_p_queue.o"
+	@echo "... c_p_queue.i"
+	@echo "... c_p_queue.s"
 	@echo "... test.o"
 	@echo "... test.i"
 	@echo "... test.s"

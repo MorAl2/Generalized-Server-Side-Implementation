@@ -265,6 +265,97 @@ CMakeFiles/Generalized-Server-Side-Implementation.dir/DFSearch.cpp.s: cmake_forc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Generalized-Server-Side-Implementation.dir/DFSearch.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mor/CLionProjects/Generalized-Server-Side-Implementation2/DFSearch.cpp -o CMakeFiles/Generalized-Server-Side-Implementation.dir/DFSearch.cpp.s
 
+CMakeFiles/Generalized-Server-Side-Implementation.dir/AStar.cpp.o: CMakeFiles/Generalized-Server-Side-Implementation.dir/flags.make
+CMakeFiles/Generalized-Server-Side-Implementation.dir/AStar.cpp.o: ../AStar.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/Generalized-Server-Side-Implementation.dir/AStar.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Generalized-Server-Side-Implementation.dir/AStar.cpp.o -c /home/mor/CLionProjects/Generalized-Server-Side-Implementation2/AStar.cpp
+
+CMakeFiles/Generalized-Server-Side-Implementation.dir/AStar.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Generalized-Server-Side-Implementation.dir/AStar.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mor/CLionProjects/Generalized-Server-Side-Implementation2/AStar.cpp > CMakeFiles/Generalized-Server-Side-Implementation.dir/AStar.cpp.i
+
+CMakeFiles/Generalized-Server-Side-Implementation.dir/AStar.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Generalized-Server-Side-Implementation.dir/AStar.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mor/CLionProjects/Generalized-Server-Side-Implementation2/AStar.cpp -o CMakeFiles/Generalized-Server-Side-Implementation.dir/AStar.cpp.s
+
+CMakeFiles/Generalized-Server-Side-Implementation.dir/RegAStar.cpp.o: CMakeFiles/Generalized-Server-Side-Implementation.dir/flags.make
+CMakeFiles/Generalized-Server-Side-Implementation.dir/RegAStar.cpp.o: ../RegAStar.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/Generalized-Server-Side-Implementation.dir/RegAStar.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Generalized-Server-Side-Implementation.dir/RegAStar.cpp.o -c /home/mor/CLionProjects/Generalized-Server-Side-Implementation2/RegAStar.cpp
+
+CMakeFiles/Generalized-Server-Side-Implementation.dir/RegAStar.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Generalized-Server-Side-Implementation.dir/RegAStar.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mor/CLionProjects/Generalized-Server-Side-Implementation2/RegAStar.cpp > CMakeFiles/Generalized-Server-Side-Implementation.dir/RegAStar.cpp.i
+
+CMakeFiles/Generalized-Server-Side-Implementation.dir/RegAStar.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Generalized-Server-Side-Implementation.dir/RegAStar.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mor/CLionProjects/Generalized-Server-Side-Implementation2/RegAStar.cpp -o CMakeFiles/Generalized-Server-Side-Implementation.dir/RegAStar.cpp.s
+
+CMakeFiles/Generalized-Server-Side-Implementation.dir/TempSearcher.cpp.o: CMakeFiles/Generalized-Server-Side-Implementation.dir/flags.make
+CMakeFiles/Generalized-Server-Side-Implementation.dir/TempSearcher.cpp.o: ../TempSearcher.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/Generalized-Server-Side-Implementation.dir/TempSearcher.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Generalized-Server-Side-Implementation.dir/TempSearcher.cpp.o -c /home/mor/CLionProjects/Generalized-Server-Side-Implementation2/TempSearcher.cpp
+
+CMakeFiles/Generalized-Server-Side-Implementation.dir/TempSearcher.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Generalized-Server-Side-Implementation.dir/TempSearcher.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mor/CLionProjects/Generalized-Server-Side-Implementation2/TempSearcher.cpp > CMakeFiles/Generalized-Server-Side-Implementation.dir/TempSearcher.cpp.i
+
+CMakeFiles/Generalized-Server-Side-Implementation.dir/TempSearcher.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Generalized-Server-Side-Implementation.dir/TempSearcher.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mor/CLionProjects/Generalized-Server-Side-Implementation2/TempSearcher.cpp -o CMakeFiles/Generalized-Server-Side-Implementation.dir/TempSearcher.cpp.s
+
+CMakeFiles/Generalized-Server-Side-Implementation.dir/TempComprator.cpp.o: CMakeFiles/Generalized-Server-Side-Implementation.dir/flags.make
+CMakeFiles/Generalized-Server-Side-Implementation.dir/TempComprator.cpp.o: ../TempComprator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/Generalized-Server-Side-Implementation.dir/TempComprator.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Generalized-Server-Side-Implementation.dir/TempComprator.cpp.o -c /home/mor/CLionProjects/Generalized-Server-Side-Implementation2/TempComprator.cpp
+
+CMakeFiles/Generalized-Server-Side-Implementation.dir/TempComprator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Generalized-Server-Side-Implementation.dir/TempComprator.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mor/CLionProjects/Generalized-Server-Side-Implementation2/TempComprator.cpp > CMakeFiles/Generalized-Server-Side-Implementation.dir/TempComprator.cpp.i
+
+CMakeFiles/Generalized-Server-Side-Implementation.dir/TempComprator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Generalized-Server-Side-Implementation.dir/TempComprator.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mor/CLionProjects/Generalized-Server-Side-Implementation2/TempComprator.cpp -o CMakeFiles/Generalized-Server-Side-Implementation.dir/TempComprator.cpp.s
+
+CMakeFiles/Generalized-Server-Side-Implementation.dir/TestAStar.cpp.o: CMakeFiles/Generalized-Server-Side-Implementation.dir/flags.make
+CMakeFiles/Generalized-Server-Side-Implementation.dir/TestAStar.cpp.o: ../TestAStar.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/Generalized-Server-Side-Implementation.dir/TestAStar.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Generalized-Server-Side-Implementation.dir/TestAStar.cpp.o -c /home/mor/CLionProjects/Generalized-Server-Side-Implementation2/TestAStar.cpp
+
+CMakeFiles/Generalized-Server-Side-Implementation.dir/TestAStar.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Generalized-Server-Side-Implementation.dir/TestAStar.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mor/CLionProjects/Generalized-Server-Side-Implementation2/TestAStar.cpp > CMakeFiles/Generalized-Server-Side-Implementation.dir/TestAStar.cpp.i
+
+CMakeFiles/Generalized-Server-Side-Implementation.dir/TestAStar.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Generalized-Server-Side-Implementation.dir/TestAStar.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mor/CLionProjects/Generalized-Server-Side-Implementation2/TestAStar.cpp -o CMakeFiles/Generalized-Server-Side-Implementation.dir/TestAStar.cpp.s
+
+CMakeFiles/Generalized-Server-Side-Implementation.dir/ObjectAdapter.cpp.o: CMakeFiles/Generalized-Server-Side-Implementation.dir/flags.make
+CMakeFiles/Generalized-Server-Side-Implementation.dir/ObjectAdapter.cpp.o: ../ObjectAdapter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/Generalized-Server-Side-Implementation.dir/ObjectAdapter.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Generalized-Server-Side-Implementation.dir/ObjectAdapter.cpp.o -c /home/mor/CLionProjects/Generalized-Server-Side-Implementation2/ObjectAdapter.cpp
+
+CMakeFiles/Generalized-Server-Side-Implementation.dir/ObjectAdapter.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Generalized-Server-Side-Implementation.dir/ObjectAdapter.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mor/CLionProjects/Generalized-Server-Side-Implementation2/ObjectAdapter.cpp > CMakeFiles/Generalized-Server-Side-Implementation.dir/ObjectAdapter.cpp.i
+
+CMakeFiles/Generalized-Server-Side-Implementation.dir/ObjectAdapter.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Generalized-Server-Side-Implementation.dir/ObjectAdapter.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mor/CLionProjects/Generalized-Server-Side-Implementation2/ObjectAdapter.cpp -o CMakeFiles/Generalized-Server-Side-Implementation.dir/ObjectAdapter.cpp.s
+
+CMakeFiles/Generalized-Server-Side-Implementation.dir/c_p_queue.cpp.o: CMakeFiles/Generalized-Server-Side-Implementation.dir/flags.make
+CMakeFiles/Generalized-Server-Side-Implementation.dir/c_p_queue.cpp.o: ../c_p_queue.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/Generalized-Server-Side-Implementation.dir/c_p_queue.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Generalized-Server-Side-Implementation.dir/c_p_queue.cpp.o -c /home/mor/CLionProjects/Generalized-Server-Side-Implementation2/c_p_queue.cpp
+
+CMakeFiles/Generalized-Server-Side-Implementation.dir/c_p_queue.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Generalized-Server-Side-Implementation.dir/c_p_queue.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mor/CLionProjects/Generalized-Server-Side-Implementation2/c_p_queue.cpp > CMakeFiles/Generalized-Server-Side-Implementation.dir/c_p_queue.cpp.i
+
+CMakeFiles/Generalized-Server-Side-Implementation.dir/c_p_queue.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Generalized-Server-Side-Implementation.dir/c_p_queue.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mor/CLionProjects/Generalized-Server-Side-Implementation2/c_p_queue.cpp -o CMakeFiles/Generalized-Server-Side-Implementation.dir/c_p_queue.cpp.s
+
 # Object files for target Generalized-Server-Side-Implementation
 Generalized__Server__Side__Implementation_OBJECTS = \
 "CMakeFiles/Generalized-Server-Side-Implementation.dir/MySerialServer.cpp.o" \
@@ -282,7 +373,14 @@ Generalized__Server__Side__Implementation_OBJECTS = \
 "CMakeFiles/Generalized-Server-Side-Implementation.dir/MatrixProblem.cpp.o" \
 "CMakeFiles/Generalized-Server-Side-Implementation.dir/MatrixSolution.cpp.o" \
 "CMakeFiles/Generalized-Server-Side-Implementation.dir/SolverTester.cpp.o" \
-"CMakeFiles/Generalized-Server-Side-Implementation.dir/DFSearch.cpp.o"
+"CMakeFiles/Generalized-Server-Side-Implementation.dir/DFSearch.cpp.o" \
+"CMakeFiles/Generalized-Server-Side-Implementation.dir/AStar.cpp.o" \
+"CMakeFiles/Generalized-Server-Side-Implementation.dir/RegAStar.cpp.o" \
+"CMakeFiles/Generalized-Server-Side-Implementation.dir/TempSearcher.cpp.o" \
+"CMakeFiles/Generalized-Server-Side-Implementation.dir/TempComprator.cpp.o" \
+"CMakeFiles/Generalized-Server-Side-Implementation.dir/TestAStar.cpp.o" \
+"CMakeFiles/Generalized-Server-Side-Implementation.dir/ObjectAdapter.cpp.o" \
+"CMakeFiles/Generalized-Server-Side-Implementation.dir/c_p_queue.cpp.o"
 
 # External object files for target Generalized-Server-Side-Implementation
 Generalized__Server__Side__Implementation_EXTERNAL_OBJECTS =
@@ -303,9 +401,16 @@ Generalized-Server-Side-Implementation: CMakeFiles/Generalized-Server-Side-Imple
 Generalized-Server-Side-Implementation: CMakeFiles/Generalized-Server-Side-Implementation.dir/MatrixSolution.cpp.o
 Generalized-Server-Side-Implementation: CMakeFiles/Generalized-Server-Side-Implementation.dir/SolverTester.cpp.o
 Generalized-Server-Side-Implementation: CMakeFiles/Generalized-Server-Side-Implementation.dir/DFSearch.cpp.o
+Generalized-Server-Side-Implementation: CMakeFiles/Generalized-Server-Side-Implementation.dir/AStar.cpp.o
+Generalized-Server-Side-Implementation: CMakeFiles/Generalized-Server-Side-Implementation.dir/RegAStar.cpp.o
+Generalized-Server-Side-Implementation: CMakeFiles/Generalized-Server-Side-Implementation.dir/TempSearcher.cpp.o
+Generalized-Server-Side-Implementation: CMakeFiles/Generalized-Server-Side-Implementation.dir/TempComprator.cpp.o
+Generalized-Server-Side-Implementation: CMakeFiles/Generalized-Server-Side-Implementation.dir/TestAStar.cpp.o
+Generalized-Server-Side-Implementation: CMakeFiles/Generalized-Server-Side-Implementation.dir/ObjectAdapter.cpp.o
+Generalized-Server-Side-Implementation: CMakeFiles/Generalized-Server-Side-Implementation.dir/c_p_queue.cpp.o
 Generalized-Server-Side-Implementation: CMakeFiles/Generalized-Server-Side-Implementation.dir/build.make
 Generalized-Server-Side-Implementation: CMakeFiles/Generalized-Server-Side-Implementation.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable Generalized-Server-Side-Implementation"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Linking CXX executable Generalized-Server-Side-Implementation"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Generalized-Server-Side-Implementation.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

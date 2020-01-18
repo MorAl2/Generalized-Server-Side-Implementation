@@ -84,6 +84,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/AStar.cpp">
+			<Option target="Generalized-Server-Side-Implementation"/>
+		</Unit>
+		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/AStar.h">
+			<Option target="Generalized-Server-Side-Implementation"/>
+		</Unit>
 		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/BestFS.cpp">
 			<Option target="Generalized-Server-Side-Implementation"/>
 		</Unit>
@@ -147,6 +153,18 @@
 		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/MyTestClientHandler.h">
 			<Option target="Generalized-Server-Side-Implementation"/>
 		</Unit>
+		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/ObjectAdapter.cpp">
+			<Option target="Generalized-Server-Side-Implementation"/>
+		</Unit>
+		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/ObjectAdapter.h">
+			<Option target="Generalized-Server-Side-Implementation"/>
+		</Unit>
+		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/RegAStar.cpp">
+			<Option target="Generalized-Server-Side-Implementation"/>
+		</Unit>
+		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/RegAStar.h">
+			<Option target="Generalized-Server-Side-Implementation"/>
+		</Unit>
 		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/Searchable.h">
 			<Option target="Generalized-Server-Side-Implementation"/>
 		</Unit>
@@ -193,6 +211,30 @@
 			<Option target="Generalized-Server-Side-Implementation"/>
 		</Unit>
 		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/StringReverser.h">
+			<Option target="Generalized-Server-Side-Implementation"/>
+		</Unit>
+		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/TempComprator.cpp">
+			<Option target="Generalized-Server-Side-Implementation"/>
+		</Unit>
+		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/TempComprator.h">
+			<Option target="Generalized-Server-Side-Implementation"/>
+		</Unit>
+		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/TempSearcher.cpp">
+			<Option target="Generalized-Server-Side-Implementation"/>
+		</Unit>
+		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/TempSearcher.h">
+			<Option target="Generalized-Server-Side-Implementation"/>
+		</Unit>
+		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/TestAStar.cpp">
+			<Option target="Generalized-Server-Side-Implementation"/>
+		</Unit>
+		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/TestAStar.h">
+			<Option target="Generalized-Server-Side-Implementation"/>
+		</Unit>
+		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/c_p_queue.cpp">
+			<Option target="Generalized-Server-Side-Implementation"/>
+		</Unit>
+		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/c_p_queue.h">
 			<Option target="Generalized-Server-Side-Implementation"/>
 		</Unit>
 		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/test.cpp">
