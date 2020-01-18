@@ -53,19 +53,19 @@ public:
 
         std::vector<State<string>*> vec;
 
-        while (!this->openList.empty()) {
+        while (!openList->empty()) {
 
-            State<string>* currentElem = this->openList.top();
+            State<string>* currentElem = openList->top();
             bool areEquals = (element == currentElem);
 
             if (areEquals == false) {
                 vec.push_back(currentElem);
             }
-            this->openList.pop();
+            openList->pop();
         }
 
-        for (int index = 0; index < vec.size(); index++) {
-            this->openList.push(vec[index]);
+        for (int i = 0; i < vec.size(); i++) {
+            openList->push(vec[i]);
         }
     }
 

@@ -25,54 +25,39 @@ class AStar : public TempSearcher<T> {
 
     Solution *search(Searchable<T> *searchable) {
         vector<State<string> *> backTraceAnsVec;
-
-        State *initialState = searchable->getInitialState();
-        initialState->setHeuristicCost(searchable->h(*initialState));
-        this->minHeap.insert(initialState); // Insert initial state
+        unordered_set<State<T> *> *closed = new unordered_set<State<T> *>;
+        State<T> *init = searchable->getInitialState();
+        init->h = calculateHValue(init, searchable);
+        this->addToOpenList(init);
 
         // Iterations
-        while (!this->minHeap.isEmpty()) {
-
-            State *n = this->minHeap.extractMin(); // extract min
-
-            this->closed.insert(n); // insert to closed set
-
-            this->numberOfNodesEvaluated++; // update the number of iterations
-
+        while (this->openListSize() != 0) {
+            State<T> *n = this->popOpenList();
+            closed->insert(n);
+            this->nodesCount++; // update the number of iterations
             // If we finished (we are in the goal state)
-            if (*n == *(searchable->getGoalState())) {
-
-                backTraceAnsVec = this->reversePath(this->backTrace(searchable, n)); // get the path
-
-                //this->restartSearcher(); // restart the Best-First-Search class
-
-                return backTraceAnsVec; // return the path (Solution)
+            if (searchable->isGoalState(n)) {
+                return backTrace(n); // return the path (Solution)
             }
-
-            vector<State *> successors = searchable->getAllPossibleStates(n); // successors vector
-
+            vector<State<T> *> *successors = searchable->getAllPossibleStates(n); // successors vector
             // Iterate over all the adj's of n
-            for (State *s : successors) {
+            for (State<T> *s : *successors) {
                 // If we did  not visit at this element yet
-                if (!this->isExistClosed(s) && !this->isExistOpen(s)) {
-
+                if (closed->find(s) == closed->end() && !this->openContains(s)) {
                     s->setCameFrom(n); // initial the father
-                    s->setCost(s->getCost() + n->getCost()); // initial the  cost
-                    s->setHeuristicCost(s->getCost() + searchable->h(*s)); // initial the heuristic cost
-                    this->minHeap.insert(s); // insert to the min_heap
+                    s->sumState = (s->sumState + n->sumState); // initial the  cost
+                    s->h = s->sumState + calculateHValue(s, searchable); // initial the heuristic cost
+                    this->addToOpenList(s);
                 }
-
                     // Else
                 else {
                     // Check if we can do the 'Relax' process
-                    if (s->getCost() > s->getCost() + n->getCost()) {
-
-                        this->minHeap.remove(s); // remove s from the min_heap
+                    if (s->sumState > s->sumState + n->sumState) {
+                        this->remove(s);
                         s->setCameFrom(n); // set the new father of s
-                        s->setCost(s->getCost() + n->getCost()); // set the new cost of s (after 'relax')
-                        s->setHeuristicCost(s->getCost() + searchable->h(*s)); // initial the heuristic cost
-                        this->minHeap.insert(s); // insert the updated s to the min_heap
-
+                        s->sumState = (s->sumState + n->sumState); // set the new cost of s (after 'relax')
+                        s->h = s->sumState + calculateHValue(s, searchable); // initial the heuristic cost
+                        this->addToOpenList(s); // insert the updated s to the min_heap
                     }
                 }
             }
@@ -83,11 +68,10 @@ class AStar : public TempSearcher<T> {
 
 
     double calculateHValue(State<T> *s, Searchable<T> *searchable) {
-//        return ((double) sqrt((s->rowPos - searchable->getEnd().first) * (s->rowPos - searchable->getEnd().first)
-//                              + (s->colPos - searchable->getEnd().second) * (s->colPos - searchable->getEnd().second)));
+//       return ((double) sqrt((s->rowPos - searchable->getEnd().first) * (s->rowPos - searchable->getEnd().first)
+//                            + (s->colPos - searchable->getEnd().second) * (s->colPos - searchable->getEnd().second)));
         double xDiff = abs(s->rowPos - searchable->getEnd().first);
         double yDiff = abs(s->colPos - searchable->getEnd().second);
-
         return abs(xDiff + yDiff);
     }
 
