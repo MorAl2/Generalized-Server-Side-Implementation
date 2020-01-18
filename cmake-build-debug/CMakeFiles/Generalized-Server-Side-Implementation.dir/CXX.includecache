@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/AStar.cpp
-AStar.h
-/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/AStar.h
-
 /home/mor/CLionProjects/Generalized-Server-Side-Implementation2/AStar.h
 unordered_set
 -
@@ -109,6 +105,10 @@ Solution.h
 /home/mor/CLionProjects/Generalized-Server-Side-Implementation2/Solution.h
 State.h
 /home/mor/CLionProjects/Generalized-Server-Side-Implementation2/State.h
+
+/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/MyClientHandler.cpp
+MyClientHandler.h
+/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/MyClientHandler.h
 
 /home/mor/CLionProjects/Generalized-Server-Side-Implementation2/MyClientHandler.h
 sstream

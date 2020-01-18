@@ -32,6 +32,8 @@ public:
         MatrixProblem *matrix_problem = new MatrixProblem();
         int size = 1;
         int rowPos = 0;
+        bool startFlag = true;
+
         while (!endFlag) {
             int valread = read(is, buffer, 4096);
             if (valread == -1) {
@@ -41,7 +43,6 @@ public:
             stringstream stream(buffer);
             string line;
             int dimension = 0;
-            bool startFlag = true;
             while (getline(stream, line, '\n')) {
                 // i got the information
                 if(line == ""){
