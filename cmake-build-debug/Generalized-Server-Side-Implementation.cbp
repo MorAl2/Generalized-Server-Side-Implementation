@@ -8,28 +8,28 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/cmake-build-debug"/>
+				<Option working_dir="/home/mor/CLionProjects/Generalized-Server-Side-Implementation/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/mor/CLionProjects/Generalized-Server-Side-Implementation/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/mor/CLionProjects/Generalized-Server-Side-Implementation/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/mor/CLionProjects/Generalized-Server-Side-Implementation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/mor/CLionProjects/Generalized-Server-Side-Implementation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/cmake-build-debug"/>
+				<Option working_dir="/home/mor/CLionProjects/Generalized-Server-Side-Implementation/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/mor/CLionProjects/Generalized-Server-Side-Implementation/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/mor/CLionProjects/Generalized-Server-Side-Implementation/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/mor/CLionProjects/Generalized-Server-Side-Implementation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/mor/CLionProjects/Generalized-Server-Side-Implementation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Generalized-Server-Side-Implementation">
-				<Option output="/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/cmake-build-debug/Generalized-Server-Side-Implementation" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/cmake-build-debug"/>
+				<Option output="/home/mor/CLionProjects/Generalized-Server-Side-Implementation/cmake-build-debug/Generalized-Server-Side-Implementation" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/mor/CLionProjects/Generalized-Server-Side-Implementation/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -44,15 +44,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/cmake-build-debug/Makefile&quot;  VERBOSE=1 Generalized-Server-Side-Implementation"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/mor/CLionProjects/Generalized-Server-Side-Implementation/cmake-build-debug/Makefile&quot;  VERBOSE=1 Generalized-Server-Side-Implementation"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/mor/CLionProjects/Generalized-Server-Side-Implementation/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/mor/CLionProjects/Generalized-Server-Side-Implementation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/mor/CLionProjects/Generalized-Server-Side-Implementation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Generalized-Server-Side-Implementation/fast">
-				<Option output="/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/cmake-build-debug/Generalized-Server-Side-Implementation" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/cmake-build-debug"/>
+				<Option output="/home/mor/CLionProjects/Generalized-Server-Side-Implementation/cmake-build-debug/Generalized-Server-Side-Implementation" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/mor/CLionProjects/Generalized-Server-Side-Implementation/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -67,180 +67,180 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/cmake-build-debug/Makefile&quot;  VERBOSE=1 Generalized-Server-Side-Implementation/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/mor/CLionProjects/Generalized-Server-Side-Implementation/cmake-build-debug/Makefile&quot;  VERBOSE=1 Generalized-Server-Side-Implementation/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/mor/CLionProjects/Generalized-Server-Side-Implementation/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/mor/CLionProjects/Generalized-Server-Side-Implementation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/mor/CLionProjects/Generalized-Server-Side-Implementation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/cmake-build-debug"/>
+				<Option working_dir="/home/mor/CLionProjects/Generalized-Server-Side-Implementation/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/mor/CLionProjects/Generalized-Server-Side-Implementation/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/mor/CLionProjects/Generalized-Server-Side-Implementation/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/mor/CLionProjects/Generalized-Server-Side-Implementation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/mor/CLionProjects/Generalized-Server-Side-Implementation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/AStar.cpp">
+		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation/AStar.cpp">
 			<Option target="Generalized-Server-Side-Implementation"/>
 		</Unit>
-		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/AStar.h">
+		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation/AStar.h">
 			<Option target="Generalized-Server-Side-Implementation"/>
 		</Unit>
-		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/BestFS.cpp">
+		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation/BestFS.cpp">
 			<Option target="Generalized-Server-Side-Implementation"/>
 		</Unit>
-		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/BestFS.h">
+		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation/BestFS.h">
 			<Option target="Generalized-Server-Side-Implementation"/>
 		</Unit>
-		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/CacheManager.h">
+		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation/CacheManager.h">
 			<Option target="Generalized-Server-Side-Implementation"/>
 		</Unit>
-		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/ClientHandler.h">
+		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation/ClientHandler.h">
 			<Option target="Generalized-Server-Side-Implementation"/>
 		</Unit>
-		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/CompareState.cpp">
+		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation/CompareState.cpp">
 			<Option target="Generalized-Server-Side-Implementation"/>
 		</Unit>
-		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/CompareState.h">
+		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation/CompareState.h">
 			<Option target="Generalized-Server-Side-Implementation"/>
 		</Unit>
-		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/DFSearch.cpp">
+		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation/DFSearch.cpp">
 			<Option target="Generalized-Server-Side-Implementation"/>
 		</Unit>
-		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/DFSearch.h">
+		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation/DFSearch.h">
 			<Option target="Generalized-Server-Side-Implementation"/>
 		</Unit>
-		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/FileCacheManager.cpp">
+		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation/FileCacheManager.cpp">
 			<Option target="Generalized-Server-Side-Implementation"/>
 		</Unit>
-		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/FileCacheManager.h">
+		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation/FileCacheManager.h">
 			<Option target="Generalized-Server-Side-Implementation"/>
 		</Unit>
-		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/Main.h">
+		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation/Main.h">
 			<Option target="Generalized-Server-Side-Implementation"/>
 		</Unit>
-		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/MatrixProblem.cpp">
+		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation/MatrixProblem.cpp">
 			<Option target="Generalized-Server-Side-Implementation"/>
 		</Unit>
-		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/MatrixProblem.h">
+		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation/MatrixProblem.h">
 			<Option target="Generalized-Server-Side-Implementation"/>
 		</Unit>
-		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/MatrixSolution.cpp">
+		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation/MatrixSolution.cpp">
 			<Option target="Generalized-Server-Side-Implementation"/>
 		</Unit>
-		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/MatrixSolution.h">
+		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation/MatrixSolution.h">
 			<Option target="Generalized-Server-Side-Implementation"/>
 		</Unit>
-		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/MyClientHandler.cpp">
+		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation/MyClientHandler.cpp">
 			<Option target="Generalized-Server-Side-Implementation"/>
 		</Unit>
-		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/MyClientHandler.h">
+		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation/MyClientHandler.h">
 			<Option target="Generalized-Server-Side-Implementation"/>
 		</Unit>
-		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/MySerialServer.cpp">
+		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation/MySerialServer.cpp">
 			<Option target="Generalized-Server-Side-Implementation"/>
 		</Unit>
-		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/MySerialServer.h">
+		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation/MySerialServer.h">
 			<Option target="Generalized-Server-Side-Implementation"/>
 		</Unit>
-		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/MyTestClientHandler.cpp">
+		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation/MyTestClientHandler.cpp">
 			<Option target="Generalized-Server-Side-Implementation"/>
 		</Unit>
-		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/MyTestClientHandler.h">
+		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation/MyTestClientHandler.h">
 			<Option target="Generalized-Server-Side-Implementation"/>
 		</Unit>
-		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/ObjectAdapter.cpp">
+		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation/ObjectAdapter.cpp">
 			<Option target="Generalized-Server-Side-Implementation"/>
 		</Unit>
-		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/ObjectAdapter.h">
+		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation/ObjectAdapter.h">
 			<Option target="Generalized-Server-Side-Implementation"/>
 		</Unit>
-		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/RegAStar.cpp">
+		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation/RegAStar.cpp">
 			<Option target="Generalized-Server-Side-Implementation"/>
 		</Unit>
-		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/RegAStar.h">
+		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation/RegAStar.h">
 			<Option target="Generalized-Server-Side-Implementation"/>
 		</Unit>
-		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/Searchable.h">
+		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation/Searchable.h">
 			<Option target="Generalized-Server-Side-Implementation"/>
 		</Unit>
-		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/Searcher.h">
+		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation/Searcher.h">
 			<Option target="Generalized-Server-Side-Implementation"/>
 		</Unit>
-		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/SearcherAbstract.cpp">
+		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation/SearcherAbstract.cpp">
 			<Option target="Generalized-Server-Side-Implementation"/>
 		</Unit>
-		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/SearcherAbstract.h">
+		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation/SearcherAbstract.h">
 			<Option target="Generalized-Server-Side-Implementation"/>
 		</Unit>
-		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/SearcherStack.h">
+		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation/SearcherStack.h">
 			<Option target="Generalized-Server-Side-Implementation"/>
 		</Unit>
-		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/Server.h">
+		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation/Server.h">
 			<Option target="Generalized-Server-Side-Implementation"/>
 		</Unit>
-		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/Solution.cpp">
+		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation/Solution.cpp">
 			<Option target="Generalized-Server-Side-Implementation"/>
 		</Unit>
-		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/Solution.h">
+		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation/Solution.h">
 			<Option target="Generalized-Server-Side-Implementation"/>
 		</Unit>
-		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/Solver.cpp">
+		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation/Solver.cpp">
 			<Option target="Generalized-Server-Side-Implementation"/>
 		</Unit>
-		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/Solver.h">
+		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation/Solver.h">
 			<Option target="Generalized-Server-Side-Implementation"/>
 		</Unit>
-		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/SolverTester.cpp">
+		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation/SolverTester.cpp">
 			<Option target="Generalized-Server-Side-Implementation"/>
 		</Unit>
-		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/SolverTester.h">
+		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation/SolverTester.h">
 			<Option target="Generalized-Server-Side-Implementation"/>
 		</Unit>
-		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/State.cpp">
+		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation/State.cpp">
 			<Option target="Generalized-Server-Side-Implementation"/>
 		</Unit>
-		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/State.h">
+		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation/State.h">
 			<Option target="Generalized-Server-Side-Implementation"/>
 		</Unit>
-		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/StringReverser.cpp">
+		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation/StringReverser.cpp">
 			<Option target="Generalized-Server-Side-Implementation"/>
 		</Unit>
-		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/StringReverser.h">
+		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation/StringReverser.h">
 			<Option target="Generalized-Server-Side-Implementation"/>
 		</Unit>
-		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/TempComprator.cpp">
+		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation/TempComprator.cpp">
 			<Option target="Generalized-Server-Side-Implementation"/>
 		</Unit>
-		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/TempComprator.h">
+		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation/TempComprator.h">
 			<Option target="Generalized-Server-Side-Implementation"/>
 		</Unit>
-		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/TempSearcher.cpp">
+		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation/TempSearcher.cpp">
 			<Option target="Generalized-Server-Side-Implementation"/>
 		</Unit>
-		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/TempSearcher.h">
+		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation/TempSearcher.h">
 			<Option target="Generalized-Server-Side-Implementation"/>
 		</Unit>
-		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/TestAStar.cpp">
+		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation/TestAStar.cpp">
 			<Option target="Generalized-Server-Side-Implementation"/>
 		</Unit>
-		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/TestAStar.h">
+		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation/TestAStar.h">
 			<Option target="Generalized-Server-Side-Implementation"/>
 		</Unit>
-		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/c_p_queue.cpp">
+		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation/c_p_queue.cpp">
 			<Option target="Generalized-Server-Side-Implementation"/>
 		</Unit>
-		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/c_p_queue.h">
+		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation/c_p_queue.h">
 			<Option target="Generalized-Server-Side-Implementation"/>
 		</Unit>
-		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/test.cpp">
+		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation/test.cpp">
 			<Option target="Generalized-Server-Side-Implementation"/>
 		</Unit>
-		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation2/CMakeLists.txt">
+		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

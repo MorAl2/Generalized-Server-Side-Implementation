@@ -40,8 +40,9 @@ public:
             if (x == s) {
                 return true;
             }
-            return false;
         }
+      return false;
+
     }
 protected:
     virtual State<T> popOpenList(){

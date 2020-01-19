@@ -15,6 +15,8 @@ class MyClientHandler : public ClientHandler {
     CacheManager<MatrixProblem *, MatrixSolution *> *cm;
 
 public:
+
+
     MyClientHandler(Solver<MatrixProblem *, MatrixSolution *> *sol,
                     CacheManager<MatrixProblem *, MatrixSolution *> *cache) {
         solver = sol;
@@ -27,23 +29,24 @@ public:
      * @param os output Stream.
      */
     void handleClient(int is, int os) {
-        char buffer[4096] = {0};
         bool endFlag = false;
         MatrixProblem *matrix_problem = new MatrixProblem();
-        int size = 1;
+        int size = 0;
         int rowPos = 0;
         bool startFlag = true;
-
+      int dimension = 0;
         while (!endFlag) {
-            int valread = read(is, buffer, 4096);
+          char buffer[1024] = {0};
+          int valread = read(is, buffer, 1024);
+            cout << buffer<<endl;
             if (valread == -1) {
                 cout << "Error - Read" << endl;
                 throw "Error - Read";
             }
-            stringstream stream(buffer);
+            stringstream stream1(buffer);
             string line;
-            int dimension = 0;
-            while (getline(stream, line, '\n')) {
+            while (getline(stream1, line, '\n')) {
+          //    cout << line<<endl;
                 // i got the information
                 if(line == ""){
                     continue;
@@ -59,8 +62,9 @@ public:
                     while (getline(stream, val, ',')) {
                         row->push_back(atoi(val.c_str()));
                     }
+                    flush(stream);
                     if (dimension == 0) {
-                        dimension = row->size();
+                        dimension = row->size()-1;
                     }
                     if (size > dimension) {
                         if (startFlag) {
@@ -70,7 +74,7 @@ public:
                             matrix_problem->setEnd(row->at(0), row->at(1));
                         }
                     }
-                    if (size <= dimension) {
+                    else if (size <= dimension) {
                         vector<State<string> *> *stateRow = new vector<State<string> *>();
                         int colPos = 0;
                         for (auto it = row->begin(); it != row->end(); it++) {
@@ -89,6 +93,8 @@ public:
             }
         }
         State<string> test("2", 2);
+        cout<< "start: (" << matrix_problem->getStart().first << ", " <<matrix_problem->getStart().second<< ")" <<endl;
+       cout<< "end: (" << matrix_problem->getEnd().first << ", " <<matrix_problem->getEnd().second<< ")" <<endl;
         if (cm->isSolutionExists(matrix_problem)) {
             string sol = cm->getSolution(matrix_problem);
             int is_sent = send(os, sol.c_str(), sol.length(), 0);
@@ -105,6 +111,25 @@ public:
             }
         }
     }
+
+
+
+  vector<string> split(string str)
+  {
+    vector<std::string> result;
+    string temp;
+    int markbegin = 0;
+    int markend = 0;
+
+    for (int i = 0; i < str.length(); ++i) {
+      if (str[i] == '\n') {
+        markend = i;
+        result.push_back(str.substr(markbegin, markend - markbegin));
+        markbegin = (i + 1);
+      }
+    }
+    return result;
+  }
 };
 
 #endif //GENERALIZED_SERVER_SIDE_IMPLEMENTATION__MYCLIENTHANDLER_H_
