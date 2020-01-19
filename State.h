@@ -63,8 +63,8 @@ public:
         return this->sumState;
     }
 
-    bool operator==(State<T> other) {
-        if ((this->state == other.getState())) {
+    bool operator==(State<T>* other) {
+        if ((this->state == other->getState())) {
             return true;
         }
         return false;

@@ -44,9 +44,16 @@ public:
         }
     }
 protected:
-    virtual State<T> popOpenList(){
+    virtual State<T> *popOpenList() {
         evaluatedNodes++;
-        State<T> temp = openList->top();
+        State<T> *temp = openList->top();
+        int i = 0;
+        for (State<T> *const &ver: (*vectorOpenList)) {
+            if(ver==temp){
+                vectorOpenList->erase(vectorOpenList->begin()+i);
+            }
+            i++;
+        }
         openList->pop();
         return temp;
     }

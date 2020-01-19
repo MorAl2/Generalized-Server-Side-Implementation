@@ -4,19 +4,19 @@
 #include "State.h"
 #include "Searcher.h"
 #include <queue>
-#include "TempComprator.h"
 #include <vector>
+#include "CompareState.h"
 
 template<typename T>
 class TempSearcher : public Searcher<T> {
 
-    priority_queue<State<T> *, vector<State<T> *>, TempComprator<T>> *openList;
+    priority_queue<State<T> *, vector<State<T> *>, CompareState<T>> *openList;
 
     int evaluatedNodes;
     vector<State<T> *> *vectorOpenList;
 public:
     TempSearcher() {
-        openList = new priority_queue<State<T> *, vector<State<T> *>, TempComprator<T>>();
+        openList = new priority_queue<State<T> *, vector<State<T> *>, CompareState<T>>();
         evaluatedNodes = 0;
         vectorOpenList = new vector<State<T> *>;
     }
@@ -31,7 +31,7 @@ public:
 
     virtual Solution *search(Searchable<T> searchable) {};
 
-    priority_queue<State<T> *, vector<State<T> *>, TempComprator<T>> *getOpenList() {
+    priority_queue<State<T> *, vector<State<T> *>, CompareState<T>> *getOpenList() {
         return this->openList;
     }
 
@@ -45,8 +45,8 @@ public:
             if (x == s) {
                 return true;
             }
-            return false;
         }
+        return false;
     }
 
     void remove(State<string>* element) {
@@ -73,6 +73,13 @@ protected:
     virtual State<T> *popOpenList() {
         evaluatedNodes++;
         State<T> *temp = openList->top();
+        int i = 0;
+        for (State<T> *const &ver: (*vectorOpenList)) {
+            if(ver==temp){
+                vectorOpenList->erase(vectorOpenList->begin()+i);
+            }
+            i++;
+        }
         openList->pop();
         return temp;
     }
