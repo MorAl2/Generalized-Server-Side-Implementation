@@ -47,6 +47,7 @@ void MySerialServer::run() {
     setsockopt(socketfd, SOL_SOCKET, SO_RCVTIMEO, (const char *) &tv, sizeof tv);
 
     while (MySerialServer::threadCondition) {
+      cout << "Waiting for connection...." << endl;
         int client_socket = accept(socketfd, (struct sockaddr *) &address, (socklen_t *) &address);
         if (client_socket == -1) {
             std::cerr << "Error accepting client! / TimeOut!" << std::endl;

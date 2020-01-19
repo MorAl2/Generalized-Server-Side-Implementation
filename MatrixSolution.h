@@ -71,7 +71,7 @@ public:
     string
 
     to_string() {
-        return state;
+      return getSolution();
     }
 
 };

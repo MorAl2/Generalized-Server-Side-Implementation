@@ -20,7 +20,7 @@
 #include "ObjectAdapter.h"
 #include "BestFS.h"
 #include "TestAlgo.h"
-
+#include "MyParallelServer.h"
 
 using namespace server_side;
 using namespace std;
@@ -32,12 +32,16 @@ namespace server_side {
 //                TestAlgo<string> *tempTestAlgo = new TestAlgo<string>();
 //                BestFS<string> *tempBestFS = new BestFS<string>();
 //                cout << tempBestFS->search(tempTestAlgo)->getSolution() << endl;
+
+
+
+
                 int port = atoi(argv[1]);
                 Searcher<std::string> *k = new AStar<std::string>();
                 Solver<MatrixProblem*, MatrixSolution*> *reverse = new ObjectAdapter<MatrixProblem*, MatrixSolution*>(k);
                 CacheManager<MatrixProblem*, MatrixSolution*> *cache = new FileCacheManager<MatrixProblem*, MatrixSolution*>(5);
                 ClientHandler *handler = new MyClientHandler(reverse,cache);
-                server_side::Server *serial = new MySerialServer();
+                server_side::Server *serial = new MyParallelServer();
                 serial->open(port, handler);
 
 //

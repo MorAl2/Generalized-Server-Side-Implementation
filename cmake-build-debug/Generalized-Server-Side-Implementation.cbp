@@ -141,6 +141,12 @@
 		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/MyClientHandler.h">
 			<Option target="Generalized-Server-Side-Implementation"/>
 		</Unit>
+		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/MyParallelServer.cpp">
+			<Option target="Generalized-Server-Side-Implementation"/>
+		</Unit>
+		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/MyParallelServer.h">
+			<Option target="Generalized-Server-Side-Implementation"/>
+		</Unit>
 		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/MySerialServer.cpp">
 			<Option target="Generalized-Server-Side-Implementation"/>
 		</Unit>

@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/AStar.cpp
-AStar.h
-/home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/AStar.h
-
 /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/AStar.h
 unordered_set
 -
@@ -33,10 +29,6 @@ iostream
 /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/CompareState.h
 State.h
 /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/State.h
-
-/home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/DFSearch.cpp
-DFSearch.h
-/home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/DFSearch.h
 
 /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/DFSearch.h
 iostream
@@ -99,6 +91,8 @@ BestFS.h
 /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/BestFS.h
 TestAlgo.h
 /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/TestAlgo.h
+MyParallelServer.h
+/home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/MyParallelServer.h
 
 /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/MatrixProblem.h
 iostream
@@ -109,10 +103,6 @@ State.h
 /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/State.h
 Searchable.h
 /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/Searchable.h
-
-/home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/MatrixSolution.cpp
-MatrixSolution.h
-/home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/MatrixSolution.h
 
 /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/MatrixSolution.h
 iostream
@@ -146,6 +136,30 @@ MatrixSolution.h
 unistd.h
 /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/unistd.h
 
+/home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/MyParallelServer.cpp
+MyParallelServer.h
+/home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/MyParallelServer.h
+netinet/in.h
+-
+sys/socket.h
+/home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/sys/socket.h
+MyClientHandler.h
+/home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/MyClientHandler.h
+sys/socket.h
+-
+netinet/in.h
+-
+unistd.h
+-
+
+/home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/MyParallelServer.h
+ClientHandler.h
+/home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/ClientHandler.h
+Server.h
+/home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/Server.h
+thread
+-
+
 /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/MySerialServer.h
 ClientHandler.h
 /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/ClientHandler.h
@@ -169,10 +183,6 @@ sstream
 -
 sys/socket.h
 -
-
-/home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/ObjectAdapter.cpp
-ObjectAdapter.h
-/home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/ObjectAdapter.h
 
 /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/ObjectAdapter.h
 string
@@ -235,8 +245,6 @@ CacheManager.h
 /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/CacheManager.h
 FileCacheManager.h
 /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/FileCacheManager.h
-MySerialServer.h
-/home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/MySerialServer.h
 
 /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/Solution.h
 iostream

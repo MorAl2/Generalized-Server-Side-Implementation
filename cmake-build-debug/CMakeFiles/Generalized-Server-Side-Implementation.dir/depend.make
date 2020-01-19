@@ -52,6 +52,21 @@ CMakeFiles/Generalized-Server-Side-Implementation.dir/MyClientHandler.cpp.o: ../
 CMakeFiles/Generalized-Server-Side-Implementation.dir/MyClientHandler.cpp.o: ../Solver.h
 CMakeFiles/Generalized-Server-Side-Implementation.dir/MyClientHandler.cpp.o: ../State.h
 
+CMakeFiles/Generalized-Server-Side-Implementation.dir/MyParallelServer.cpp.o: ../CacheManager.h
+CMakeFiles/Generalized-Server-Side-Implementation.dir/MyParallelServer.cpp.o: ../ClientHandler.h
+CMakeFiles/Generalized-Server-Side-Implementation.dir/MyParallelServer.cpp.o: ../FileCacheManager.h
+CMakeFiles/Generalized-Server-Side-Implementation.dir/MyParallelServer.cpp.o: ../MatrixProblem.h
+CMakeFiles/Generalized-Server-Side-Implementation.dir/MyParallelServer.cpp.o: ../MatrixSolution.h
+CMakeFiles/Generalized-Server-Side-Implementation.dir/MyParallelServer.cpp.o: ../MyClientHandler.h
+CMakeFiles/Generalized-Server-Side-Implementation.dir/MyParallelServer.cpp.o: ../MyParallelServer.cpp
+CMakeFiles/Generalized-Server-Side-Implementation.dir/MyParallelServer.cpp.o: ../MyParallelServer.h
+CMakeFiles/Generalized-Server-Side-Implementation.dir/MyParallelServer.cpp.o: ../Searchable.h
+CMakeFiles/Generalized-Server-Side-Implementation.dir/MyParallelServer.cpp.o: ../Server.h
+CMakeFiles/Generalized-Server-Side-Implementation.dir/MyParallelServer.cpp.o: ../Solution.h
+CMakeFiles/Generalized-Server-Side-Implementation.dir/MyParallelServer.cpp.o: ../Solver.h
+CMakeFiles/Generalized-Server-Side-Implementation.dir/MyParallelServer.cpp.o: ../State.h
+CMakeFiles/Generalized-Server-Side-Implementation.dir/MyParallelServer.cpp.o: ../StringReverser.h
+
 CMakeFiles/Generalized-Server-Side-Implementation.dir/MySerialServer.cpp.o: ../CacheManager.h
 CMakeFiles/Generalized-Server-Side-Implementation.dir/MySerialServer.cpp.o: ../ClientHandler.h
 CMakeFiles/Generalized-Server-Side-Implementation.dir/MySerialServer.cpp.o: ../FileCacheManager.h
@@ -134,6 +149,7 @@ CMakeFiles/Generalized-Server-Side-Implementation.dir/test.cpp.o: ../Main.h
 CMakeFiles/Generalized-Server-Side-Implementation.dir/test.cpp.o: ../MatrixProblem.h
 CMakeFiles/Generalized-Server-Side-Implementation.dir/test.cpp.o: ../MatrixSolution.h
 CMakeFiles/Generalized-Server-Side-Implementation.dir/test.cpp.o: ../MyClientHandler.h
+CMakeFiles/Generalized-Server-Side-Implementation.dir/test.cpp.o: ../MyParallelServer.h
 CMakeFiles/Generalized-Server-Side-Implementation.dir/test.cpp.o: ../MySerialServer.h
 CMakeFiles/Generalized-Server-Side-Implementation.dir/test.cpp.o: ../MyTestClientHandler.h
 CMakeFiles/Generalized-Server-Side-Implementation.dir/test.cpp.o: ../ObjectAdapter.h

@@ -7,6 +7,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Generalized-Server-Side-Implementation.dir/MatrixProblem.cpp.o"
   "CMakeFiles/Generalized-Server-Side-Implementation.dir/MatrixSolution.cpp.o"
   "CMakeFiles/Generalized-Server-Side-Implementation.dir/MyClientHandler.cpp.o"
+  "CMakeFiles/Generalized-Server-Side-Implementation.dir/MyParallelServer.cpp.o"
   "CMakeFiles/Generalized-Server-Side-Implementation.dir/MySerialServer.cpp.o"
   "CMakeFiles/Generalized-Server-Side-Implementation.dir/MyTestClientHandler.cpp.o"
   "CMakeFiles/Generalized-Server-Side-Implementation.dir/ObjectAdapter.cpp.o"

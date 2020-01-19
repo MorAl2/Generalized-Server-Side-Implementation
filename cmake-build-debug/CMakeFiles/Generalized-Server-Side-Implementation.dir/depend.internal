@@ -52,6 +52,21 @@ CMakeFiles/Generalized-Server-Side-Implementation.dir/MyClientHandler.cpp.o
  /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/Solution.h
  /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/Solver.h
  /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/State.h
+CMakeFiles/Generalized-Server-Side-Implementation.dir/MyParallelServer.cpp.o
+ /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/CacheManager.h
+ /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/ClientHandler.h
+ /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/FileCacheManager.h
+ /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/MatrixProblem.h
+ /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/MatrixSolution.h
+ /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/MyClientHandler.h
+ /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/MyParallelServer.cpp
+ /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/MyParallelServer.h
+ /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/Searchable.h
+ /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/Server.h
+ /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/Solution.h
+ /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/Solver.h
+ /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/State.h
+ /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/StringReverser.h
 CMakeFiles/Generalized-Server-Side-Implementation.dir/MySerialServer.cpp.o
  /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/CacheManager.h
  /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/ClientHandler.h
@@ -135,6 +150,7 @@ CMakeFiles/Generalized-Server-Side-Implementation.dir/test.cpp.o
  /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/MatrixProblem.h
  /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/MatrixSolution.h
  /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/MyClientHandler.h
+ /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/MyParallelServer.h
  /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/MySerialServer.h
  /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/MyTestClientHandler.h
  /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/ObjectAdapter.h
