@@ -18,6 +18,8 @@
 #include "DFSearch.h"
 #include "AStar.h"
 #include "ObjectAdapter.h"
+#include "BestFS.h"
+#include "TestAlgo.h"
 
 using namespace server_side;
 using namespace std;
@@ -26,7 +28,9 @@ namespace server_side {
         class Main {
         public:
             int main(int argc, char *argv[]) {
-
+                TestAlgo<string> *tempTestAlgo = new TestAlgo<string>();
+                BestFS<string> *tempBestFS = new BestFS<string>();
+                cout << tempBestFS->search(tempTestAlgo)->getSolution() << endl;
                 int port = atoi(argv[1]);
                 Searcher<std::string> *k = new AStar<std::string>();
                 Solver<MatrixProblem*, MatrixSolution*> *reverse = new ObjectAdapter<MatrixProblem*, MatrixSolution*>(k);

@@ -45,8 +45,8 @@ public:
             if (x == s) {
                 return true;
             }
+            return false;
         }
-      return false;
     }
 
     void remove(State<string>* element) {
