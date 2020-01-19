@@ -20,7 +20,8 @@
 #include "ObjectAdapter.h"
 #include "BestFS.h"
 #include "TestAlgo.h"
-#include "MyParallelServer.h"
+#include "BFS.h"
+
 
 using namespace server_side;
 using namespace std;
@@ -29,19 +30,15 @@ namespace server_side {
         class Main {
         public:
             int main(int argc, char *argv[]) {
-//                TestAlgo<string> *tempTestAlgo = new TestAlgo<string>();
-//                BestFS<string> *tempBestFS = new BestFS<string>();
-//                cout << tempBestFS->search(tempTestAlgo)->getSolution() << endl;
-
-
-
-
+                /*TestAlgo<string> *tempTestAlgo = new TestAlgo<string>();
+                BFS<string> *tempBFS = new BFS<string>();
+                cout << tempBFS->search(tempTestAlgo)->getSolution() << endl;*/
                 int port = atoi(argv[1]);
-                Searcher<std::string> *k = new AStar<std::string>();
+                Searcher<std::string> *k = new BFS<std::string>();
                 Solver<MatrixProblem*, MatrixSolution*> *reverse = new ObjectAdapter<MatrixProblem*, MatrixSolution*>(k);
                 CacheManager<MatrixProblem*, MatrixSolution*> *cache = new FileCacheManager<MatrixProblem*, MatrixSolution*>(5);
                 ClientHandler *handler = new MyClientHandler(reverse,cache);
-                server_side::Server *serial = new MyParallelServer();
+                server_side::Server *serial = new MySerialServer();
                 serial->open(port, handler);
 
 //
@@ -205,10 +202,7 @@ namespace server_side {
                      ClientHandler *handler = new MyTestClientHandler(reverse, cache);
                      server_side::Server *serial = new MySerialServer();
                      serial->open(port, handler);
-
-
                      cout << "Main Done.." << endl;
-
                  }
                  catch (const char *e) {
                      cout << e << endl;
