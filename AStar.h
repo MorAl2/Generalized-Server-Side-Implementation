@@ -9,7 +9,6 @@
 #include "TempSearcher.h"
 #include "MatrixSolution.h"
 #include "math.h"
-
 template<typename T>
 class AStar : public TempSearcher<T> {
 

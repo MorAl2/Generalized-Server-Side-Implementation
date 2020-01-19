@@ -14,7 +14,6 @@ protected:
     int nodesCount = 0;
 public:
     virtual Solution* search(Searchable<T> *searchable) {}
-
     virtual int getNumberOfNodesEvaluated() {}
 };
 

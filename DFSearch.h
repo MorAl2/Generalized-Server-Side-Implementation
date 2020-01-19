@@ -7,7 +7,6 @@
 #include "MatrixSolution.h"
 
 using namespace std;
-
 template<typename T>
 class DFSearch : public SearcherStack<T> {
 public:

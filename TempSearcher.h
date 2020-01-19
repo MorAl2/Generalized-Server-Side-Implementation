@@ -7,16 +7,16 @@
 #include "TempComprator.h"
 #include <vector>
 
-template<typename T>
+template<typename T, typename Comprator>
 class TempSearcher : public Searcher<T> {
 
-    priority_queue<State<T> *, vector<State<T> *>, TempComprator<T>> *openList;
+    priority_queue<State<T> *, vector<State<T> *>, Comprator> *openList;
 
     int evaluatedNodes;
     vector<State<T> *> *vectorOpenList;
 public:
     TempSearcher() {
-        openList = new priority_queue<State<T> *, vector<State<T> *>, TempComprator<T>>();
+        openList = new priority_queue<State<T> *, vector<State<T> *>, Comprator>();
         evaluatedNodes = 0;
         vectorOpenList = new vector<State<T> *>;
     }
@@ -45,8 +45,8 @@ public:
             if (x == s) {
                 return true;
             }
-            return false;
         }
+      return false;
     }
 
     void remove(State<string>* element) {
@@ -70,12 +70,19 @@ public:
     }
 
 protected:
-    virtual State<T> *popOpenList() {
-        evaluatedNodes++;
-        State<T> *temp = openList->top();
-        openList->pop();
-        return temp;
+  virtual State<T> *popOpenList() {
+    evaluatedNodes++;
+    State<T> *temp = openList->top();
+    int i = 0;
+    for (State<T> *const &ver: (*vectorOpenList)) {
+      if(ver==temp){
+        vectorOpenList->erase(vectorOpenList->begin()+i);
+      }
+      i++;
     }
+    openList->pop();
+    return temp;
+  }
 };
 
 

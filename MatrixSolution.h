@@ -11,7 +11,6 @@ using namespace std;
 class MatrixSolution : public Solution {
     vector<State<string> *> *path;
     string state;
-
 public:
     MatrixSolution(string data) {
         state = data;

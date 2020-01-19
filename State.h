@@ -63,12 +63,12 @@ public:
         return this->sumState;
     }
 
-    bool operator==(State<T>* other) {
-        if ((this->state == other->getState())) {
-            return true;
-        }
-        return false;
-    }
+//    bool operator==(State<T>* other) {
+//        if ((this->state == other->getState())) {
+//            return true;
+//        }
+//        return false;
+//    }
 //
 };
 

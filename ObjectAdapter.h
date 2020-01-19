@@ -15,7 +15,6 @@
 
 #include "Searcher.h"
 #include <iostream>
-
 using namespace std;
 template<typename Problem, typename Sol>
 class ObjectAdapter : public Solver<MatrixProblem*, MatrixSolution*> {

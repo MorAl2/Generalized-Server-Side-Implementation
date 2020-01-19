@@ -13,7 +13,6 @@
 class MyClientHandler : public ClientHandler {
     Solver<MatrixProblem *, MatrixSolution *> *solver;
     CacheManager<MatrixProblem *, MatrixSolution *> *cm;
-
 public:
 
 

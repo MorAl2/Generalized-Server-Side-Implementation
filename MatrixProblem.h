@@ -39,7 +39,6 @@ public:
     void addToStateString(string x) {
         state.append(x);
     }
-
     State<string> *getInitialState() {
         return matrix.at(src.first)->at(src.second);
     }

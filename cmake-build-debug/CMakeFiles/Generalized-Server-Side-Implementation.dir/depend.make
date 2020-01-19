@@ -13,12 +13,6 @@ CMakeFiles/Generalized-Server-Side-Implementation.dir/AStar.cpp.o: ../TempSearch
 
 CMakeFiles/Generalized-Server-Side-Implementation.dir/BestFS.cpp.o: ../BestFS.cpp
 CMakeFiles/Generalized-Server-Side-Implementation.dir/BestFS.cpp.o: ../BestFS.h
-CMakeFiles/Generalized-Server-Side-Implementation.dir/BestFS.cpp.o: ../CompareState.h
-CMakeFiles/Generalized-Server-Side-Implementation.dir/BestFS.cpp.o: ../Searchable.h
-CMakeFiles/Generalized-Server-Side-Implementation.dir/BestFS.cpp.o: ../Searcher.h
-CMakeFiles/Generalized-Server-Side-Implementation.dir/BestFS.cpp.o: ../SearcherAbstract.h
-CMakeFiles/Generalized-Server-Side-Implementation.dir/BestFS.cpp.o: ../Solution.h
-CMakeFiles/Generalized-Server-Side-Implementation.dir/BestFS.cpp.o: ../State.h
 
 CMakeFiles/Generalized-Server-Side-Implementation.dir/CompareState.cpp.o: ../CompareState.cpp
 CMakeFiles/Generalized-Server-Side-Implementation.dir/CompareState.cpp.o: ../CompareState.h
@@ -130,6 +124,7 @@ CMakeFiles/Generalized-Server-Side-Implementation.dir/c_p_queue.cpp.o: ../c_p_qu
 CMakeFiles/Generalized-Server-Side-Implementation.dir/c_p_queue.cpp.o: ../c_p_queue.h
 
 CMakeFiles/Generalized-Server-Side-Implementation.dir/test.cpp.o: ../AStar.h
+CMakeFiles/Generalized-Server-Side-Implementation.dir/test.cpp.o: ../BestFS.h
 CMakeFiles/Generalized-Server-Side-Implementation.dir/test.cpp.o: ../CacheManager.h
 CMakeFiles/Generalized-Server-Side-Implementation.dir/test.cpp.o: ../ClientHandler.h
 CMakeFiles/Generalized-Server-Side-Implementation.dir/test.cpp.o: ../CompareState.h
@@ -154,5 +149,6 @@ CMakeFiles/Generalized-Server-Side-Implementation.dir/test.cpp.o: ../State.h
 CMakeFiles/Generalized-Server-Side-Implementation.dir/test.cpp.o: ../StringReverser.h
 CMakeFiles/Generalized-Server-Side-Implementation.dir/test.cpp.o: ../TempComprator.h
 CMakeFiles/Generalized-Server-Side-Implementation.dir/test.cpp.o: ../TempSearcher.h
+CMakeFiles/Generalized-Server-Side-Implementation.dir/test.cpp.o: ../TestAlgo.h
 CMakeFiles/Generalized-Server-Side-Implementation.dir/test.cpp.o: ../test.cpp
 
