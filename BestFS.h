@@ -32,9 +32,9 @@ public:
             State<T>* n = this->popOpenList();
             closed->insert(n);
             if(searchable->isGoalState(n)){
-                vector<State<string> *>  *noy=backTrace(n);
+                vector<State<string> *>  *backTraceState = backTrace(n);
                 vector<State<string> *> *pat;
-                MatrixSolution *ms = new MatrixSolution(noy);
+                MatrixSolution *ms = new MatrixSolution(backTraceState);
                 return ms;
             }
             vector<State<T> *> *adjList = searchable->getAllPossibleStates(n);
