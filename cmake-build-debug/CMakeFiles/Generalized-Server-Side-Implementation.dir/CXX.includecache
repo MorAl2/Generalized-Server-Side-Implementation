@@ -34,6 +34,10 @@ iostream
 State.h
 /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/State.h
 
+/home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/DFSearch.cpp
+DFSearch.h
+/home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/DFSearch.h
+
 /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/DFSearch.h
 iostream
 -
@@ -106,6 +110,10 @@ State.h
 Searchable.h
 /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/Searchable.h
 
+/home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/MatrixSolution.cpp
+MatrixSolution.h
+/home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/MatrixSolution.h
+
 /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/MatrixSolution.h
 iostream
 -
@@ -115,6 +123,10 @@ Solution.h
 /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/Solution.h
 State.h
 /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/State.h
+
+/home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/MyClientHandler.cpp
+MyClientHandler.h
+/home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/MyClientHandler.h
 
 /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/MyClientHandler.h
 sstream
@@ -157,6 +169,10 @@ sstream
 -
 sys/socket.h
 -
+
+/home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/ObjectAdapter.cpp
+ObjectAdapter.h
+/home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/ObjectAdapter.h
 
 /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/ObjectAdapter.h
 string
