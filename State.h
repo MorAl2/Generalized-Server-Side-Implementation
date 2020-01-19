@@ -62,7 +62,12 @@ public:
     double getSumState() {
         return this->sumState;
     }
-
+    bool getIsDisc(){
+        return this->isDisc;
+    }
+    void setIsDisc(){
+        this->isDisc = true;
+    }
 //    bool operator==(State<T>* other) {
 //        if ((this->state == other->getState())) {
 //            return true;
