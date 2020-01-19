@@ -10,7 +10,7 @@
 #include "MatrixSolution.h"
 #include "math.h"
 template<typename T>
-class AStar : public TempSearcher<T> {
+class AStar : public TempSearcher<T,TempComprator<T>> {
 
     Solution *backTrace(State<T> *v) {
         vector<State<T> *> *path = new vector<State<T> *>();
