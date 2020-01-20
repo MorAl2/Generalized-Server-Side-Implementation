@@ -31,6 +31,7 @@ public:
         while(this->openListSize()>0){
             State<T>* n = this->popOpenList();
             closed->insert(n);
+            this->nodesCount++;
             if(searchable->isGoalState(n)){
                 vector<State<string> *>  *backTraceState = backTrace(n);
                 vector<State<string> *> *pat;

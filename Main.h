@@ -30,11 +30,8 @@ namespace server_side {
         class Main {
         public:
             int main(int argc, char *argv[]) {
-                /*TestAlgo<string> *tempTestAlgo = new TestAlgo<string>();
-                BFS<string> *tempBFS = new BFS<string>();
-                cout << tempBFS->search(tempTestAlgo)->getSolution() << endl;*/
                 int port = atoi(argv[1]);
-                Searcher<std::string> *k = new BFS<std::string>();
+                Searcher<std::string> *k = new DFSearch<std::string>();
                 Solver<MatrixProblem*, MatrixSolution*> *reverse = new ObjectAdapter<MatrixProblem*, MatrixSolution*>(k);
                 CacheManager<MatrixProblem*, MatrixSolution*> *cache = new FileCacheManager<MatrixProblem*, MatrixSolution*>(5);
                 ClientHandler *handler = new MyClientHandler(reverse,cache);
