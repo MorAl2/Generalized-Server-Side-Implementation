@@ -33,7 +33,6 @@ public:
             this->nodesCount++;
             v->setIsDisc();
             if (searchable->isGoalState(v)) {
-                cout << "goalState" << endl;
                 return backTrace(v);
             }
                 vector<State<T> *> *adjList = searchable->getAllPossibleStates(v);

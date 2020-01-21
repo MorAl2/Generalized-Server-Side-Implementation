@@ -64,6 +64,7 @@ public:
                 instruction += ") ,";
             }
         }
+        instruction = instruction.substr(0,instruction.length()-2);
         return instruction;
 
     }
