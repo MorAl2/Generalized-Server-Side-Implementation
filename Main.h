@@ -21,7 +21,7 @@
 #include "BestFS.h"
 #include "TestAlgo.h"
 #include "BFS.h"
-
+#include "MyParallelServer.h"
 
 using namespace server_side;
 using namespace std;
@@ -35,7 +35,7 @@ namespace server_side {
                 Solver<MatrixProblem*, MatrixSolution*> *reverse = new ObjectAdapter<MatrixProblem*, MatrixSolution*>(k);
                 CacheManager<MatrixProblem*, MatrixSolution*> *cache = new FileCacheManager<MatrixProblem*, MatrixSolution*>(5);
                 ClientHandler *handler = new MyClientHandler(reverse,cache);
-                server_side::Server *serial = new MySerialServer();
+                server_side::Server *serial = new MyParallelServer();
                 serial->open(port, handler);
 
 //

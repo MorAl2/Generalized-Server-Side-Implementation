@@ -14,6 +14,14 @@ CMakeFiles/Generalized-Server-Side-Implementation.dir/AStar.cpp.o
 CMakeFiles/Generalized-Server-Side-Implementation.dir/BestFS.cpp.o
  /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/BestFS.cpp
  /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/BestFS.h
+ /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/CompareState.h
+ /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/MatrixSolution.h
+ /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/Searchable.h
+ /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/Searcher.h
+ /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/Solution.h
+ /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/State.h
+ /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/TempComprator.h
+ /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/TempSearcher.h
 CMakeFiles/Generalized-Server-Side-Implementation.dir/CompareState.cpp.o
  /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/CompareState.cpp
  /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/CompareState.h
@@ -140,6 +148,7 @@ CMakeFiles/Generalized-Server-Side-Implementation.dir/c_p_queue.cpp.o
  /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/c_p_queue.h
 CMakeFiles/Generalized-Server-Side-Implementation.dir/test.cpp.o
  /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/AStar.h
+ /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/BFS.h
  /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/BestFS.h
  /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/CacheManager.h
  /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/ClientHandler.h
@@ -157,6 +166,7 @@ CMakeFiles/Generalized-Server-Side-Implementation.dir/test.cpp.o
  /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/Searchable.h
  /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/Searcher.h
  /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/SearcherAbstract.h
+ /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/SearcherQueue.h
  /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/SearcherStack.h
  /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/Server.h
  /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/Solution.h

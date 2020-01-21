@@ -37,7 +37,7 @@ void MyParallelServer::run() {
   }
 
   //making socket listen to the port
-  if (listen(socketfd, 5) == -1) { //can also set to SOMAXCON (max connections)
+  if (listen(socketfd, 11) == -1) { //can also set to SOMAXCON (max connections)
     std::cerr << "Error during listening command" << std::endl;
     MyParallelServer::threadCondition = false;
     throw "Error during listening command";
