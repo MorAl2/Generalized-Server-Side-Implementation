@@ -1,7 +1,3 @@
-//
-// Created by noy on 12/01/2020.
-//
-
 #ifndef GENERALIZED_SERVER_SIDE_IMPLEMENTATION_SEARCHABLE_H
 #define GENERALIZED_SERVER_SIDE_IMPLEMENTATION_SEARCHABLE_H
 
@@ -12,19 +8,40 @@
 using namespace std;
 
 template<typename T>
+// the Searchable Interface.
 class Searchable {
-    pair<int, int> src;
-    pair<int, int> target;
-public:
-    virtual State<T> *getInitialState() {}
+  // the start and goal.
+  pair<int, int> src;
+  pair<int, int> target;
+ public:
 
-    virtual bool isGoalState(State<T> *s) {}
+  /**
+ *
+ * @return the inital state.
+*/
+  virtual State<T> *getInitialState() {}
 
-    virtual vector<State<T> *> *getAllPossibleStates(State<T> *s) {}
+  /**
+  * @param s the vertex.
+  * @return if its the goal state,
+  */
+  virtual bool isGoalState(State<T> *s) {}
 
-    virtual pair<int, int> getStart(){}
-
-    virtual pair<int, int> getEnd(){}
+  /**
+  *
+  * @return vector with all the possible states.
+  */
+  virtual vector<State<T> *> *getAllPossibleStates(State<T> *s) {}
+/**
+ * return the start.
+ * @return
+ */
+  virtual pair<int, int> getStart() {}
+/**
+ * return the end.
+ * @return
+ */
+  virtual pair<int, int> getEnd() {}
 };
 
 #endif //GENERALIZED_SERVER_SIDE_IMPLEMENTATION_SEARCHABLE_H

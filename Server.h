@@ -9,6 +9,7 @@
 
 
 namespace server_side {
+// The Server Interface.
     class Server {
     protected:
         bool threadCondition = false;

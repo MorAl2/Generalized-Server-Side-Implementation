@@ -100,8 +100,6 @@ CMakeFiles/Generalized-Server-Side-Implementation.dir/ObjectAdapter.cpp.o: ../So
 CMakeFiles/Generalized-Server-Side-Implementation.dir/ObjectAdapter.cpp.o: ../Solver.h
 CMakeFiles/Generalized-Server-Side-Implementation.dir/ObjectAdapter.cpp.o: ../State.h
 
-CMakeFiles/Generalized-Server-Side-Implementation.dir/RegAStar.cpp.o: ../RegAStar.cpp
-CMakeFiles/Generalized-Server-Side-Implementation.dir/RegAStar.cpp.o: ../RegAStar.h
 
 CMakeFiles/Generalized-Server-Side-Implementation.dir/SearcherAbstract.cpp.o: ../CompareState.h
 CMakeFiles/Generalized-Server-Side-Implementation.dir/SearcherAbstract.cpp.o: ../Searchable.h
@@ -111,11 +109,7 @@ CMakeFiles/Generalized-Server-Side-Implementation.dir/SearcherAbstract.cpp.o: ..
 CMakeFiles/Generalized-Server-Side-Implementation.dir/SearcherAbstract.cpp.o: ../Solution.h
 CMakeFiles/Generalized-Server-Side-Implementation.dir/SearcherAbstract.cpp.o: ../State.h
 
-CMakeFiles/Generalized-Server-Side-Implementation.dir/Solution.cpp.o: ../Solution.cpp
-CMakeFiles/Generalized-Server-Side-Implementation.dir/Solution.cpp.o: ../Solution.h
 
-CMakeFiles/Generalized-Server-Side-Implementation.dir/Solver.cpp.o: ../Solver.cpp
-CMakeFiles/Generalized-Server-Side-Implementation.dir/Solver.cpp.o: ../Solver.h
 
 CMakeFiles/Generalized-Server-Side-Implementation.dir/SolverTester.cpp.o: ../Solver.h
 CMakeFiles/Generalized-Server-Side-Implementation.dir/SolverTester.cpp.o: ../SolverTester.cpp
@@ -142,9 +136,6 @@ CMakeFiles/Generalized-Server-Side-Implementation.dir/TempSearcher.cpp.o: ../Tem
 
 CMakeFiles/Generalized-Server-Side-Implementation.dir/TestAStar.cpp.o: ../TestAStar.cpp
 CMakeFiles/Generalized-Server-Side-Implementation.dir/TestAStar.cpp.o: ../TestAStar.h
-
-CMakeFiles/Generalized-Server-Side-Implementation.dir/c_p_queue.cpp.o: ../c_p_queue.cpp
-CMakeFiles/Generalized-Server-Side-Implementation.dir/c_p_queue.cpp.o: ../c_p_queue.h
 
 CMakeFiles/Generalized-Server-Side-Implementation.dir/test.cpp.o: ../AStar.h
 CMakeFiles/Generalized-Server-Side-Implementation.dir/test.cpp.o: ../BFS.h

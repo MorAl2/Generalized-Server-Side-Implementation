@@ -21,7 +21,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/Generalized-Server-Side-Implementation.dir/TempComprator.cpp.o"
   "CMakeFiles/Generalized-Server-Side-Implementation.dir/TempSearcher.cpp.o"
   "CMakeFiles/Generalized-Server-Side-Implementation.dir/TestAStar.cpp.o"
-  "CMakeFiles/Generalized-Server-Side-Implementation.dir/c_p_queue.cpp.o"
   "CMakeFiles/Generalized-Server-Side-Implementation.dir/test.cpp.o"
   "Generalized-Server-Side-Implementation"
   "Generalized-Server-Side-Implementation.pdb"

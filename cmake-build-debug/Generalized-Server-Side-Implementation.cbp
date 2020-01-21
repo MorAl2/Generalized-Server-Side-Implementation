@@ -237,12 +237,6 @@
 		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/TestAStar.h">
 			<Option target="Generalized-Server-Side-Implementation"/>
 		</Unit>
-		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/c_p_queue.cpp">
-			<Option target="Generalized-Server-Side-Implementation"/>
-		</Unit>
-		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/c_p_queue.h">
-			<Option target="Generalized-Server-Side-Implementation"/>
-		</Unit>
 		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/test.cpp">
 			<Option target="Generalized-Server-Side-Implementation"/>
 		</Unit>

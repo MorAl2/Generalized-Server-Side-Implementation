@@ -4,7 +4,9 @@
 #include <sys/socket.h>
 #include <netinet/in.h>
 #include <unistd.h>
-
+/**
+ * runing the connection socket loop.
+ */
 void MySerialServer::run() {
 //create socket
     int socketfd = socket(AF_INET, SOCK_STREAM, 0);
@@ -40,7 +42,7 @@ void MySerialServer::run() {
     } else {
         std::cout << "Server is now listening ..." << std::endl;
     }
-
+    // setting the timeout.
     struct timeval tv;
     tv.tv_sec = 12000;
     tv.tv_usec = 0;
@@ -56,12 +58,16 @@ void MySerialServer::run() {
         } else {
             cout << "Got Connection!" << endl;
         }
+        // hhandlling the input.
         MySerialServer::handler->handleClient(client_socket, client_socket);
-        close(client_socket);
     }
     close(socketfd);
 }
-
+/**
+ * opening the server for connections.
+ * @param port 5600 as requested.
+ * @param c the client handler.
+ */
 void MySerialServer::open(int port, ClientHandler *c) {
     MySerialServer::handler = c;
     MySerialServer::port = port;
@@ -69,7 +75,9 @@ void MySerialServer::open(int port, ClientHandler *c) {
     thread th(&MySerialServer::run, this);
     th.detach();
 }
-
+/**
+ * stopping accapting connections.
+ */
 void MySerialServer::stop() {
     MySerialServer::threadCondition = false;
 

@@ -1,7 +1,6 @@
 #ifndef GENERALIZED_SERVER_SIDE_IMPLEMENTATION_SEARCHERSTACK_H
 #define GENERALIZED_SERVER_SIDE_IMPLEMENTATION_SEARCHERSTACK_H
 
-
 #include "State.h"
 #include "Searcher.h"
 #include <iostream>

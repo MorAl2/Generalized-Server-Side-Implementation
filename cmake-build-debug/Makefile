@@ -717,33 +717,6 @@ TestAStar.cpp.s:
 	$(MAKE) -f CMakeFiles/Generalized-Server-Side-Implementation.dir/build.make CMakeFiles/Generalized-Server-Side-Implementation.dir/TestAStar.cpp.s
 .PHONY : TestAStar.cpp.s
 
-c_p_queue.o: c_p_queue.cpp.o
-
-.PHONY : c_p_queue.o
-
-# target to build an object file
-c_p_queue.cpp.o:
-	$(MAKE) -f CMakeFiles/Generalized-Server-Side-Implementation.dir/build.make CMakeFiles/Generalized-Server-Side-Implementation.dir/c_p_queue.cpp.o
-.PHONY : c_p_queue.cpp.o
-
-c_p_queue.i: c_p_queue.cpp.i
-
-.PHONY : c_p_queue.i
-
-# target to preprocess a source file
-c_p_queue.cpp.i:
-	$(MAKE) -f CMakeFiles/Generalized-Server-Side-Implementation.dir/build.make CMakeFiles/Generalized-Server-Side-Implementation.dir/c_p_queue.cpp.i
-.PHONY : c_p_queue.cpp.i
-
-c_p_queue.s: c_p_queue.cpp.s
-
-.PHONY : c_p_queue.s
-
-# target to generate assembly for a file
-c_p_queue.cpp.s:
-	$(MAKE) -f CMakeFiles/Generalized-Server-Side-Implementation.dir/build.make CMakeFiles/Generalized-Server-Side-Implementation.dir/c_p_queue.cpp.s
-.PHONY : c_p_queue.cpp.s
-
 test.o: test.cpp.o
 
 .PHONY : test.o
@@ -846,9 +819,6 @@ help:
 	@echo "... TestAStar.o"
 	@echo "... TestAStar.i"
 	@echo "... TestAStar.s"
-	@echo "... c_p_queue.o"
-	@echo "... c_p_queue.i"
-	@echo "... c_p_queue.s"
 	@echo "... test.o"
 	@echo "... test.i"
 	@echo "... test.s"

@@ -7,7 +7,7 @@
 
 using namespace std;
 using namespace server_side;
-
+// running the server with serial input handle.
 class MySerialServer : public server_side::Server {
     int port;
     ClientHandler* handler;

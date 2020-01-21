@@ -1,7 +1,3 @@
-//Initialize the closed list
-// Created by mor on 17.1.2020.
-//
-
 #ifndef GENERALIZED_SERVER_SIDE_IMPLEMENTATION_ASTAR_H
 #define GENERALIZED_SERVER_SIDE_IMPLEMENTATION_ASTAR_H
 
@@ -9,72 +5,91 @@
 #include "TempSearcher.h"
 #include "MatrixSolution.h"
 #include "math.h"
+
 template<typename T>
-class AStar : public TempSearcher<T,TempComprator<T>> {
-
-    Solution *backTrace(State<T> *v) {
-        vector<State<T> *> *path = new vector<State<T> *>();
-        while (v != nullptr) {
-            path->push_back(v);
-            v = v->cameFrom;
+// class for the AStar Algorithm.
+class AStar : public TempSearcher<T, TempComprator<T>> {
+  /**
+   * given the goal veterx reached returns the shortest Path.
+   * @param v - the goal vertex.
+   * @return Solution with the shortest Path.
+   */
+  Solution *backTrace(State<T> *v) {
+    // vector to hold the path vertex.
+    vector<State<T> *> *path = new vector<State<T> *>();
+    // go to to the p(v) until reaching the start vertex.
+    while (v != nullptr) {
+      // adding the vertex to the vector.
+      path->push_back(v);
+      // getting the p(v).
+      v = v->cameFrom;
+    }
+    // Creating a Solution class.
+    MatrixSolution *sol = new MatrixSolution(path);
+    // returning the solution.
+    return sol;
+  }
+  /**
+   * Activating the search algorithm on the problem.
+   * @param searchable - the object to search on.
+   * @return Solution with the shortest Path.
+   */
+  Solution *search(Searchable<T> *searchable) {
+    // getting the start vertex setting its h and adding to openList.
+    State<T> *init = searchable->getInitialState();
+    init->h = calculateHValue(init, searchable);
+    this->addToOpenList(init);
+    // the closed list.
+    unordered_set<State<T> *> *closed = new unordered_set<State<T> *>;
+    while (this->openListSize() != 0) {
+      // poping the head verex which is the smallest h from the priorty queue.
+      State<T> *checkedVertex = this->popOpenList();
+      // adding to the evaluted nodes.
+      this->nodesCount++;
+      // adding it to the closed list.
+      closed->insert(checkedVertex);
+      // if we reached the goal, stopping and getting the Solution.
+      if (searchable->isGoalState(checkedVertex)) {
+        return backTrace(checkedVertex);
+      }
+      // geting all the possible states.
+      vector<State<T> *> *possibleStates = searchable->getAllPossibleStates(checkedVertex);
+      // going for each of the states.
+      for (State<T> *states : *possibleStates) {
+        // if it isnt being or was checked.
+        if (closed->find(states) == closed->end() && !this->openContains(states)) {
+          // setting the p(v).
+          states->setCameFrom(checkedVertex);
+          // updating the feilds.
+          states->sumState = (states->sumState + checkedVertex->sumState);
+          states->h = states->sumState + calculateHValue(states, searchable);
+          // adding it to the open list to be checked.
+          this->addToOpenList(states);
+        } else {
+          // checking if there is a better path.
+          if (states->sumState > states->sumState + checkedVertex->sumState) {
+            // updating the vertex and removing and adding to the open list.
+            this->remove(states);
+            states->setCameFrom(checkedVertex);
+            states->sumState = (states->sumState + checkedVertex->sumState);
+            states->h = states->sumState + calculateHValue(states, searchable);
+            this->addToOpenList(states);
+          }
         }
-        MatrixSolution *sol = new MatrixSolution(path);
-        return sol;
+      }
     }
+    // if error occurd and the goal wasn't reached returning empty path.
+    return new MatrixSolution(new vector<State<T> *>());
 
-    Solution *search(Searchable<T> *searchable) {
-        vector<State<string> *> backTraceAnsVec;
-        unordered_set<State<T> *> *closed = new unordered_set<State<T> *>;
-        State<T> *init = searchable->getInitialState();
-        init->h = calculateHValue(init, searchable);
-        this->addToOpenList(init);
-
-        // Iterations
-        while (this->openListSize() != 0) {
-            State<T> *n = this->popOpenList();
-            closed->insert(n);
-            this->nodesCount++; // update the number of iterations
-            // If we finished (we are in the goal state)
-            if (searchable->isGoalState(n)) {
-                return backTrace(n); // return the path (Solution)
-            }
-            vector<State<T> *> *successors = searchable->getAllPossibleStates(n); // successors vector
-            // Iterate over all the adj's of n
-            for (State<T> *s : *successors) {
-                // If we did  not visit at this element yet
-                if (closed->find(s) == closed->end() && !this->openContains(s)) {
-                    s->setCameFrom(n); // initial the father
-                    s->sumState = (s->sumState + n->sumState); // initial the  cost
-                    s->h = s->sumState + calculateHValue(s, searchable); // initial the heuristic cost
-                    this->addToOpenList(s);
-                }
-                    // Else
-                else {
-                    // Check if we can do the 'Relax' process
-                    if (s->sumState > s->sumState + n->sumState) {
-                        this->remove(s);
-                        s->setCameFrom(n); // set the new father of s
-                        s->sumState = (s->sumState + n->sumState); // set the new cost of s (after 'relax')
-                        s->h = s->sumState + calculateHValue(s, searchable); // initial the heuristic cost
-                        this->addToOpenList(s); // insert the updated s to the min_heap
-                    }
-                }
-            }
-        }
-
-        return 0;
-    }
-
-
-    double calculateHValue(State<T> *s, Searchable<T> *searchable) {
-//       return ((double) sqrt((s->rowPos - searchable->getEnd().first) * (s->rowPos - searchable->getEnd().first)
-//                            + (s->colPos - searchable->getEnd().second) * (s->colPos - searchable->getEnd().second)));
-        double xDiff = abs(s->rowPos - searchable->getEnd().first);
-        double yDiff = abs(s->colPos - searchable->getEnd().second);
-        return abs(xDiff + yDiff);
-    }
-
+  }
+  /**
+   *   calculating the h of the vertex.
+   */
+  double calculateHValue(State<T> *s, Searchable<T> *searchable) {
+    double xDiff = abs(s->rowPos - searchable->getEnd().first);
+    double yDiff = abs(s->colPos - searchable->getEnd().second);
+    return abs(xDiff + yDiff);
+  }
 };
-
 
 #endif //GENERALIZED_SERVER_SIDE_IMPLEMENTATION_ASTAR_H

@@ -1,7 +1,3 @@
-//
-// Created by mor on 19.1.2020.
-//
-
 #include "MyParallelServer.h"
 #include <netinet/in.h>
 #include "sys/socket.h"
@@ -9,7 +5,9 @@
 #include <sys/socket.h>
 #include <netinet/in.h>
 #include <unistd.h>
-
+/**
+ * runing the connection socket loop.
+ */
 void MyParallelServer::run() {
 //create socket
   int socketfd = socket(AF_INET, SOCK_STREAM, 0);
@@ -46,11 +44,14 @@ void MyParallelServer::run() {
     std::cout << "Server is now listening ..." << std::endl;
   }
 
+  // setting the timeout.
   struct timeval tv;
   tv.tv_sec = 12000;
   tv.tv_usec = 0;
   setsockopt(socketfd, SOL_SOCKET, SO_RCVTIMEO, (const char *) &tv, sizeof tv);
-  thread th;
+  thread *th;
+  vector<thread *> threadList;
+  // as long as it open rcv connections.
   while (MyParallelServer::threadCondition) {
     cout << "Waiting for connection...." << endl;
     int client_socket = accept(socketfd, (struct sockaddr *) &address, (socklen_t *) &address);
@@ -61,22 +62,33 @@ void MyParallelServer::run() {
     } else {
       cout << "Got Connection!" << endl;
     }
-    thread th(&ClientHandler::handleClient,this->handler,client_socket,client_socket);
-    //MyParallelServer::handler->handleClient(client_socket, client_socket);
-    //close(client_socket);
-    th.detach();
+    // handaling the data on a thread.
+    th = new thread(&ClientHandler::handleClient,this->handler,client_socket,client_socket);
+    threadList.push_back(th);
   }
+  th->join();
+//  for(vector<thread *>::iterator it = threadList.begin();it!= threadList.end();it++){
+//    //TODO - add threadList
+//    it.base()->
+//  }
   close(socketfd);
 }
-
+/**
+ * opening the server for connections.
+ * @param port 5600 as requested.
+ * @param c the client handler.
+ */
 void MyParallelServer::open(int port, ClientHandler *c) {
   MyParallelServer::handler = c;
+  // TODO - set the port to 5600
   MyParallelServer::port = port;
   MyParallelServer::threadCondition = true;
   thread th(&MyParallelServer::run, this);
   th.detach();
 }
-
+/**
+ * stopping accapting connections.
+ */
 void MyParallelServer::stop() {
   MyParallelServer::threadCondition = false;
 }
