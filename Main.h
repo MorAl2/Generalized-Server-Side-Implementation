@@ -26,17 +26,18 @@
 using namespace server_side;
 using namespace std;
 namespace server_side {
-    namespace boot {
-        class Main {
-        public:
-            int main(int argc, char *argv[]) {
-                int port = atoi(argv[1]);
-                Searcher<std::string> *k = new AStar<std::string>();
-                Solver<MatrixProblem*, MatrixSolution*> *reverse = new ObjectAdapter<MatrixProblem*, MatrixSolution*>(k);
-                CacheManager<MatrixProblem*, MatrixSolution*> *cache = new FileCacheManager<MatrixProblem*, MatrixSolution*>(5);
-                ClientHandler *handler = new MyClientHandler(reverse,cache);
-                server_side::Server *serial = new MyParallelServer();
-                serial->open(port, handler);
+namespace boot {
+class Main {
+ public:
+  int main(int argc, char *argv[]) {
+    int port = atoi(argv[1]);
+    Searcher<std::string> *k = new AStar<std::string>();
+    Solver<MatrixProblem *, MatrixSolution *> *reverse = new ObjectAdapter<MatrixProblem *, MatrixSolution *>(k);
+    CacheManager<MatrixProblem *, MatrixSolution *> *cache = new FileCacheManager<MatrixProblem *, MatrixSolution *>(5);
+    ClientHandler *handler = new MyClientHandler(reverse, cache);
+    server_side::Server *serial = new MyParallelServer();
+    thread *th2ptr = serial->open(port, handler);
+    th2ptr->join();
 
 //
 //                MatrixProblem *mat = new MatrixProblem();
@@ -192,24 +193,21 @@ namespace server_side {
 //                temp->getOpenList()->push(*s2);
 //                temp->getOpenList()->push(*s3);
 //                cout << temp->getOpenList()->top().getCost() << endl;
-                /*try {
-                     int port = atoi(argv[1]);
-                     Solver<string, string> *reverse = new StringReverser();
-                     CacheManager<string, string> *cache = new FileCacheManager(5);
-                     ClientHandler *handler = new MyTestClientHandler(reverse, cache);
-                     server_side::Server *serial = new MySerialServer();
-                     serial->open(port, handler);
-                     cout << "Main Done.." << endl;
-                 }
-                 catch (const char *e) {
-                     cout << e << endl;
-                 }*/
-                while (serial->getCondition()) {
-
-                }
-            }
-        };
-    }
+    /*try {
+         int port = atoi(argv[1]);
+         Solver<string, string> *reverse = new StringReverser();
+         CacheManager<string, string> *cache = new FileCacheManager(5);
+         ClientHandler *handler = new MyTestClientHandler(reverse, cache);
+         server_side::Server *serial = new MySerialServer();
+         serial->open(port, handler);
+         cout << "Main Done.." << endl;
+     }
+     catch (const char *e) {
+         cout << e << endl;
+     }*/
+  }
+};
+}
 }
 
 #endif //GENERALIZED_SERVER_SIDE_IMPLEMENTATION_MAIN_H

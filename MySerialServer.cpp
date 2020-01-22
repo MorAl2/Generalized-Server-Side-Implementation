@@ -68,12 +68,12 @@ void MySerialServer::run() {
  * @param port 5600 as requested.
  * @param c the client handler.
  */
-void MySerialServer::open(int port, ClientHandler *c) {
+thread* MySerialServer::open(int port, ClientHandler *c) {
     MySerialServer::handler = c;
     MySerialServer::port = port;
     MySerialServer::threadCondition = true;
-    thread th(&MySerialServer::run, this);
-    th.detach();
+    thread* th = new thread(&MySerialServer::run, this);
+    return th;
 }
 /**
  * stopping accapting connections.

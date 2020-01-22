@@ -63,14 +63,13 @@ void MyParallelServer::run() {
       cout << "Got Connection!" << endl;
     }
     // handaling the data on a thread.
-    th = new thread(&ClientHandler::handleClient,this->handler,client_socket,client_socket);
+    th = new thread(&ClientHandler::handleClient, this->handler, client_socket, client_socket);
     threadList.push_back(th);
   }
-  th->join();
-//  for(vector<thread *>::iterator it = threadList.begin();it!= threadList.end();it++){
-//    //TODO - add threadList
-//    it.base()->
-//  }
+  for (auto &g: threadList) {
+    g->join();
+  }
+
   close(socketfd);
 }
 /**
@@ -78,13 +77,13 @@ void MyParallelServer::run() {
  * @param port 5600 as requested.
  * @param c the client handler.
  */
-void MyParallelServer::open(int port, ClientHandler *c) {
+thread* MyParallelServer::open(int port, ClientHandler *c) {
   MyParallelServer::handler = c;
   // TODO - set the port to 5600
   MyParallelServer::port = port;
   MyParallelServer::threadCondition = true;
-  thread th(&MyParallelServer::run, this);
-  th.detach();
+  thread* th1 = new thread(&MyParallelServer::run, this);
+  return th1;
 }
 /**
  * stopping accapting connections.

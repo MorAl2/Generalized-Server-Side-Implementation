@@ -1,6 +1,7 @@
 #ifndef GENERALIZED_SERVER_SIDE_IMPLEMENTATION_SERVER_H
 #define GENERALIZED_SERVER_SIDE_IMPLEMENTATION_SERVER_H
 
+#include <thread>
 #include "ClientHandler.h"
 #include "Solver.h"
 #include "StringReverser.h"
@@ -19,7 +20,7 @@ namespace server_side {
          * @param port - port # to listen on.
          * @param c -  object of ClientHandler - define type of Stream.
          */
-        virtual void open(int port, ClientHandler *c) = 0;
+        virtual thread* open(int port, ClientHandler *c) = 0;
 
         /**
          * stop Listening for Clients.

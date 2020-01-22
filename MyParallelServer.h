@@ -16,7 +16,7 @@ class MyParallelServer : public server_side::Server {
    * @param port port number to listen
    * @param c object of ClientHandler - define type of conversation
    */
-  void open(int port, ClientHandler *c);
+  thread* open(int port, ClientHandler *c);
 
   /**
    * stop Listening for Clients.
