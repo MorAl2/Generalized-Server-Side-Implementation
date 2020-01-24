@@ -10,6 +10,7 @@ class Solver {
    * @return solution of problem
    */
   virtual Solution solve(Problem p) = 0;
+  virtual Solver* getClone() {}
 };
 
 #endif //GENERALIZED_SERVER_SIDE_IMPLEMENTATION_SOLVER_H

@@ -96,8 +96,8 @@ class MatrixProblem : public Searchable<string> {
     int col = s->colPos;
     int size = matrix.size();
     vector<State<string> *> *adjList = new vector<State<string> *>();
-    if (isValidLocation(row, col - 1, size) && matrix.at(row)->at(col - 1)->cost != -1) {
-      adjList->push_back(matrix.at(row)->at(col - 1));
+    if (isValidLocation(row + 1, col, size) && matrix.at(row + 1)->at(col)->cost != -1) {
+      adjList->push_back(matrix.at(row + 1)->at(col));
     }
     if (isValidLocation(row, col + 1, size) && matrix.at(row)->at(col + 1)->cost != -1) {
       adjList->push_back(matrix.at(row)->at(col + 1));
@@ -105,9 +105,10 @@ class MatrixProblem : public Searchable<string> {
     if (isValidLocation(row - 1, col, size) && matrix.at(row - 1)->at(col)->cost != -1) {
       adjList->push_back(matrix.at(row - 1)->at(col));
     }
-    if (isValidLocation(row + 1, col, size) && matrix.at(row + 1)->at(col)->cost != -1) {
-      adjList->push_back(matrix.at(row + 1)->at(col));
+    if (isValidLocation(row, col - 1, size) && matrix.at(row)->at(col - 1)->cost != -1) {
+      adjList->push_back(matrix.at(row)->at(col - 1));
     }
+
     return adjList;
   }
   /**

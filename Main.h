@@ -30,7 +30,13 @@ namespace boot {
 class Main {
  public:
   int main(int argc, char *argv[]) {
-    int port = atoi(argv[1]);
+    int port;
+    if (argc > 1) {
+      port = atoi(argv[1]);
+    }
+    else {
+      port = 5600;
+    }
     Searcher<std::string> *k = new AStar<std::string>();
     Solver<MatrixProblem *, MatrixSolution *> *reverse = new ObjectAdapter<MatrixProblem *, MatrixSolution *>(k);
     CacheManager<MatrixProblem *, MatrixSolution *> *cache = new FileCacheManager<MatrixProblem *, MatrixSolution *>(5);
@@ -38,8 +44,6 @@ class Main {
     server_side::Server *serial = new MyParallelServer();
     thread *th2ptr = serial->open(port, handler);
     th2ptr->join();
-
-//
 //                MatrixProblem *mat = new MatrixProblem();
 //                vector<State<string> *> *raw1 = new vector<State<string> *>();
 //                vector<State<string> *> *raw2 = new vector<State<string> *>();

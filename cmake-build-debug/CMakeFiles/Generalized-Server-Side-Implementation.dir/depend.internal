@@ -100,7 +100,6 @@ CMakeFiles/Generalized-Server-Side-Implementation.dir/ObjectAdapter.cpp.o
  /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/Solution.h
  /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/Solver.h
  /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/State.h
-CMakeFiles/Generalized-Server-Side-Implementation.dir/RegAStar.cpp.o
 CMakeFiles/Generalized-Server-Side-Implementation.dir/SearcherAbstract.cpp.o
  /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/CompareState.h
  /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/Searchable.h
@@ -109,8 +108,6 @@ CMakeFiles/Generalized-Server-Side-Implementation.dir/SearcherAbstract.cpp.o
  /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/SearcherAbstract.h
  /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/Solution.h
  /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/State.h
-CMakeFiles/Generalized-Server-Side-Implementation.dir/Solution.cpp.o
-CMakeFiles/Generalized-Server-Side-Implementation.dir/Solver.cpp.o
 CMakeFiles/Generalized-Server-Side-Implementation.dir/SolverTester.cpp.o
  /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/Solver.h
  /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/SolverTester.cpp
@@ -134,9 +131,6 @@ CMakeFiles/Generalized-Server-Side-Implementation.dir/TempSearcher.cpp.o
  /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/TempComprator.h
  /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/TempSearcher.cpp
  /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/TempSearcher.h
-CMakeFiles/Generalized-Server-Side-Implementation.dir/TestAStar.cpp.o
- /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/TestAStar.cpp
- /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/TestAStar.h
 CMakeFiles/Generalized-Server-Side-Implementation.dir/test.cpp.o
  /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/AStar.h
  /home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/BFS.h

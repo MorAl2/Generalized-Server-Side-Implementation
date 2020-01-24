@@ -22,6 +22,8 @@ class Searcher {
    * @return the # of evaluted nodes.
    */
   virtual int getNumberOfNodesEvaluated() {}
+
+  virtual Searcher* getClone(){}
 };
 
 #endif //GENERALIZED_SERVER_SIDE_IMPLEMENTATION_SEARCHER_H

@@ -46,7 +46,7 @@ void MyParallelServer::run() {
 
   // setting the timeout.
   struct timeval tv;
-  tv.tv_sec = 12000;
+  tv.tv_sec = 120;
   tv.tv_usec = 0;
   setsockopt(socketfd, SOL_SOCKET, SO_RCVTIMEO, (const char *) &tv, sizeof tv);
   thread *th;
@@ -58,11 +58,12 @@ void MyParallelServer::run() {
     if (client_socket == -1) {
       std::cerr << "Error accepting client! / TimeOut!" << std::endl;
       MyParallelServer::stop();
-      throw "Error accepting client";
     } else {
       cout << "Got Connection!" << endl;
     }
     // handaling the data on a thread.
+    //ClientHandler* handler1 = this->handler->getClone();
+    //handler1->handleClient(client_socket,client_socket);
     th = new thread(&ClientHandler::handleClient, this->handler, client_socket, client_socket);
     threadList.push_back(th);
   }

@@ -30,6 +30,11 @@ class TempSearcher : public Searcher<T> {
     return openList->size();
   }
 
+  virtual void erase(){
+    openList = new priority_queue<State<T> *, vector<State<T> *>, Comprator>();
+    evaluatedNodes = 0;
+    vectorOpenList = new vector<State<T> *>;
+  }
   /**
    * the evaluted nodes.
    * @return the evaluted nodes.

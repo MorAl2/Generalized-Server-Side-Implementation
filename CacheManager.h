@@ -25,6 +25,8 @@ public:
      * @param s - The solution for the problem p
      */
     virtual void addSolution(Problem p, Solution s) = 0;
+
+    virtual CacheManager< Problem, Solution>* getClone() {}
 };
 
 #endif //GENERALIZED_SERVER_SIDE_IMPLEMENTATION_CACHEMANAGER_H

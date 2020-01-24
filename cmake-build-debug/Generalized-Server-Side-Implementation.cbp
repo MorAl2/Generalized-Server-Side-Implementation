@@ -165,12 +165,6 @@
 		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/ObjectAdapter.h">
 			<Option target="Generalized-Server-Side-Implementation"/>
 		</Unit>
-		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/RegAStar.cpp">
-			<Option target="Generalized-Server-Side-Implementation"/>
-		</Unit>
-		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/RegAStar.h">
-			<Option target="Generalized-Server-Side-Implementation"/>
-		</Unit>
 		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/Searchable.h">
 			<Option target="Generalized-Server-Side-Implementation"/>
 		</Unit>
@@ -189,13 +183,7 @@
 		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/Server.h">
 			<Option target="Generalized-Server-Side-Implementation"/>
 		</Unit>
-		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/Solution.cpp">
-			<Option target="Generalized-Server-Side-Implementation"/>
-		</Unit>
 		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/Solution.h">
-			<Option target="Generalized-Server-Side-Implementation"/>
-		</Unit>
-		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/Solver.cpp">
 			<Option target="Generalized-Server-Side-Implementation"/>
 		</Unit>
 		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/Solver.h">
@@ -229,12 +217,6 @@
 			<Option target="Generalized-Server-Side-Implementation"/>
 		</Unit>
 		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/TempSearcher.h">
-			<Option target="Generalized-Server-Side-Implementation"/>
-		</Unit>
-		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/TestAStar.cpp">
-			<Option target="Generalized-Server-Side-Implementation"/>
-		</Unit>
-		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/TestAStar.h">
 			<Option target="Generalized-Server-Side-Implementation"/>
 		</Unit>
 		<Unit filename="/home/mor/CLionProjects/Generalized-Server-Side-Implementation (העתק)/test.cpp">

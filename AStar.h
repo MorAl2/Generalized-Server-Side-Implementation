@@ -35,6 +35,7 @@ class AStar : public TempSearcher<T, TempComprator<T>> {
    * @return Solution with the shortest Path.
    */
   Solution *search(Searchable<T> *searchable) {
+    this->erase();
     // getting the start vertex setting its h and adding to openList.
     State<T> *init = searchable->getInitialState();
     init->h = calculateHValue(init, searchable);
@@ -70,6 +71,7 @@ class AStar : public TempSearcher<T, TempComprator<T>> {
           if (states->sumState > states->sumState + checkedVertex->sumState) {
             // updating the vertex and removing and adding to the open list.
             this->remove(states);
+            closed->erase(closed->find(states));
             states->setCameFrom(checkedVertex);
             states->sumState = (states->sumState + checkedVertex->sumState);
             states->h = states->sumState + calculateHValue(states, searchable);
@@ -89,6 +91,10 @@ class AStar : public TempSearcher<T, TempComprator<T>> {
     double xDiff = abs(s->rowPos - searchable->getEnd().first);
     double yDiff = abs(s->colPos - searchable->getEnd().second);
     return abs(xDiff + yDiff);
+  }
+
+  Searcher<T>* getClone(){
+    return new AStar();
   }
 };
 

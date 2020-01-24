@@ -12,6 +12,8 @@ public:
      * @param os - output Stream.
      */
     virtual void handleClient(int is , int os) = 0;
+
+    virtual ClientHandler* getClone() {}
 };
 
 

@@ -447,33 +447,6 @@ ObjectAdapter.cpp.s:
 	$(MAKE) -f CMakeFiles/Generalized-Server-Side-Implementation.dir/build.make CMakeFiles/Generalized-Server-Side-Implementation.dir/ObjectAdapter.cpp.s
 .PHONY : ObjectAdapter.cpp.s
 
-RegAStar.o: RegAStar.cpp.o
-
-.PHONY : RegAStar.o
-
-# target to build an object file
-RegAStar.cpp.o:
-	$(MAKE) -f CMakeFiles/Generalized-Server-Side-Implementation.dir/build.make CMakeFiles/Generalized-Server-Side-Implementation.dir/RegAStar.cpp.o
-.PHONY : RegAStar.cpp.o
-
-RegAStar.i: RegAStar.cpp.i
-
-.PHONY : RegAStar.i
-
-# target to preprocess a source file
-RegAStar.cpp.i:
-	$(MAKE) -f CMakeFiles/Generalized-Server-Side-Implementation.dir/build.make CMakeFiles/Generalized-Server-Side-Implementation.dir/RegAStar.cpp.i
-.PHONY : RegAStar.cpp.i
-
-RegAStar.s: RegAStar.cpp.s
-
-.PHONY : RegAStar.s
-
-# target to generate assembly for a file
-RegAStar.cpp.s:
-	$(MAKE) -f CMakeFiles/Generalized-Server-Side-Implementation.dir/build.make CMakeFiles/Generalized-Server-Side-Implementation.dir/RegAStar.cpp.s
-.PHONY : RegAStar.cpp.s
-
 SearcherAbstract.o: SearcherAbstract.cpp.o
 
 .PHONY : SearcherAbstract.o
@@ -500,60 +473,6 @@ SearcherAbstract.s: SearcherAbstract.cpp.s
 SearcherAbstract.cpp.s:
 	$(MAKE) -f CMakeFiles/Generalized-Server-Side-Implementation.dir/build.make CMakeFiles/Generalized-Server-Side-Implementation.dir/SearcherAbstract.cpp.s
 .PHONY : SearcherAbstract.cpp.s
-
-Solution.o: Solution.cpp.o
-
-.PHONY : Solution.o
-
-# target to build an object file
-Solution.cpp.o:
-	$(MAKE) -f CMakeFiles/Generalized-Server-Side-Implementation.dir/build.make CMakeFiles/Generalized-Server-Side-Implementation.dir/Solution.cpp.o
-.PHONY : Solution.cpp.o
-
-Solution.i: Solution.cpp.i
-
-.PHONY : Solution.i
-
-# target to preprocess a source file
-Solution.cpp.i:
-	$(MAKE) -f CMakeFiles/Generalized-Server-Side-Implementation.dir/build.make CMakeFiles/Generalized-Server-Side-Implementation.dir/Solution.cpp.i
-.PHONY : Solution.cpp.i
-
-Solution.s: Solution.cpp.s
-
-.PHONY : Solution.s
-
-# target to generate assembly for a file
-Solution.cpp.s:
-	$(MAKE) -f CMakeFiles/Generalized-Server-Side-Implementation.dir/build.make CMakeFiles/Generalized-Server-Side-Implementation.dir/Solution.cpp.s
-.PHONY : Solution.cpp.s
-
-Solver.o: Solver.cpp.o
-
-.PHONY : Solver.o
-
-# target to build an object file
-Solver.cpp.o:
-	$(MAKE) -f CMakeFiles/Generalized-Server-Side-Implementation.dir/build.make CMakeFiles/Generalized-Server-Side-Implementation.dir/Solver.cpp.o
-.PHONY : Solver.cpp.o
-
-Solver.i: Solver.cpp.i
-
-.PHONY : Solver.i
-
-# target to preprocess a source file
-Solver.cpp.i:
-	$(MAKE) -f CMakeFiles/Generalized-Server-Side-Implementation.dir/build.make CMakeFiles/Generalized-Server-Side-Implementation.dir/Solver.cpp.i
-.PHONY : Solver.cpp.i
-
-Solver.s: Solver.cpp.s
-
-.PHONY : Solver.s
-
-# target to generate assembly for a file
-Solver.cpp.s:
-	$(MAKE) -f CMakeFiles/Generalized-Server-Side-Implementation.dir/build.make CMakeFiles/Generalized-Server-Side-Implementation.dir/Solver.cpp.s
-.PHONY : Solver.cpp.s
 
 SolverTester.o: SolverTester.cpp.o
 
@@ -690,33 +609,6 @@ TempSearcher.cpp.s:
 	$(MAKE) -f CMakeFiles/Generalized-Server-Side-Implementation.dir/build.make CMakeFiles/Generalized-Server-Side-Implementation.dir/TempSearcher.cpp.s
 .PHONY : TempSearcher.cpp.s
 
-TestAStar.o: TestAStar.cpp.o
-
-.PHONY : TestAStar.o
-
-# target to build an object file
-TestAStar.cpp.o:
-	$(MAKE) -f CMakeFiles/Generalized-Server-Side-Implementation.dir/build.make CMakeFiles/Generalized-Server-Side-Implementation.dir/TestAStar.cpp.o
-.PHONY : TestAStar.cpp.o
-
-TestAStar.i: TestAStar.cpp.i
-
-.PHONY : TestAStar.i
-
-# target to preprocess a source file
-TestAStar.cpp.i:
-	$(MAKE) -f CMakeFiles/Generalized-Server-Side-Implementation.dir/build.make CMakeFiles/Generalized-Server-Side-Implementation.dir/TestAStar.cpp.i
-.PHONY : TestAStar.cpp.i
-
-TestAStar.s: TestAStar.cpp.s
-
-.PHONY : TestAStar.s
-
-# target to generate assembly for a file
-TestAStar.cpp.s:
-	$(MAKE) -f CMakeFiles/Generalized-Server-Side-Implementation.dir/build.make CMakeFiles/Generalized-Server-Side-Implementation.dir/TestAStar.cpp.s
-.PHONY : TestAStar.cpp.s
-
 test.o: test.cpp.o
 
 .PHONY : test.o
@@ -789,18 +681,9 @@ help:
 	@echo "... ObjectAdapter.o"
 	@echo "... ObjectAdapter.i"
 	@echo "... ObjectAdapter.s"
-	@echo "... RegAStar.o"
-	@echo "... RegAStar.i"
-	@echo "... RegAStar.s"
 	@echo "... SearcherAbstract.o"
 	@echo "... SearcherAbstract.i"
 	@echo "... SearcherAbstract.s"
-	@echo "... Solution.o"
-	@echo "... Solution.i"
-	@echo "... Solution.s"
-	@echo "... Solver.o"
-	@echo "... Solver.i"
-	@echo "... Solver.s"
 	@echo "... SolverTester.o"
 	@echo "... SolverTester.i"
 	@echo "... SolverTester.s"
@@ -816,9 +699,6 @@ help:
 	@echo "... TempSearcher.o"
 	@echo "... TempSearcher.i"
 	@echo "... TempSearcher.s"
-	@echo "... TestAStar.o"
-	@echo "... TestAStar.i"
-	@echo "... TestAStar.s"
 	@echo "... test.o"
 	@echo "... test.i"
 	@echo "... test.s"

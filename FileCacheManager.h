@@ -13,7 +13,6 @@ template<typename Problem, typename Solution>
 // class for cacheing the solutions.
 class FileCacheManager : public CacheManager<Problem, Solution> {
   unsigned int maxCacheSize;
-  unordered_map<string, bool> *isExist = new unordered_map<string, bool>();
 
  public:
   FileCacheManager(int size) {
@@ -27,10 +26,6 @@ class FileCacheManager : public CacheManager<Problem, Solution> {
   bool isSolutionExists(Problem p) {
     string fileName = p->to_string() + "." + typeid(this).name();
     std::size_t h1 = std::hash<std::string>{}(fileName);
-    if (isExist->find(to_string(h1)) != isExist->end()) {
-      return true;
-    }
-
     ifstream file;
 
     file.open(to_string(h1), ios::in);
@@ -49,7 +44,6 @@ class FileCacheManager : public CacheManager<Problem, Solution> {
     string fileName = p->to_string() + "." + typeid(this).name();
     std::size_t h1 = std::hash<std::string>{}(fileName);
     file.open(to_string(h1), ios::in);
-    isExist->emplace(to_string(h1), true);
     if (!file) {
       cout << "Problem Opening File" << endl;
       throw "an error";
@@ -81,12 +75,15 @@ class FileCacheManager : public CacheManager<Problem, Solution> {
     ofstream file;
     cout << h1;
     file.open(to_string(h1));
-    isExist->emplace(to_string(h1), true);
     if (!file) {
       throw "an error";
     }
     file.write(s->to_string().c_str(), s->to_string().length());
     file.close();
+  }
+
+  CacheManager< Problem, Solution>* getClone() {
+    return new FileCacheManager(5);
   }
 };
 

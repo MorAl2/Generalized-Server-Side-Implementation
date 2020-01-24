@@ -31,6 +31,10 @@ class ObjectAdapter : public Solver<MatrixProblem *, MatrixSolution *> {
   MatrixSolution *solve(Problem p) override {
     this->searchab->search(p);
   }
+
+  Solver* getClone() {
+    return new ObjectAdapter(this->searchab->getClone());
+  }
 };
 
 #endif //GENERALIZED_SERVER_SIDE_IMPLEMENTATION_OBJECTADAPTER_H

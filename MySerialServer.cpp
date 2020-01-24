@@ -34,7 +34,7 @@ void MySerialServer::run() {
     }
 
     //making socket listen to the port
-    if (listen(socketfd, 5) == -1) { //can also set to SOMAXCON (max connections)
+    if (listen(socketfd, 20) == -1) { //can also set to SOMAXCON (max connections)
         std::cerr << "Error during listening command" << std::endl;
         MySerialServer::threadCondition = false;
         throw "Error during listening command";
@@ -44,7 +44,7 @@ void MySerialServer::run() {
     }
     // setting the timeout.
     struct timeval tv;
-    tv.tv_sec = 12000;
+    tv.tv_sec = 120000;
     tv.tv_usec = 0;
     setsockopt(socketfd, SOL_SOCKET, SO_RCVTIMEO, (const char *) &tv, sizeof tv);
 
@@ -54,7 +54,7 @@ void MySerialServer::run() {
         if (client_socket == -1) {
             std::cerr << "Error accepting client! / TimeOut!" << std::endl;
             MySerialServer::stop();
-            throw "Error accepting client";
+
         } else {
             cout << "Got Connection!" << endl;
         }

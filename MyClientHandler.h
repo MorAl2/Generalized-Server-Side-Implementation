@@ -14,7 +14,10 @@
 class MyClientHandler : public ClientHandler {
   Solver<MatrixProblem *, MatrixSolution *> *solver;
   CacheManager<MatrixProblem *, MatrixSolution *> *cm;
+
+
  public:
+
   // CTOR.
   MyClientHandler(Solver<MatrixProblem *, MatrixSolution *> *sol,
                   CacheManager<MatrixProblem *, MatrixSolution *> *cache) {
@@ -37,9 +40,9 @@ class MyClientHandler : public ClientHandler {
     // reading until the end is reached.
     while (!endFlag) {
       // buffer for holding the rcved data.
-      char buffer[1024] = {0};
+      char buffer[10000] = {0};
       // rcv the data.
-      int valread = read(is, buffer, 1024);
+      int valread = read(is, buffer, 10000);
       if (valread == -1) {
         cout << "Error - Read" << endl;
         throw "Error - Read";
@@ -54,7 +57,7 @@ class MyClientHandler : public ClientHandler {
           continue;
         }
         // if the end is reached.
-        if (line == "end") {
+        if (line == "end"|| line.find("end")!= string::npos) {
           endFlag = true;
           break;
         } else {
@@ -118,6 +121,11 @@ class MyClientHandler : public ClientHandler {
     }
     // closing the connection.
     close(is);
+  }
+
+  ClientHandler* getClone() {
+
+    return new MyClientHandler(this->solver->getClone(),this->cm->getClone());
   }
 };
 

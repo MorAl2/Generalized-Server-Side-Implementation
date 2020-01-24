@@ -69,7 +69,11 @@ class MatrixSolution : public Solution {
         instruction += ") ,";
       }
     }
-    instruction = instruction.substr(0, instruction.length() - 2);
+    if(instruction == ""){
+      instruction = "No Path Was Found.";
+      return instruction;
+    }
+    instruction = instruction.substr(0, instruction.length() - 1);
     state = instruction;
     return instruction;
   }
