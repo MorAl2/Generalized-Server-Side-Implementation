@@ -60,6 +60,10 @@ class DFSearch : public SearcherStack<T> {
     return new MatrixSolution(new vector<State<T> *>());
   }
 
+  /**
+   * getter of the number of the field nodesCount
+   * @return the value of the field nodesCount
+   */
   int getNumberOfNodesEvaluated() override {
     this->nodesCount;
   }
