@@ -15,9 +15,6 @@ The Problem And Solving It Is Also Generic and the api can be used to solve any 
 - Mor Almado.
 - Noy Israeli.
 
-# Simulator
-
-- FlightGear 2019.1, can be downloaded from here: https://www.flightgear.org/
 
 ## Installation
 
@@ -27,36 +24,26 @@ The Problem And Solving It Is Also Generic and the api can be used to solve any 
 
 ## Usage
 
-- The program takes as CommandLine Argument the txt file you wish to Interpret, the txt file should be in the same folder you run the program from,
-for Example if you wish to run The file fly.txt the following command should execute:
-"./a.out fly.txt". and the fly.txt should be in the same folder a.out is.
+- The program takes as CommandLine Argument the port of which the server should listen on, if no port was given the default port is 5600.
 
-- The program should show it waits for connection.
+one the server rcved a connection the ClientHandler kicks in and handles the data rcved by the input stream/socket.
 
-- Afterwards run the FlightGear Simulator or Alternatively Run the script Simulating it, the program should print it Accepted connection for both the server thread and the client thread, and will start interpreting the file supplied to it.
+the current program Configitraion rcv a metrix as data from the socket at the following format:
+1. each value is divided by :","
+2. each line is divided by :\n"
+3. the metrix is Cubic.
+4. after the matrix data the line is the start point
+5. the next point is the goal point.
+6. afterwards the word "end" on a new line.
 
-- The Following Commands Are Allowed:
+the program will then process the data and check if it has solution for that problem in the cache.
+otherwise it will solve the problem Using the Proper Solver Implemention and send back the least costly path from start to goal point which is the solutio to this problem.
 
-- openDataServer(port) - open server using sockets for the simulator to send data 
+Any problem can be solved by specfing the Right Implemntaion of Solver And ClinetHandler Intefaces for processing and solving the problem.
 
-- connectControlClient(ip, port) - open client socket and connecting to the simulator for changing controls of the plane.
+Using the ObjectAdapter Solid principles can still work, for example in the main program it adptes from search algorithem to the solver interface and use the Searcher to find the least costly Path using the A* Algo.
 
-- var - creating a new var , 
-can be simluator depending/changing var - will be declered by (->) for changing and (<-) for depending or non for exapmple: 
-(var h0 = 3)
- (var breaks -> sim(** breaks path**) will change the simualtor breaks.)
- (var alt <- sim(** altitude path**) will be changed by the data supplied by the simulator.)
-
-- Print(data) - print the paramater supplied to it can be string or expession.
-   
-- Sleep(time) - stops the main thread for the specified time, can be string or expession.
-   
-- while(condition) { commands } - while loop.
-   
-- if(conddition) { command } - will execute the commands only if the condition is true.
-    
-- also the use of functions is Allowed but must be Declared Before the call to the function.
-
+3 more Search algorithem are implimented in the files include an compare between them in the PDF file.
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 GitHub Link for the project: https://github.com/MorAl2/FlightSimulatorInterpreter
