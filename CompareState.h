@@ -3,10 +3,10 @@
 
 #include "State.h"
 template<typename T>
-// comprator for the prirty queue.
+// comprator for the priority queue.
 struct CompareState {
   bool operator()(State<T> *const &p1, State<T> *const &p2) {
-    // return "true" if "p1" is ordered before "p2", for example:
+    // return "true" if "p1" is ordered before "p2"
     return p1->getSumState() > p2->getSumState();
   }
 };
