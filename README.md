@@ -1,13 +1,11 @@
 # Generalized-Server-Side-Implementation
 
-Provides Generic Implemantion of ServerSide using Sockets and MultiThreading, 
-The Solver Inetrface Provides API for Problem Solving using The ClientHandler Interface which is an API
-of handaling Stream of data recived by the Socket.
+Provides generic implemantion of a Server using sockets and MultiThreading, 
+The Solver Inetrface provides API for Problem Solving using The ClientHandler which is an API for handaling Streams of data recived by the socket.
 
-This prodcut was build based on the SOLID design Pattrem Priniciples and provide an easy way for Managing ServerSize Comunictaion.
+This project was build based on the SOLID design pattrem priniciples and provides an easy way for managing ServerSide Comunication.
 
-The Current Main of the program Runs Search Algorithm For findiing the shortest path in a field/Matrix/Maze.
-The Problem And Solving It Is Also Generic and the api can be used to solve any given problem by the right class which will Impliment The Solver Interface.
+The current Main of the program runs search algorithm For findiing the shortest path in a Field/Matrix/Maze. The Problem And Solving It Is Also Generic and the API can be used to solve any given problem by the right class which will Impliment The Solver Interface.
 (https://github.com/MorAl2/Generalized-Server-Side-Implementation)
 
 # Authors
