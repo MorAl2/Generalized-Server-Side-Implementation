@@ -1,7 +1,7 @@
 # Generalized-Server-Side-Implementation
 
-Prvides Generic Implemantion of ServerSide using Sockets and MultiThreading, 
-The Solver Inetrface Provide API for Problem Solving using The ClientHandler Interface which is an API
+Provides Generic Implemantion of ServerSide using Sockets and MultiThreading, 
+The Solver Inetrface Provides API for Problem Solving using The ClientHandler Interface which is an API
 of handaling Stream of data recived by the Socket.
 
 This prodcut was build based on the SOLID design Pattrem Priniciples and provide an easy way for Managing ServerSize Comunictaion.
